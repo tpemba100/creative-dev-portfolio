@@ -1,0 +1,47 @@
+.hero {
+  /* background-color: green; */
+  height: 90vh;
+  display: flex;
+  position: relative;
+  margin-bottom: 10rem;
+}
+.title_left {
+  height: 100%;
+  width: 50%;
+  padding-top: 10%;
+  padding-left: 4rem;
+  position: relative;
+}
+.title_left h3 {
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 40px;
+}
+.title_headline {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 700;
+  padding-left: 40px;
+  margin-bottom: 1rem;
+}
+.title_left span {
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 4rem;
+  position: absolute;
+  top: 43%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.desc_right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.desc_right p {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 33px;
+  margin-bottom: 2rem;
+}

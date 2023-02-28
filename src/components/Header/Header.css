@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&display=swap");
+
+.header {
+  height: 6em;
+  max-width: 100%;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-family: "Averia Serif Libre", cursive;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 6em;
+  }
+}
