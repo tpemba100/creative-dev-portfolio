@@ -31,7 +31,13 @@
   font-size: 3rem;
 }
 
-.row-col-bottom {
-  /* margin-top: 20px; */
-  /* background-color: blue; */
+@media (max-width: 600px) {
+  .row-letter {
+    font-size: 1rem;
+    background-color: red;
+  }
+
+  .a .row-letter {
+    background-color: purple;
+  }
 }

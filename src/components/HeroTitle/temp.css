@@ -50,3 +50,29 @@
   font-size: 2rem;
   font-family: "Averia Serif Libre", cursive;
 }
+
+@media (max-width: 600px) {
+  .banner .banner-row .row-title,
+  .banner .banner-row .row-letter {
+    font-size: 3rem;
+  }
+
+  .banner .banner-row .row-col {
+    margin-left: 0;
+  }
+
+  .ban_and .banner-row {
+    top: 50%;
+    left: 90%;
+  }
+
+  .ban_and .banner-row .row-title,
+  .ban_and .banner-row .row-letter {
+    font-size: 2rem;
+  }
+
+  .ban_title .banner-row .row-title,
+  .ban_title .banner-row .row-letter {
+    font-size: 1.5rem;
+  }
+}

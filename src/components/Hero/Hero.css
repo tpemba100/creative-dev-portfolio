@@ -69,3 +69,26 @@
   width: 50%;
   /* background-color: green; */
 }
+
+@media (max-width: 600px) {
+  .new_cont {
+    /* background-color: orange; */
+    display: block;
+    padding-top: 3rem;
+  }
+
+  .banner_cont_left {
+    width: 100%;
+  }
+
+  .desc_right {
+    width: 100%;
+    height: 65vh;
+    /* background-color: green; */
+  }
+
+  .desc_right p {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+  }
+}
