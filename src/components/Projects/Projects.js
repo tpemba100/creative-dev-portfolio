@@ -10,7 +10,7 @@ export default function Projects() {
   if (!projects.length) return null;
 
   return (
-    <Box sx={{ flexGrow: 1, p: 0 }}>
+    <Box sx={{ flexGrow: 1, p: 0 }} id="projects">
       <h3 className="page">projects</h3>
       <Grid
         container
@@ -19,11 +19,11 @@ export default function Projects() {
           "--Grid-borderWidth": "2px",
           borderTop: "var(--Grid-borderWidth) solid",
           borderLeft: "var(--Grid-borderWidth) solid",
-          borderColor: "divider",
+          borderColor: "red",
           "& > div": {
             borderRight: "var(--Grid-borderWidth) solid",
             borderBottom: "var(--Grid-borderWidth) solid",
-            borderColor: "divider",
+            borderColor: "red",
           },
         }}
       >
