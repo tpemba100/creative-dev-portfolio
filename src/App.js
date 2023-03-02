@@ -16,26 +16,9 @@ const App = () => {
   const url = "https://api.github.com/users/tpemba100/repos";
   const [repoList, setRepoList] = useState([]);
 
-  const fetchRepos = async () => {
-    try {
-      const res = await fetch(`${url}`);
-      const data = await res.json();
-      setRepoList(data);
-      console.log("sucess Repo Fetch");
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    fetchRepos();
-  }, []);
-
   return (
     <div id="top" className={`${themeName} app`}>
       <Header />
-
       <main>
         <Hero />
         <About />

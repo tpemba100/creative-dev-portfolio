@@ -1,0 +1,31 @@
+/* .banner .banner-row .row-title,
+.banner .banner-row .row-letter {
+  font-size: 20rem;
+  font-weight: 500;
+  position: relative;
+  letter-spacing: -0.8rem;
+  display: inline-block;
+  white-space: nowrap;
+} */
+.banner {
+  height: 100%;
+  width: 50%;
+  padding-top: 10%;
+  /* padding-left: 4rem; */
+  background-color: red;
+}
+
+.row-letter {
+  font-size: 7rem;
+  font-weight: 500;
+  position: relative;
+  /* letter-spacing: -0.8rem; */
+  letter-spacing: 0rem;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.a .row-letter {
+  /* background-color: red; */
+  font-size: 3rem;
+}

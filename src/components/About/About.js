@@ -1,8 +1,8 @@
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import GitHubIcon from "@mui/icons-material/GitHub";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { design_about, develop_about } from "../../portfolio";
 import { useState } from "react";
-import ResumePDF from "../../assets/Tsering_Pemba_Resume.pdf";
+// import ResumePDF from "../../assets/Tsering_Pemba_Resume.pdf";
 import "./About.css";
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
   };
 
   return (
-    <div className="about">
+    <div className="about" id="about">
       <h3 className="about-title">about me</h3>
       <div className="about-btn">
         <button

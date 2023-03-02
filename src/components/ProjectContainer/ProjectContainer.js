@@ -1,32 +1,39 @@
 import uniqid from "uniqid";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { useState } from "react";
 import "./ProjectContainer.css";
 
-const ProjectContainer = ({ project }) => (
-  <div className="project">
-    <h3>{project.name}</h3>
+const ProjectContainer = ({ project, projectImg }) => {
+  const [hovered, setHovered] = useState(false);
 
-    <p className="project__description">{project.description}</p>
-    {project.stack && (
-      <ul className="project__stack">
-        {project.stack.map((item) => (
-          <li key={uniqid()} className="project__stack-item">
-            {item}
-          </li>
-        ))}
-      </ul>
-    )}
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
 
-    {project.sourceCode && (
-      <a
-        href={project.sourceCode}
-        aria-label="source code"
-        className="link link--icon"
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
+
+  return (
+    <div className="project">
+      <div className="project_title" style={{ zIndex: hovered ? 0 : 1 }}>
+        <h3 className="project_name">{project.name}</h3>
+        <p className="project_description">{project.description}</p>
+      </div>
+
+      <div
+        className="img_cont"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        style={{
+          transform: hovered ? "scale(1.14)" : "scale(1)",
+          opacity: hovered ? "1" : "0.8",
+        }}
       >
-        <GitHubIcon />
-      </a>
-    )}
-  </div>
-);
+        <img src={require("../.././assets/project_img/" + projectImg)} />
+      </div>
+    </div>
+  );
+};
 
 export default ProjectContainer;

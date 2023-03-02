@@ -4,6 +4,7 @@
   display: flex;
   position: relative;
   margin-bottom: 10rem;
+  /* background-color: brown; */
 }
 .title_left {
   height: 100%;
@@ -11,7 +12,9 @@
   padding-top: 10%;
   padding-left: 4rem;
   position: relative;
+  /* background-color: red; */
 }
+
 .title_left h3 {
   font-family: "Averia Serif Libre", cursive;
   font-size: 40px;
@@ -23,6 +26,7 @@
   padding-left: 40px;
   margin-bottom: 1rem;
 }
+
 .title_left span {
   font-family: "Averia Serif Libre", cursive;
   font-size: 4rem;
@@ -44,4 +48,14 @@
   font-weight: 500;
   font-size: 33px;
   margin-bottom: 2rem;
+}
+
+.row-letter {
+  font-size: 5rem;
+  font-weight: 500;
+  position: relative;
+  letter-spacing: -0.8rem;
+  /* letter-spacing: 1rem; */
+  display: inline-block;
+  white-space: nowrap;
 }

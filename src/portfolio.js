@@ -38,9 +38,8 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: "Student Group",
-    description:
-      "This is an application that can help students manage members in their group. The students can be added directly from a form container and displayed right below it. All the data is stored in MySQL Database or PHP MyAdmin.",
+    name: "Tiqc Collective",
+    description: "ui/ux design",
     stack: [
       "CSS",
       "JavaeScript",
@@ -50,22 +49,47 @@ const projects = [
       "Node",
       "MySQL Database",
     ],
+    img: "tiqc_collective.jpg",
     sourceCode: "https://github.com/tpemba100/Student-Group",
     livePreview: "https://github.com/tpemba100/Student-Gropup",
   },
   {
-    name: "Computer Ticketing Sysytem",
-    description:
-      "This is an full stack application where the user can raise a ticket for any issues with their computer. The users can provide information in the reactive forms to raise a ticket. Only authticated users can login and raise a ticket.",
+    name: "The Ghost Clan",
+    description: "Web Design",
     stack: ["Redux", "TypeScript", "React", "CSS", "MongoDB"],
+    img: "the_ghost_clan.png",
     sourceCode: "https://github.com/tpemba100/ComputerTicketSystem",
     livePreview: "https://github.com/tpemba100/ComputerTicketSystem",
   },
   {
-    name: "Netflix Clone",
-    description:
-      "A Front End Client View of NETFLIX app with very similar interface and experience. The Front end was developed using React, SCSS and Material UI for similar User Experience as original Netflix.",
+    name: "Nextflix",
+    description: "Development",
     stack: ["React", "SCSS", "React Hooks"],
+    img: "nextflix.png",
+    sourceCode: "https://github.com/tpemba100/Netflix-clone",
+    livePreview: "https://github.com/tpemba100/Netflix-clone",
+  },
+  {
+    name: "Nextflix",
+    description: "ui/ux Design",
+    stack: ["React", "SCSS", "React Hooks"],
+    img: "nextflix.png",
+    sourceCode: "https://github.com/tpemba100/Netflix-clone",
+    livePreview: "https://github.com/tpemba100/Netflix-clone",
+  },
+  {
+    name: "Nextflix",
+    description: "Development",
+    stack: ["React", "SCSS", "React Hooks"],
+    img: "random_1.png",
+    sourceCode: "https://github.com/tpemba100/Netflix-clone",
+    livePreview: "https://github.com/tpemba100/Netflix-clone",
+  },
+  {
+    name: "Nextflix",
+    description: "ui/ux Design",
+    stack: ["React", "SCSS", "React Hooks"],
+    img: "random_1.png",
     sourceCode: "https://github.com/tpemba100/Netflix-clone",
     livePreview: "https://github.com/tpemba100/Netflix-clone",
   },
