@@ -6,8 +6,10 @@ import { useState } from "react";
 import "./About.css";
 
 const About = () => {
+  //to toggle between active for design and develop
   const [activeButton, setActiveButton] = useState("design");
 
+  // to handle the toggle
   const handleButtonClick = (button) => {
     setActiveButton(button);
   };
@@ -18,30 +20,44 @@ const About = () => {
       <div className="about-btn">
         <button
           onClick={() => handleButtonClick("design")}
-          className="design_cont"
+          // when the activeButton is design, we do not set active className
+          className={`design_cont ${activeButton === "design" ? "" : "active"}`}
           style={{
             backgroundColor:
               activeButton === "design"
                 ? "rgb(233, 233, 233)"
                 : "var(--clr-primary)",
-            color: activeButton === "design" ? "var(--clr-primary)" : "#fff",
+            color:
+              activeButton === "design"
+                ? "var(--clr-primary)"
+                : "var(--clr-bg)",
+            opacity: activeButton === "design" ? "1" : "0.5",
             borderTopLeftRadius: "10px",
             borderTopRightRadius: "10px",
+            cursor: activeButton === "design" ? "default" : "pointer",
           }}
         >
           Design
         </button>
         <button
           onClick={() => handleButtonClick("develop")}
-          className="develop_cont"
+          // if activeButton != develop, we set active:hover..
+          className={`develop_cont ${
+            activeButton === "develop" ? "" : "active"
+          }`}
           style={{
             backgroundColor:
               activeButton === "develop"
                 ? "rgb(233, 233, 233)"
                 : "var(--clr-primary)",
-            color: activeButton === "develop" ? "var(--clr-primary)" : "#fff",
+            color:
+              activeButton === "develop"
+                ? "var(--clr-primary)"
+                : "var(--clr-bg)",
+            opacity: activeButton === "develop" ? "1" : "0.5",
             borderTopLeftRadius: "10px",
             borderTopRightRadius: "10px",
+            cursor: activeButton === "develop" ? "default" : "pointer",
           }}
         >
           Develop
