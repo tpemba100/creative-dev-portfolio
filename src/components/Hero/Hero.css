@@ -1,18 +1,17 @@
-.hero {
-  /* background-color: green; */
+/* .hero {
+  background-color: green;
   height: 90vh;
   display: flex;
   position: relative;
   margin-bottom: 10rem;
-  /* background-color: brown; */
-}
-.title_left {
+} */
+/* .title_left {
   height: 100%;
   width: 50%;
   padding-top: 10%;
   padding-left: 4rem;
   position: relative;
-  /* background-color: red; */
+  background-color: red;
 }
 
 .title_left h3 {
@@ -35,12 +34,13 @@
   left: 95%;
   transform: translate(-50%, -50%);
   z-index: 0;
-}
+} */
 .desc_right {
   width: 50%;
   height: 100%;
   display: flex;
   align-items: flex-end;
+  height: 80vh;
 }
 .desc_right p {
   margin-left: 1rem;
@@ -50,12 +50,22 @@
   margin-bottom: 2rem;
 }
 
-.row-letter {
+/* .row-letter {
   font-size: 5rem;
   font-weight: 500;
   position: relative;
   letter-spacing: -0.8rem;
-  /* letter-spacing: 1rem; */
   display: inline-block;
   white-space: nowrap;
+} */
+
+.new_cont {
+  /* background-color: orange; */
+  display: flex;
+  padding-top: 5rem;
+}
+
+.banner_cont_left {
+  width: 50%;
+  /* background-color: green; */
 }

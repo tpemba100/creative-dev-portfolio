@@ -7,13 +7,14 @@
   display: inline-block;
   white-space: nowrap;
 } */
-.banner {
+
+/* .banner {
   height: 100%;
   width: 50%;
   padding-top: 10%;
-  /* padding-left: 4rem; */
+  padding-left: 4rem;
   background-color: red;
-}
+} */
 
 .row-letter {
   font-size: 7rem;
@@ -28,4 +29,9 @@
 .a .row-letter {
   /* background-color: red; */
   font-size: 3rem;
+}
+
+.row-col-bottom {
+  /* margin-top: 20px; */
+  /* background-color: blue; */
 }

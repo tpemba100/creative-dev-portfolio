@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./BannerTitle.css";
+// import "./BannerTitle.css";
+import "./temp.css";
 
 const bannerTitle = {
   animate: {
@@ -12,7 +13,7 @@ const bannerTitle = {
 };
 
 const letterAni = {
-  initial: { y: 400 },
+  initial: { y: 120 },
   animate: {
     y: 0,
     transition: {
@@ -25,11 +26,14 @@ const letterAni = {
 const BannerTitle = () => {
   return (
     <motion.div className="banner" variants={bannerTitle}>
-      <BannerRowTop title={"DESIGNER"} />
-      <div className="a">
-        <BannerRowBottom title={"&"} />
+      <div className="ban_title">
+        <BannerRowTitle title={"creative"} />
       </div>
-      <BannerRowBottom title={"DEVELOPER"} />
+      <BannerRowTop title={"DESIGNER"} />
+      <div className="ban_and">
+        <BannerRowMid title={"&"} />
+      </div>
+      <BannerRowTop title={"DEVELOPER"} />
     </motion.div>
   );
 };
@@ -54,15 +58,28 @@ const AnimatedLetters = ({ title, disabled }) => (
 
 const BannerRowTop = ({ title }) => {
   return (
-    <div className="row-col">
-      <AnimatedLetters title={title} />
+    <div className={"banner-row"}>
+      <div className="row-col">
+        <AnimatedLetters title={title} />
+      </div>
     </div>
   );
 };
-const BannerRowBottom = ({ title }) => {
+const BannerRowMid = ({ title }) => {
   return (
-    <div className="row-col">
-      <AnimatedLetters title={title} />
+    <div className={"banner-row"}>
+      <div className="row-col-mid">
+        <AnimatedLetters title={title} />
+      </div>
+    </div>
+  );
+};
+const BannerRowTitle = ({ title }) => {
+  return (
+    <div className={"banner-row"}>
+      <div className="row-col-title">
+        <AnimatedLetters title={title} />
+      </div>
     </div>
   );
 };

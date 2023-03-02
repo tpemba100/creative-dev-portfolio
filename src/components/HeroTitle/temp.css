@@ -1,0 +1,52 @@
+.banner {
+  z-index: 100;
+  position: relative;
+}
+.banner .banner-row {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.banner .banner-row.center {
+  justify-content: center;
+  text-align: center;
+}
+
+.banner .banner-row.right {
+  justify-content: flex-end;
+}
+.banner .banner-row .row-title,
+.banner .banner-row .row-letter {
+  font-size: 6rem;
+  font-weight: 700;
+  position: relative;
+  letter-spacing: 0.5rem;
+  /* letter-spacing: -0.8rem; */
+  display: inline-block;
+  white-space: nowrap;
+}
+.banner .banner-row .row-col {
+  width: 50%;
+  display: flex;
+  margin-left: 2rem;
+}
+
+.ban_and .banner-row {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+
+.ban_and .banner-row .row-title,
+.ban_and .banner-row .row-letter {
+  font-size: 4rem;
+  font-family: "Averia Serif Libre", cursive;
+}
+
+.ban_title .banner-row .row-title,
+.ban_title .banner-row .row-letter {
+  font-size: 2rem;
+  font-family: "Averia Serif Libre", cursive;
+}
