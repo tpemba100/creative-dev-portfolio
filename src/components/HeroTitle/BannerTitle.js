@@ -13,7 +13,7 @@ const bannerTitle = {
 };
 
 const letterAni = {
-  initial: { y: 120 },
+  initial: { y: 130 },
   animate: {
     y: 0,
     transition: {

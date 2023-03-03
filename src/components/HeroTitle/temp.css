@@ -1,5 +1,5 @@
 .banner {
-  z-index: 100;
+  z-index: 0;
   position: relative;
 }
 .banner .banner-row {
@@ -17,7 +17,8 @@
 }
 .banner .banner-row .row-title,
 .banner .banner-row .row-letter {
-  font-size: 5.5rem;
+  /* font-size: 5.5rem; */
+  font-size: 7vw;
   font-weight: 700;
   position: relative;
   letter-spacing: -0.1rem;
@@ -32,7 +33,7 @@
 
 .ban_and .banner-row {
   position: absolute;
-  z-index: 100;
+  z-index: 10;
   top: 50%;
   left: 88%;
   transform: translate(-50%, -50%);
@@ -40,13 +41,15 @@
 
 .ban_and .banner-row .row-title,
 .ban_and .banner-row .row-letter {
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: 6vw;
   font-family: "Averia Serif Libre", cursive;
 }
 
 .ban_title .banner-row .row-title,
 .ban_title .banner-row .row-letter {
   font-size: 2rem;
+  letter-spacing: 0.6rem;
   font-family: "Averia Serif Libre", cursive;
 }
 
@@ -56,7 +59,8 @@
   }
   .banner .banner-row .row-title,
   .banner .banner-row .row-letter {
-    font-size: 3.5rem;
+    /* font-size: 3.5rem; */
+    font-size: 14vw;
   }
 
   .banner .banner-row .row-col {
@@ -70,11 +74,12 @@
 
   .ban_and .banner-row .row-title,
   .ban_and .banner-row .row-letter {
-    font-size: 2.5rem;
+    font-size: 10vw;
   }
 
   .ban_title .banner-row .row-title,
   .ban_title .banner-row .row-letter {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: 7vw;
   }
 }

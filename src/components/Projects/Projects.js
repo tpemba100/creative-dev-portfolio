@@ -11,7 +11,7 @@ export default function Projects() {
 
   return (
     <Box sx={{ flexGrow: 1, p: 0 }} id="projects">
-      <h3 className="page">projects</h3>
+      <h3 className="section__title">projects</h3>
       <Grid
         container
         spacing={2}

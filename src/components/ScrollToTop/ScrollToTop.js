@@ -18,6 +18,7 @@ const ScrollToTop = () => {
       <a href="#top">
         <ArrowUpwardIcon fontSize="large" />
       </a>
+      <div className="text">Go to top</div>
     </div>
   ) : null;
 };

@@ -3,6 +3,33 @@
   bottom: 2em;
   right: 4em;
   background-color: transparent;
+  transition: all 0.3s;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.scroll-top:hover {
+  background-color: var(--clr-bg-alt);
+  /* transform: scale(1.1); */
+  border-radius: 50%;
+}
+
+.scroll-top:hover .text {
+  opacity: 1;
+  border-color: none;
+  transition: all 0.3s;
+  background-color: transparent;
+}
+
+.text {
+  position: absolute;
+  opacity: 0;
+  font-size: 0.8rem;
+  color: var(--clr-text);
+  width: 100%;
+  transform: translateX(-10px);
+  margin-top: 5px;
 }
 
 @media (max-width: 900px) {

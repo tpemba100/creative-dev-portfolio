@@ -5,28 +5,16 @@
   padding-top: 5rem;
 }
 
-.about-title {
-  font-family: "Averia Serif Libre", cursive;
-  font-weight: 700;
-  font-size: 30px;
-  margin-left: 2rem;
-}
-
 .about-btn {
   display: flex;
   font-family: "Averia Serif Libre", cursive;
-  /* background-color: rgb(233, 233, 233); */
 }
 
 .about-btn .develop_cont {
-  /* border-top-left-radius: 20px; */
   border-top-right-radius: 20px;
-  /* border-bottom-left-radius: 20px; */
 }
 .about-btn .design_cont {
   border-top-left-radius: 20px;
-  /* border-top-right-radius: 20px; */
-  /* border-bottom-right-radius: 20px; */
 }
 
 .active:hover {
@@ -38,29 +26,39 @@
   text-transform: uppercase;
   /* background-color: pink; */
   width: 50%;
-  font-size: 70px;
+  /* font-size: 70px; */
+  font-size: 3.5vw;
   padding: 10px 0;
-  /* box-shadow: -9px -8px 16px 1px gray; */
 }
 
 .develop_cont {
   text-transform: uppercase;
-  font-size: 70px;
+  /* font-size: 70px; */
+  font-size: 3.5vw;
   padding: 10px 0;
   width: 50%;
   /* box-shadow: 9px -8px 16px 1px gray; */
 }
 
 .info_cont {
+  display: flex;
+
   /* box-shadow: 0 0 20px 10px gray; */
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: var(--clr-fg);
 }
 
+/* .about_visual {
+  background-color: red;
+  height: 50vh;
+  width: 50%;
+} */
+
 .info {
-  padding: 5rem 5rem;
+  /* width: 50%; */
   margin-left: 50%;
+  padding: 4vw;
   color: var(--clr-bg-alt);
   border-bottom-right-radius: 20px;
 }
@@ -84,8 +82,9 @@
   }
 
   .info {
-    padding: 2rem;
+    padding: 1rem;
     margin: 0;
+    width: 100%;
   }
 
   .info h2 {

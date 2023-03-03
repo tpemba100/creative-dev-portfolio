@@ -1,25 +1,55 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { useState, useEffect } from "react";
 import "./ShowRepo.css";
 
-function ShowRepo({ repos }) {
+function ShowRepo() {
+  const url = "https://api.github.com/users/tpemba100/repos";
+  const [repoList, setRepoList] = useState([]);
+
   const filterInput = document.querySelector(".filter-repos");
+  const [visibleRepos, setVisibleRepos] = useState(6);
 
-  console.log(repos);
+  const fetchRepos = async () => {
+    try {
+      const res = await fetch(`${url}`);
+      const data = await res.json();
+      setRepoList(data);
+      console.log("sucess Repo Fetch");
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
+  useEffect(() => {
+    fetchRepos();
+  }, []);
+
+  function handleLoad() {
+    if (visibleRepos === repoList.length) {
+      setVisibleRepos(6);
+    } else {
+      setVisibleRepos(visibleRepos + 6);
+    }
+  }
+  // make the search text into all lowercase
+  // select all the repos with .repo
   function handleRepoSearch(e) {
     const search = e.toLowerCase();
     const repos = document.querySelectorAll(".repo");
 
     console.log("am running");
-    console.log(search);
-    console.log(repos);
+
+    // 1. loop thru all repo -> make the text inside repo into lower case
     for (const repo of repos) {
       const repoText = repo.innerText.toLowerCase();
 
+      // 2. IF texts in repo has search text, remove .hide
       if (repoText.includes(search)) {
         repo.classList.remove("hide");
         console.log("showwww");
       } else {
+        // IF no same text, -> add hide.
         repo.classList.add("hide");
         console.log("showwww");
       }
@@ -28,20 +58,23 @@ function ShowRepo({ repos }) {
 
   return (
     <section class="repos section">
-      <h2 class="section__title">Github Repos</h2>
+      <div className="section_header">
+        <h3 className="section__title">github repo</h3>
 
-      <input
-        type="text"
-        class="filter-repos"
-        placeholder="Search Repositories"
-        onChange={(e) => handleRepoSearch(e.target.value)}
-      />
+        <div class="filter-repos">
+          <input
+            type="text"
+            placeholder="Search Repositories"
+            onChange={(e) => handleRepoSearch(e.target.value)}
+          />
+        </div>
+      </div>
       <ul class="repo__list">
-        {repos.map((repo) => (
+        {repoList.slice(0, visibleRepos).map((repo) => (
           <li key={repo.id} className="repo">
             <h3>{repo.name}</h3>
             <br />
-            <h3 class="lang-text">{repo.language}</h3>
+            <h2 class="lang-text">{repo.language}</h2>
             <br />
             <br />
 
@@ -55,6 +88,15 @@ function ShowRepo({ repos }) {
           </li>
         ))}
       </ul>
+      {visibleRepos <= repoList.length ? (
+        <span
+          type="button"
+          className="btn btn--outline abt-btn"
+          onClick={handleLoad}
+        >
+          {visibleRepos === repoList.length ? "Hide All" : "See More"}
+        </span>
+      ) : null}
     </section>
   );
 }

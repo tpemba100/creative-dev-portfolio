@@ -16,7 +16,7 @@ const About = () => {
 
   return (
     <div className="about" id="about">
-      <h3 className="about-title">about me</h3>
+      <h3 className="section__title">about me</h3>
       <div className="about-btn">
         <button
           onClick={() => handleButtonClick("design")}
@@ -60,6 +60,10 @@ const About = () => {
         </button>
       </div>
       <div className="info_cont">
+        {/* <div className="about_visual">
+          <h1>something</h1>
+        </div> */}
+
         {activeButton === "design" && (
           <div className="info">
             <h2>Description:</h2>
