@@ -25,12 +25,10 @@ const About = () => {
           style={{
             backgroundColor:
               activeButton === "design"
-                ? "rgb(233, 233, 233)"
+                ? "var(--clr-fg)"
                 : "var(--clr-primary)",
             color:
-              activeButton === "design"
-                ? "var(--clr-primary)"
-                : "var(--clr-bg)",
+              activeButton === "design" ? "var(--clr-bg)" : "var(--clr-bg)",
             opacity: activeButton === "design" ? "1" : "0.5",
             borderTopLeftRadius: "10px",
             borderTopRightRadius: "10px",
@@ -48,12 +46,10 @@ const About = () => {
           style={{
             backgroundColor:
               activeButton === "develop"
-                ? "rgb(233, 233, 233)"
+                ? "var(--clr-fg)"
                 : "var(--clr-primary)",
             color:
-              activeButton === "develop"
-                ? "var(--clr-primary)"
-                : "var(--clr-bg)",
+              activeButton === "develop" ? "var(--clr-bg)" : "var(--clr-bg)",
             opacity: activeButton === "develop" ? "1" : "0.5",
             borderTopLeftRadius: "10px",
             borderTopRightRadius: "10px",

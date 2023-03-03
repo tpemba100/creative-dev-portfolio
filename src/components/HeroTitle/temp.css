@@ -17,18 +17,17 @@
 }
 .banner .banner-row .row-title,
 .banner .banner-row .row-letter {
-  font-size: 6rem;
+  font-size: 5.5rem;
   font-weight: 700;
   position: relative;
-  letter-spacing: 0.5rem;
-  /* letter-spacing: -0.8rem; */
+  letter-spacing: -0.1rem;
   display: inline-block;
   white-space: nowrap;
 }
 .banner .banner-row .row-col {
   width: 50%;
   display: flex;
-  margin-left: 2rem;
+  padding-left: 2rem;
 }
 
 .ban_and .banner-row {
@@ -52,23 +51,26 @@
 }
 
 @media (max-width: 600px) {
+  .banner .banner-row .row-col {
+    padding-left: 0;
+  }
   .banner .banner-row .row-title,
   .banner .banner-row .row-letter {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .banner .banner-row .row-col {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
   }
 
   .ban_and .banner-row {
     top: 50%;
-    left: 90%;
+    left: 85%;
   }
 
   .ban_and .banner-row .row-title,
   .ban_and .banner-row .row-letter {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .ban_title .banner-row .row-title,

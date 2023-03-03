@@ -26,7 +26,7 @@ const ProjectContainer = ({ project, projectImg }) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         style={{
-          transform: hovered ? "scale(1.14)" : "scale(1)",
+          transform: hovered ? "scale(1.1)" : "scale(1)",
           opacity: hovered ? "1" : "0.8",
         }}
       >

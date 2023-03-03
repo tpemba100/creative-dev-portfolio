@@ -19,11 +19,11 @@ export default function Projects() {
           "--Grid-borderWidth": "2px",
           borderTop: "var(--Grid-borderWidth) solid",
           borderLeft: "var(--Grid-borderWidth) solid",
-          borderColor: "red",
+          borderColor: "var(--clr-primary)",
           "& > div": {
             borderRight: "var(--Grid-borderWidth) solid",
             borderBottom: "var(--Grid-borderWidth) solid",
-            borderColor: "red",
+            borderColor: "var(--clr-primary)",
           },
         }}
       >

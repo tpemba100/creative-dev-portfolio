@@ -34,7 +34,6 @@
 @media (max-width: 600px) {
   .row-letter {
     font-size: 1rem;
-    background-color: red;
   }
 
   .a .row-letter {

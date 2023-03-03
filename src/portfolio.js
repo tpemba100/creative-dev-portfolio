@@ -1,6 +1,6 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: "localhost:3000",
+  homepage: "http://localhost:3000/",
   title: "Tsering Pemba",
 };
 
