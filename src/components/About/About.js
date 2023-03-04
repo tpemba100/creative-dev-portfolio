@@ -4,6 +4,7 @@ import { design_about, develop_about } from "../../portfolio";
 import { useState } from "react";
 // import ResumePDF from "../../assets/Tsering_Pemba_Resume.pdf";
 import "./About.css";
+import Square from "../threeModel/square";
 
 const About = () => {
   //to toggle between active for design and develop
@@ -60,9 +61,9 @@ const About = () => {
         </button>
       </div>
       <div className="info_cont">
-        {/* <div className="about_visual">
-          <h1>something</h1>
-        </div> */}
+        <div className="about_visual">
+          <Square />
+        </div>
 
         {activeButton === "design" && (
           <div className="info">

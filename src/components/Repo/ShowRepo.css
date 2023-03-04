@@ -109,6 +109,14 @@
     float: none;
   }
 
+  .repo h3 {
+    font-size: 4.5vw;
+  }
+
+  .lang-text {
+    font-size: 2vw;
+  }
+
   .filter-repos input {
     width: 100%;
     align-items: center;

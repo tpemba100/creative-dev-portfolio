@@ -49,15 +49,15 @@
   background-color: var(--clr-fg);
 }
 
-/* .about_visual {
-  background-color: red;
-  height: 50vh;
+.about_visual {
   width: 50%;
-} */
+  /* height: 90%; */
+  /* background-color: red; */
+}
 
 .info {
-  /* width: 50%; */
-  margin-left: 50%;
+  width: 50%;
+  /* margin-left: 50%; */
   padding: 4vw;
   color: var(--clr-bg-alt);
   border-bottom-right-radius: 20px;
@@ -79,6 +79,14 @@
   .develop_cont {
     font-size: 1.7rem;
     width: 50%;
+  }
+
+  .info_cont {
+    display: block;
+  }
+  .about_visual {
+    width: 100%;
+    /* height: 50%; */
   }
 
   .info {
