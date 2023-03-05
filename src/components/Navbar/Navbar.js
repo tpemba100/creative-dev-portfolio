@@ -5,6 +5,7 @@ import MenuIcon from "@mui/icons-material//Menu";
 import CloseIcon from "@mui/icons-material//Close";
 import { ThemeContext } from "../../contexts/theme";
 import { about, projects, contact } from "../../portfolio";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -38,18 +39,21 @@ const Navbar = () => {
             </a>
           </li>
         ) : null}
-        {/* TECHNICALLY ARCHIVE*/}
-        {contact.email ? (
+
+        <Link to="/archive" className="custom-link">
+          {/* TECHNICALLY ARCHIVE*/}
+          {/* {contact.email ? ( */}
           <li className="nav__list-item">
             <a
-              href="#contact"
+              // href="#contact"
               onClick={toggleNavList}
               className="link link--nav"
             >
-              Contact
+              Archive
             </a>
           </li>
-        ) : null}
+          {/* ) : null} */}
+        </Link>
       </ul>
 
       <button
