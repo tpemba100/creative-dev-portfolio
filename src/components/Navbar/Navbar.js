@@ -6,7 +6,7 @@ import CloseIcon from "@mui/icons-material//Close";
 import { ThemeContext } from "../../contexts/theme";
 import { about, projects, contact } from "../../portfolio";
 import { Link, useNavigate } from "react-router-dom";
-import ScrollIntoView from "react-scroll-into-view";
+// import ScrollIntoView from "react-scroll-into-view";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -21,6 +21,8 @@ const Navbar = () => {
       console.log("just scrool activate");
     } else {
       navigate("/");
+
+      console.log("NAVIGATE");
     }
   }
 
@@ -36,7 +38,7 @@ const Navbar = () => {
               href="#about"
               onClick={() => {
                 toggleNavList();
-                // handleClick();
+                handleClick();
               }}
               className="link link--nav"
             >
