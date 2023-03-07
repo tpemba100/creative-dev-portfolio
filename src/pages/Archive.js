@@ -1,11 +1,15 @@
 import React from "react";
+import Projects from "../components/Projects/Projects";
+import ".././App.css";
 import Square from "../components/threeModel/square";
+import { archives } from "../portfolio";
 
 const Archive = () => {
+  console.log(archives[1]);
   return (
-    <div style={{ width: "100%", height: "80vh" }}>
-      <h1>There is no Archive yet.</h1>
-      <Square style={{ width: "100%", height: "50%" }} />
+    <div>
+      {/* <Square style={{ width: "100%", height: "50%" }} /> */}
+      <Projects projects={archives} />
     </div>
   );
 };

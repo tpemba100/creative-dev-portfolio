@@ -5,14 +5,24 @@ import MenuIcon from "@mui/icons-material//Menu";
 import CloseIcon from "@mui/icons-material//Close";
 import { ThemeContext } from "../../contexts/theme";
 import { about, projects, contact } from "../../portfolio";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import ScrollIntoView from "react-scroll-into-view";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext);
   const [showNavList, setShowNavList] = useState(false);
+  const navigate = useNavigate();
 
   const toggleNavList = () => setShowNavList(!showNavList);
+
+  function handleClick() {
+    if (window.location.pathname === "/") {
+      console.log("just scrool activate");
+    } else {
+      navigate("/");
+    }
+  }
 
   return (
     <nav className="center nav">
@@ -22,7 +32,14 @@ const Navbar = () => {
       >
         {about ? (
           <li className="nav__list-item">
-            <a href="#about" onClick={toggleNavList} className="link link--nav">
+            <a
+              href="#about"
+              onClick={() => {
+                toggleNavList();
+                // handleClick();
+              }}
+              className="link link--nav"
+            >
               About
             </a>
           </li>
@@ -32,7 +49,10 @@ const Navbar = () => {
           <li className="nav__list-item">
             <a
               href="#projects"
-              onClick={toggleNavList}
+              onClick={() => {
+                toggleNavList();
+                handleClick();
+              }}
               className="link link--nav"
             >
               Projects
@@ -44,15 +64,10 @@ const Navbar = () => {
           {/* TECHNICALLY ARCHIVE*/}
           {/* {contact.email ? ( */}
           <li className="nav__list-item">
-            <a
-              // href="#contact"
-              onClick={toggleNavList}
-              className="link link--nav"
-            >
+            <a onClick={toggleNavList} className="link link--nav">
               Archive
             </a>
           </li>
-          {/* ) : null} */}
         </Link>
       </ul>
 

@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Footer from "./components/Footer/Footer";
 import Archive from "./pages/Archive";
-import ViewProjects from "./pages/ViewProjects";
+import ViewProject from "./pages/ViewProject";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
@@ -19,7 +19,7 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/archive" element={<Archive />} />
-            <Route exact path="/view-projects" element={<ViewProjects />} />
+            <Route exact path="/project" element={<ViewProject />} />
           </Routes>
         </main>
         <ScrollToTop />

@@ -1,5 +1,4 @@
 import uniqid from "uniqid";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import { useState } from "react";
 import "./ProjectContainer.css";
 
@@ -18,7 +17,7 @@ const ProjectContainer = ({ project, projectImg }) => {
     <div className="project">
       <div className="project_title" style={{ zIndex: hovered ? 0 : 1 }}>
         <h3 className="project_name">{project.name}</h3>
-        <p className="project_description">{project.description}</p>
+        <p className="project_description">{project.header}</p>
       </div>
 
       <div

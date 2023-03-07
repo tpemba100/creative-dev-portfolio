@@ -47,11 +47,9 @@ function ShowRepo() {
       // 2. IF texts in repo has search text, remove .hide
       if (repoText.includes(search)) {
         repo.classList.remove("hide");
-        console.log("showwww");
       } else {
         // IF no same text, -> add hide.
         repo.classList.add("hide");
-        console.log("showwww");
       }
     }
   }

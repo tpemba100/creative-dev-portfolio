@@ -1,17 +1,17 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
-import { projects } from "../../portfolio";
 import uniqid from "uniqid";
 import ProjectContainer from "../ProjectContainer/ProjectContainer";
 import "./Projects.css";
+import { Link } from "react-router-dom";
 
-export default function Projects() {
+export default function Projects({ projects }) {
   if (!projects.length) return null;
 
   return (
     <Box sx={{ flexGrow: 1, p: 0 }} id="projects">
-      <h3 className="section__title">projects</h3>
+      <h3 className="section__title">{projects[0].name}</h3>
       <Grid
         container
         spacing={2}
@@ -33,13 +33,15 @@ export default function Projects() {
         </Grid>
         <Grid xs={12} sm={12} md={6} minHeight={30}></Grid> */}
 
-        {projects.map((project) => (
+        {projects.slice(1).map((project) => (
           <Grid {...{ xs: 12, sm: 12, md: 6, lg: 6 }} minHeight={160}>
-            <ProjectContainer
-              key={uniqid()}
-              project={project}
-              projectImg={project.img}
-            />
+            <Link to="/project" state={project}>
+              <ProjectContainer
+                key={uniqid()}
+                project={project}
+                projectImg={project.head_img}
+              />
+            </Link>
           </Grid>
         ))}
       </Grid>

@@ -37,6 +37,7 @@
   top: 50%;
   left: 88%;
   transform: translate(-50%, -50%);
+  background-color: transparent;
 }
 
 .ban_and .banner-row .row-title,
@@ -44,6 +45,7 @@
   /* font-size: 4rem; */
   font-size: 6vw;
   font-family: "Averia Serif Libre", cursive;
+  background-color: transparent;
 }
 
 .ban_title .banner-row .row-title,

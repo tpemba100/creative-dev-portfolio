@@ -4,16 +4,19 @@ import Contact from ".././components/Contact/Contact";
 import ".././App.css";
 import ShowRepo from ".././components/Repo/ShowRepo";
 import Hero from ".././components/Hero/Hero";
+import { projects } from "../portfolio";
 
 const Home = () => {
+  if (!projects.length) return null;
+
   return (
-    <main>
+    <div>
       <Hero />
       <About />
-      <Projects />
+      <Projects projects={projects} />
       <ShowRepo />
       <Contact />
-    </main>
+    </div>
   );
 };
 

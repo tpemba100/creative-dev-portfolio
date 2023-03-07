@@ -1,7 +1,5 @@
-// import GitHubIcon from "@mui/icons-material/GitHub";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { design_about, develop_about } from "../../portfolio";
-import { useState } from "react";
+import { useState, useRef } from "react";
 // import ResumePDF from "../../assets/Tsering_Pemba_Resume.pdf";
 import "./About.css";
 import Square from "../threeModel/square";
