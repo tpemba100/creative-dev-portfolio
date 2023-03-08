@@ -45,15 +45,17 @@ export default function Projects({ projects }) {
                   projectImg={project.head_img}
                 />
                 {/* info */}
-                <h5>{project.description} </h5>
+                <h5 className="archive_desc">{project.description} </h5>
                 <div className="txt_stack">
                   {project.stack.map((item) => (
                     <p>{item}</p>
                   ))}
                 </div>
-                <span type="button" className="btn btn--outline abt_btn">
-                  see more
-                </span>
+                <div className="archive_btn">
+                  <span type="button" className="btn btn--outline">
+                    see more
+                  </span>
+                </div>
               </div>
             ) : (
               <Link to="/project" state={project}>

@@ -44,7 +44,7 @@ const ViewProject = () => {
           </div>
         </div>
         <div className="hero_img">
-          <img src={require("../.././assets/project_img/" + projectImg)} />
+          <img src={require("../.././assets/project_img/qcti/" + projectImg)} />
         </div>
       </div>
 

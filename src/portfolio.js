@@ -56,36 +56,34 @@ const projects = [
     description:
       " This is a basic description of the project. Nothing more, nothing less.",
     stack: ["Figma", "Miro", "Photoshop", "inDesign", "Google Forms"],
-    head_img: "tiqc_collective.jpg",
+    head_img: "qcti-header.jpg",
     sections: [
       {
         title: "introduction",
         brief:
           "hello this is a section brief. a little paragraph or something for Introduction",
         img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
+          "qcti-problem-statement.jpg",
+          "qcti-project-overview.jpg",
+          "qcti-customer-problem.jpg",
+          "qcti-tiqc-background.jpg",
+          "qcti-design-process.jpg",
         ],
       },
       {
         title: "discover",
         brief:
           "hello this is a section brief. a little paragraph or something for Discover",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "the_ghost_clan.png",
-        ],
+        img: ["qcti-define.jpg", "qcti-discovery.jpg", "qcti-user-persona.png"],
       },
       {
-        title: "design",
+        title: "define",
         brief:
           "hello this is a section brief. a little paragraph or something for design section",
         img: [
-          "tiqc_collective.jpg",
-          "the_ghost_clan.png",
-          "tiqc_collective.jpg",
+          "qcti-define.jpg",
+          "qcti-full-analysis.jpg",
+          "qcti-user-interview.png",
         ],
       },
       {
@@ -104,9 +102,10 @@ const projects = [
           "hello this is a section brief. a little paragraph or something for deliver",
         img: [
           "tiqc_collective.jpg",
-          "the_ghost_clan.png",
-          "tiqc_collective.jpg",
-          "the_ghost_clan.png",
+          "qcti-prototype.png",
+          "qcti-prototype-1.png",
+          "qcti-prototype-link.png",
+          "qcti-final-decision.jpg",
         ],
       },
     ],

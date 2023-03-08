@@ -1,19 +1,29 @@
+.archive_desc {
+  text-align: center;
+}
+
 .txt_stack {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   font-size: 1vw;
   justify-content: space-around;
-  margin: 1rem 0rem;
+  margin: 1rem 1.5rem;
 }
 
 .txt_stack p {
   font-size: 1vw;
   text-transform: uppercase;
-  padding: 5px 15px;
+  padding: 5px 13px;
   /* margin: 10px 5px; */
   background-color: var(--clr-primary);
   color: var(--clr-bg);
+}
+
+.archive_btn {
+  width: 20%;
+  margin: auto;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -23,12 +33,10 @@
   }
 
   .txt_stack p {
+    margin-top: 1rem;
     font-size: 2vw;
   }
-
-  .project_btn {
-    margin: 1rem auto;
-    font-size: 0.6px;
-    padding: 3px 10px;
+  .archive_btn {
+    width: 100%;
   }
 }
