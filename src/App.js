@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Footer from "./components/Footer/Footer";
 import Archive from "./pages/Archive";
-import ViewProject from "./pages/ViewProject";
+import ViewProject from "./pages/ViewProject/ViewProject";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 

@@ -42,7 +42,7 @@
   height: 18vw; */
   width: 80%;
   height: 310px;
-  transition-duration: 0.3s;
+  transition: all 0.3s ease-in-out;
 
   /* transition-timing-function: ease-in-out; */
   /* transition-delay: 0s; */
@@ -51,7 +51,7 @@
 }
 
 .img_cont:hover {
-  box-shadow: 0px 0px 20px gray;
+  box-shadow: 0px 0px 20px var(--clr-primary);
 }
 
 .img_cont img {

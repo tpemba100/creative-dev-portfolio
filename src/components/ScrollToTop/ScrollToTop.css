@@ -13,6 +13,7 @@
   background-color: var(--clr-bg-alt);
   /* transform: scale(1.1); */
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .scroll-top:hover .text {

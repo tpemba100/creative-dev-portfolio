@@ -162,3 +162,11 @@ main {
     margin-top: 4em;
   }
 }
+
+.head--font {
+  font-family: "Averia Serif Libre", cursive;
+}
+
+.body--font {
+  font-family: "Averia Serif Libre", cursive;
+}

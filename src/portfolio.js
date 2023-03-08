@@ -443,7 +443,7 @@ const archives = [
     name: "archive",
   },
   {
-    name: "Tiqc Collectiveeeee",
+    name: "Random Cards",
     header: "ui/ux design",
     description:
       " This is a basic description of the project. Nothing more, nothing less.",
@@ -453,7 +453,7 @@ const archives = [
     livePreview: "https://github.com/tpemba100/ComputerTicketSystem",
   },
   {
-    name: "The Ghost Claneeeee",
+    name: "Movie Filter",
     header: "Web Design",
     description:
       " This is a basic description of the project. Nothing more, nothing less.",
@@ -463,7 +463,7 @@ const archives = [
     livePreview: "https://github.com/tpemba100/ComputerTicketSystem",
   },
   {
-    name: "Nextflieeeex",
+    name: "Todo List",
     header: "Development",
     description:
       " This is a basic description of the project. Nothing more, nothing less.",
@@ -473,7 +473,7 @@ const archives = [
     livePreview: "https://github.com/tpemba100/Netflix-clone",
   },
   {
-    name: "Nextflixeee",
+    name: "Nextflix",
     header: "ui/ux Design",
     description:
       " This is a basic description of the project. Nothing more, nothing less.",
@@ -483,7 +483,7 @@ const archives = [
     livePreview: "https://github.com/tpemba100/Netflix-clone",
   },
   {
-    name: "Nextflixeee",
+    name: "Github Finder",
     header: "Development",
     description:
       " This is a basic description of the project. Nothing more, nothing less.",
@@ -493,8 +493,8 @@ const archives = [
     livePreview: "https://github.com/tpemba100/Netflix-clone",
   },
   {
-    name: "Nextflixeee",
-    header: "ui/ux Design",
+    name: "Food Branding",
+    header: "branding design",
     description:
       " This is a basic description of the project. Nothing more, nothing less.",
     stack: ["React", "SCSS", "React Hooks"],
