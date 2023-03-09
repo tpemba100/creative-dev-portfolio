@@ -54,7 +54,7 @@ const projects = [
   },
   {
     name: "Qcti Collective",
-    header: "ui/ux design",
+    header: "ui/ux case study",
     description:
       "Case Study for our Queens College Tech Incubator, Including research, interviews, analysis and prototype.",
     stack: [
@@ -120,67 +120,62 @@ const projects = [
   //THE GHOST CLAN
   //THE GHOST CLAN
   {
-    name: "The Ghost Clan",
-    header: "Web Design",
+    name: "Peak Speak",
+    header: "ui/ux case study",
     description:
-      " This is a basic description of the project. Nothing more, nothing less.",
-    stack: ["Redux", "TypeScript", "React", "CSS", "MongoDB"],
-    head_img: "the_ghost_clan.png",
+      "A case study on app for langauge learning called peak speak. Focused on easy learning with bite size lessons and real conversation learning.",
+    stack: ["figma", "miro", "Otter", "Photoshop", "illustrator"],
+    head_img: "peak_speak/peak_speak_1_head_img.jpg",
     sections: [
       {
         title: "introduction",
-        brief:
-          "hello this is a section brief. a little paragraph or something for Introduction",
         img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
+          "peak_speak/peak_speak_2_overview.jpg",
+          "peak_speak/peak_speak_3_process.jpg",
         ],
       },
       {
         title: "discover",
         brief:
-          "hello this is a section brief. a little paragraph or something for Discover",
+          "I interviewed my family members, friends and few classmates with various background and various native language. Got many new insights and focused on defining key features of my app. I did an competitive analysis with other similar companies as well. ",
         img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
+          "peak_speak/peak_speak_4_insight.jpg",
+          "peak_speak/peak_speak_5_features.jpg",
+          "peak_speak/peak_speak_6_competetive.jpg",
         ],
+      },
+      {
+        title: "define",
+        brief:
+          "After discovering insights from interviews and research. I defined my target audience, a one persona and mapped thier jounrey leading to the usage of my app during its daily life. ",
+        img: [
+          "peak_speak/peak_speak_7_persona.jpg",
+          "peak_speak/peak_speak_8_journey.jpg",
+          "peak_speak/peak_speak_9_visual_journey.jpg",
+        ],
+      },
+      {
+        title: "ideate",
+        brief:
+          "After understanding the problem, target users, their brief experience and our features based on insights. User Flow, a flow chart so my app from start to finish.",
+        img: ["peak_speak/peak_speak_10_user_flow.jpg"],
       },
       {
         title: "design",
         brief:
-          "hello this is a section brief. a little paragraph or something for design section",
+          "After various itteration of wire frames and design to create a simple but effective user experience, we developed the app protoype. Then i tested and made improvements based on result of user testing. ",
         img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "develop",
-        brief:
-          "hello this is a section brief. a little paragraph or something for develop part.      ",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "deliver",
-        brief:
-          "hello this is a section brief. a little paragraph or something for deliver",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
+          "peak_speak/peak_speak_11_wireframe.jpg",
+          "peak_speak/peak_speak_12_style.jpg",
+          "peak_speak/peak_speak_13_proto.jpg",
+          "peak_speak/peak_speak_16_access.jpg",
+          "peak_speak/peak_speak_14_testing.jpg",
+          "peak_speak/peak_speak_15_mock.jpg",
         ],
       },
     ],
-    sourceCode: "https://github.com/tpemba100/Student-Group",
-    prototype: "https://www.google.com",
+    prototype:
+      "https://www.figma.com/proto/hvAGnjSm7wL929Y7v05dtg/Learning-app?node-id=9-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=9%3A3",
   },
   {
     name: "Nextflix",

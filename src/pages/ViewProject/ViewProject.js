@@ -49,7 +49,7 @@ const ViewProject = () => {
       <div className="sections">
         {sections.map((section, index) => (
           // section
-          <div key={index} className="section ">
+          <div key={index} className="section">
             <h2 className="head--font section_head_title">{section.title}</h2>
             <p>{section.brief}</p>
 
@@ -71,26 +71,30 @@ const ViewProject = () => {
 
       {/* PROTOTYPE OR SOURCE CODE */}
       <div className="btn_cont">
-        <span
-          type="button"
-          className="btn btn--outline abt-btn"
-          onClick={() => handleClick(sourceCode)}
-          style={{
-            width: "300px",
-          }}
-        >
-          Source Code
-        </span>
-        <span
-          type="button"
-          className="btn btn--outline abt-btn"
-          onClick={() => handleClick(prototype)}
-          style={{
-            width: "300px",
-          }}
-        >
-          Prototype
-        </span>
+        {sourceCode ? (
+          <span
+            type="button"
+            className="btn btn--outline abt-btn"
+            onClick={() => handleClick(sourceCode)}
+            style={{
+              width: "300px",
+            }}
+          >
+            Source Code
+          </span>
+        ) : null}
+        {prototype ? (
+          <span
+            type="button"
+            className="btn btn--outline abt-btn"
+            onClick={() => handleClick(prototype)}
+            style={{
+              width: "300px",
+            }}
+          >
+            Prototype
+          </span>
+        ) : null}
       </div>
     </div>
   );
