@@ -1,5 +1,6 @@
 .hero {
   display: flex;
+  margin-top: 5vw;
 }
 
 .hero_txt {
@@ -17,10 +18,13 @@
 }
 
 .hero_txt h3 {
-  margin-top: 30px;
-  text-transform: uppercase;
+  font-size: 1.5vw;
+  margin-top: 6vh;
+  font-weight: 500;
+  /* text-transform: uppercase; */
 }
 .hero_txt h4 {
+  font-size: 1vw;
   text-transform: uppercase;
 }
 
@@ -29,7 +33,7 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: space-evenly;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .hero_txt_stack p {
@@ -68,11 +72,10 @@
   margin-bottom: 1rem;
 }
 .section p {
-  margin: 2.5rem 0;
+  margin: 2.5rem 0.5rem;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
   padding-left: 6vw;
-  text-transform: uppercase;
 }
 
 /* SECTION IMAGE */
@@ -84,10 +87,11 @@
 
 .section_img {
   width: 40%;
-  /* background-color: #fff; */
+  height: auto;
   margin-bottom: 2rem;
   border: 2px outset var(--clr-primary);
   transition: all 0.1s ease-in-out;
+  line-height: 0;
 }
 
 .section_img:nth-of-type(even) {
@@ -96,10 +100,11 @@
 }
 
 .section_img:hover {
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
   cursor: pointer;
-  /* width: 100%; */
   box-shadow: 0 0px 20px var(--clr-primary);
+  width: 90%;
+  border: 0px outset var(--clr-primary);
 }
 
 .section_img img {
@@ -107,7 +112,7 @@
   height: 100%;
 }
 
-.section_img.enlarged {
+/* .section_img.enlarged {
   position: fixed;
   width: 80%;
   height: 80%;
@@ -117,7 +122,7 @@
   bottom: 0;
   margin: auto;
   z-index: 9999;
-}
+} */
 
 .btn_cont span {
   margin-bottom: 2vw;
@@ -164,26 +169,25 @@
 
   /* SECTION IMAGE */
   .section_img_cont {
+    width: 100%;
     padding: 0 6vw;
   }
 
   .section_img {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .section_img:nth-of-type(even) {
-    width: 100%;
+    width: 90%;
     margin: auto;
     margin-bottom: 2rem;
   }
 
-  .section_img.enlarged {
-    position: relative;
-    width: auto;
-    height: auto;
-    margin: 0;
+  .section_img:nth-of-type(even) {
+    width: 90%;
+    margin-left: 0;
+    margin: auto;
     margin-bottom: 2rem;
+  }
+  .section_img:hover {
+    cursor: default;
+    width: 100%;
   }
 }
 

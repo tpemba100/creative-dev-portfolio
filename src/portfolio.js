@@ -47,72 +47,77 @@ const projects = [
   // if there are no projects, Projects section won't show up
 
   //TIQC COLLECTIVE
+  //TIQC COLLECTIVE
+  //TIQC COLLECTIVE
   {
     name: "projects",
   },
   {
-    name: "Tiqc Collective",
+    name: "Qcti Collective",
     header: "ui/ux design",
     description:
-      " This is a basic description of the project. Nothing more, nothing less.",
-    stack: ["Figma", "Miro", "Photoshop", "inDesign", "Google Forms"],
-    head_img: "qcti-header.jpg",
+      "Case Study for our Queens College Tech Incubator, Including research, interviews, analysis and prototype.",
+    stack: [
+      "Figma",
+      "Miro",
+      "Photoshop",
+      "inDesign",
+      "Google Forms",
+      "inVision",
+    ],
+    head_img: "qcti/qcti-header.jpg",
     sections: [
       {
         title: "introduction",
         brief:
-          "hello this is a section brief. a little paragraph or something for Introduction",
+          "Queens College tech incubator is a program in Queens College that provides assistance to small business and start ups in our community. We had the opportunity to make a meaningful immpact to our commuity by trying to help the qcti achive greater engagment and involvement.",
         img: [
-          "qcti-problem-statement.jpg",
-          "qcti-project-overview.jpg",
-          "qcti-customer-problem.jpg",
-          "qcti-tiqc-background.jpg",
-          "qcti-design-process.jpg",
+          "qcti/qcti-problem-statement.jpg",
+          "qcti/qcti-project-overview.jpg",
+          "qcti/qcti-customer-problem.jpg",
+          "qcti/qcti-tiqc-background.jpg",
+          "qcti/qcti-design-process.jpg",
         ],
       },
       {
         title: "discover",
         brief:
-          "hello this is a section brief. a little paragraph or something for Discover",
-        img: ["qcti-define.jpg", "qcti-discovery.jpg", "qcti-user-persona.png"],
+          "We reserached and interviewed 5 individuals (entrepreneurs, staff members and student interns) and found the importance creating a Cohesive Ecosystem that creates environment of connections, community and collaboration.",
+
+        img: [
+          "qcti/qcti-discovery.jpg",
+          "qcti/qcti-user-persona.jpg",
+          "qcti/qcti-user-interview.jpg",
+        ],
       },
       {
         title: "define",
         brief:
-          "hello this is a section brief. a little paragraph or something for design section",
+          "Focusing on Cohesive Ecosystem, We believe a web app would be the best solution that would bring about collaboration, community and support to all party.  ",
         img: [
-          "qcti-define.jpg",
-          "qcti-full-analysis.jpg",
-          "qcti-user-interview.png",
+          "qcti/qcti-define.jpg",
+          "qcti/qcti-define.jpg",
+          "qcti/qcti-full-analysis.jpg",
         ],
       },
       {
         title: "develop",
         brief:
-          "hello this is a section brief. a little paragraph or something for develop part.      ",
-        img: [
-          "the_ghost_clan.png",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
+          "After many itterations on our wireframing and user interaction to create a seamless user experience, we designed and developed a prototype of the web app. ",
+        img: ["qcti/qcti-prototype.jpg", "qcti/qcti-prototype-1.jpg"],
       },
       {
         title: "deliver",
         brief:
-          "hello this is a section brief. a little paragraph or something for deliver",
-        img: [
-          "tiqc_collective.jpg",
-          "qcti-prototype.png",
-          "qcti-prototype-1.png",
-          "qcti-prototype-link.png",
-          "qcti-final-decision.jpg",
-        ],
+          "Final Step: User Testing. We evaluated user's experience and their feed back for solutions. Always room for improvement. ",
+        img: ["qcti/qcti-final-decision.jpg"],
       },
     ],
-    sourceCode: "https://github.com/tpemba100/Student-Group",
-    prototype: "https://www.google.com",
   },
 
+  //THE GHOST CLAN
+  //THE GHOST CLAN
+  //THE GHOST CLAN
   //THE GHOST CLAN
   {
     name: "The Ghost Clan",
@@ -366,6 +371,10 @@ const projects = [
     sourceCode: "https://github.com/tpemba100/Student-Group",
     prototype: "https://www.google.com",
   },
+
+  //NEXTFLIX
+  //NEXTFLIX
+  //NEXTFLIX
   {
     name: "Nextflix",
     header: "ui/ux Design",

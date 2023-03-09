@@ -25,10 +25,6 @@ const ViewProject = () => {
     window.open(link, "_blank");
   };
 
-  const handleEnlarge = (index) => {
-    setEnlargedIndex(enlargedIndex === index ? null : index);
-  };
-
   return (
     <div>
       {/* Main Header */}
@@ -44,7 +40,7 @@ const ViewProject = () => {
           </div>
         </div>
         <div className="hero_img">
-          <img src={require("../.././assets/project_img/qcti/" + projectImg)} />
+          <img src={require("../.././assets/project_img/" + projectImg)} />
         </div>
       </div>
 
@@ -62,10 +58,8 @@ const ViewProject = () => {
               {section.img.map((img, index) => (
                 <div
                   key={index}
-                  className={`section_img ${
-                    index === enlargedIndex ? "enlarged" : ""
-                  }`}
-                  onClick={() => handleEnlarge(index)}
+                  className="section_img"
+                  // onClick={() => handleEnlarge(index)}
                 >
                   <img src={require("../.././assets/project_img/" + img)} />
                 </div>

@@ -29,7 +29,7 @@ const ProjectContainer = ({ project, projectImg }) => {
           opacity: hovered ? "1" : "0.8",
         }}
       >
-        <img src={require("../.././assets/project_img/qcti/" + projectImg)} />
+        <img src={require("../.././assets/project_img/" + projectImg)} />
       </div>
     </div>
   );
