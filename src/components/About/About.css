@@ -72,6 +72,9 @@
 }
 
 @media (max-width: 600px) {
+  .about {
+    margin-bottom: 5rem;
+  }
   .design_cont {
     font-size: 1.7rem;
   }

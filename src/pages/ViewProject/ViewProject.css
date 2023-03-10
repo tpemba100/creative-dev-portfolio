@@ -173,7 +173,7 @@
   }
 
   .hero_txt h1 {
-    font-size: 14vw;
+    font-size: 13vw;
     text-align: center;
   }
 
@@ -190,13 +190,14 @@
   .hero_txt_stack {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 2rem;
   }
 
   .hero_txt_stack p {
-    padding: 5px 15px;
-    margin: 10px 5px;
+    padding: 5px 10px;
+    margin: 8px 4px;
     justify-content: space-evenly;
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   .hero_img {
@@ -204,6 +205,13 @@
   }
 
   /* SECTION */
+
+  .section_head_title {
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 6vw;
+  }
 
   .section p {
     margin: 2.3rem 0;

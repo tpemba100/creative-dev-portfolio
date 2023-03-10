@@ -80,7 +80,8 @@
   }
 
   .project_name {
-    font-size: 1.5rem;
+    font-size: 6vw;
+    width: 70%;
   }
 
   .project_description {

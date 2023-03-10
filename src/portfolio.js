@@ -211,131 +211,38 @@ const projects = [
     ],
     prototype: "https://netflix-clone-front.onrender.com/",
   },
+
+  //REACT TODO
+  //REACT TODO
+  //REACT TODO
   {
-    name: "Nextflix",
-    header: "ui/ux Design",
+    name: "Todo List",
+    header: "development",
     description:
-      " This is a basic description of the project. Nothing more, nothing less.",
-    stack: ["React", "SCSS", "React Hooks"],
-    head_img: "nextflix.png",
+      "A Classc Todo App with extra features such as filter and dark/light themed design.",
+    stack: [
+      "React",
+      "TypeScript",
+      "Scss",
+      "Chakra UI",
+      "Vite",
+      "React Toastify",
+    ],
+    head_img: "todo_list/todo.png",
     sections: [
       {
-        title: "introduction",
+        title: "features",
         brief:
-          "hello this is a section brief. a little paragraph or something for Introduction",
+          "Add or Delete list. Filter thru the list weather its all, active or completed. Readibility accessibilty:Dark and Light themed. Responsive Design and Development. Todo List are saved locally within your browser.",
         img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "discover",
-        brief:
-          "hello this is a section brief. a little paragraph or something for Discover",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "design",
-        brief:
-          "hello this is a section brief. a little paragraph or something for design section",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "develop",
-        brief:
-          "hello this is a section brief. a little paragraph or something for develop part.      ",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "deliver",
-        brief:
-          "hello this is a section brief. a little paragraph or something for deliver",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
+          "todo_list/react-ts-todo.gif",
+          "todo_list/todo.png",
+          "todo_list/todo_light.png",
+          "todo_list/todo_notification.png",
         ],
       },
     ],
-    sourceCode: "https://github.com/tpemba100/Student-Group",
-    prototype: "https://www.google.com",
-  },
-  {
-    name: "Nextflix",
-    header: "Development",
-    description:
-      " This is a basic description of the project. Nothing more, nothing less.",
-    stack: ["React", "SCSS", "React Hooks"],
-    head_img: "random_1.png",
-    sections: [
-      {
-        title: "introduction",
-        brief:
-          "hello this is a section brief. a little paragraph or something for Introduction",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "discover",
-        brief:
-          "hello this is a section brief. a little paragraph or something for Discover",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "design",
-        brief:
-          "hello this is a section brief. a little paragraph or something for design section",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "develop",
-        brief:
-          "hello this is a section brief. a little paragraph or something for develop part.      ",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "deliver",
-        brief:
-          "hello this is a section brief. a little paragraph or something for deliver",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-    ],
-    sourceCode: "https://github.com/tpemba100/Student-Group",
-    prototype: "https://www.google.com",
+    prototype: "https://react-todo-ts-omega.vercel.app/",
   },
 
   //NEXTFLIX
