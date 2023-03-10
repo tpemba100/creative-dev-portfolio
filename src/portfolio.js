@@ -115,10 +115,10 @@ const projects = [
     ],
   },
 
-  //THE GHOST CLAN
-  //THE GHOST CLAN
-  //THE GHOST CLAN
-  //THE GHOST CLAN
+  //PEAK SPEAK
+  //PEAK SPEAK
+  //PEAK SPEAK
+  //PEAK SPEAK
   {
     name: "Peak Speak",
     header: "ui/ux case study",
@@ -177,68 +177,39 @@ const projects = [
     prototype:
       "https://www.figma.com/proto/hvAGnjSm7wL929Y7v05dtg/Learning-app?node-id=9-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=9%3A3",
   },
+
+  //NETFLIX
+  //NETFLIX
+  //NETFLIX
+  //NETFLIX
   {
-    name: "Nextflix",
-    header: "Development",
-    description:
-      " This is a basic description of the project. Nothing more, nothing less.",
-    stack: ["React", "SCSS", "React Hooks"],
-    head_img: "nextflix.png",
+    name: "Netflix Clone",
+    header: "Full Stack Development",
+    description: "A full stack netflix movie app clone using MERN stack.",
+    stack: ["react", "scss", "Material UI", "MongoDB", "Node", "Express"],
+    head_img: "netflix/register.png",
     sections: [
       {
         title: "introduction",
         brief:
-          "hello this is a section brief. a little paragraph or something for Introduction",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
+          "A NETFLIX clone app with very similar interface and experience created with MERN Stack (MongoDb, Express, React, NodeJs). The Front end was developed using React, SCSS and Material UI for similar User Experience as original Netflix. And the back end is built with NodeJs, Express, Mongoose and with MongoDB as database.",
+        img: ["netflix/nextflix.gif"],
       },
       {
-        title: "discover",
+        title: "features",
         brief:
-          "hello this is a section brief. a little paragraph or something for Discover",
+          "User can navigate to sign up page, login page, home and movie view page. User can slide thru sections to see more movies and hover to see preview. The video player is implemented with Vimeo and has most usabilty such as play/pause, full screen and options. ",
         img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "design",
-        brief:
-          "hello this is a section brief. a little paragraph or something for design section",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "develop",
-        brief:
-          "hello this is a section brief. a little paragraph or something for develop part.      ",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "deliver",
-        brief:
-          "hello this is a section brief. a little paragraph or something for deliver",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
+          "netflix/register.png",
+          "netflix/login.png",
+          "netflix/fullpage.jpeg",
+          "netflix/home_hover.png",
+          "netflix/watch.png",
+          "netflix/mongoDb.png",
         ],
       },
     ],
-    sourceCode: "https://github.com/tpemba100/Student-Group",
-    prototype: "https://www.google.com",
+    prototype: "https://netflix-clone-front.onrender.com/",
   },
   {
     name: "Nextflix",
