@@ -303,7 +303,7 @@ const projects = [
           "Add Students information. Save Employee information. Delete Employee information. Update Employee information",
         img: [
           "student_group/main.png",
-          "student_group/intellij.png",
+          "student_group/itellij.png",
           "student_group/data.png",
         ],
       },
