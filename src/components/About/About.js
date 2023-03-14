@@ -2,7 +2,8 @@ import { design_about, develop_about } from "../../portfolio";
 import { useState } from "react";
 // import ResumePDF from "../../assets/Tsering_Pemba_Resume.pdf";
 import "./About.css";
-import Square from "../threeModel/square";
+// import Square from "../threeModel/square";
+import Giphy from "./GifApi";
 
 const About = () => {
   //to toggle between active for design and develop
@@ -60,7 +61,8 @@ const About = () => {
       </div>
       <div className="info_cont">
         <div className="about_visual">
-          <Square />
+          {/* <Square /> */}
+          <Giphy active={activeButton} />
         </div>
 
         {activeButton === "design" && (

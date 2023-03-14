@@ -1,3 +1,23 @@
 .contact {
   flex-direction: column;
 }
+
+.contact_div {
+  display: flex;
+}
+
+.contact_div a {
+  margin: 0px 1vw;
+}
+
+@media (max-width: 600px) {
+  .contact_div {
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .contact_div a {
+    margin: 1.7vh 2vw;
+  }
+}

@@ -71,6 +71,18 @@
   font-size: 20px;
 }
 
+.gif_cont {
+  display: flex;
+  justify-content: center; /* horizontally center the images */
+  padding-top: 30px;
+  align-items: center; /* vertically center the images */
+  height: 100%;
+}
+
+.gif_cont img {
+  width: 50%;
+}
+
 @media (max-width: 600px) {
   .about {
     margin-bottom: 5rem;

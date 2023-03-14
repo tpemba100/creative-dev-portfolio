@@ -52,6 +52,39 @@ const projects = [
   {
     name: "projects",
   },
+  //NETFLIX
+  //NETFLIX
+  //NETFLIX
+  //NETFLIX
+  {
+    name: "Netflix Clone",
+    header: "Full Stack Development",
+    description: "A full stack netflix movie app clone using MERN stack.",
+    stack: ["react", "scss", "Material UI", "MongoDB", "Node", "Express"],
+    head_img: "netflix/register.png",
+    sections: [
+      {
+        title: "introduction",
+        brief:
+          "A NETFLIX clone app with very similar interface and experience created with MERN Stack (MongoDb, Express, React, NodeJs). The Front end was developed using React, SCSS and Material UI for similar User Experience as original Netflix. And the back end is built with NodeJs, Express, Mongoose and with MongoDB as database.",
+        img: ["netflix/nextflix.gif"],
+      },
+      {
+        title: "features",
+        brief:
+          "User can navigate to sign up page, login page, home and movie view page. User can slide thru sections to see more movies and hover to see preview. The video player is implemented with Vimeo and has most usabilty such as play/pause, full screen and options. ",
+        img: [
+          "netflix/register.png",
+          "netflix/login.png",
+          "netflix/fullpage.jpeg",
+          "netflix/home_hover.png",
+          "netflix/watch.png",
+          "netflix/mongoDb.png",
+        ],
+      },
+    ],
+    prototype: "https://netflix-clone-front.onrender.com/",
+  },
   {
     name: "Qcti Collective",
     header: "ui/ux case study",
@@ -178,40 +211,6 @@ const projects = [
       "https://www.figma.com/proto/hvAGnjSm7wL929Y7v05dtg/Learning-app?node-id=9-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=9%3A3",
   },
 
-  //NETFLIX
-  //NETFLIX
-  //NETFLIX
-  //NETFLIX
-  {
-    name: "Netflix Clone",
-    header: "Full Stack Development",
-    description: "A full stack netflix movie app clone using MERN stack.",
-    stack: ["react", "scss", "Material UI", "MongoDB", "Node", "Express"],
-    head_img: "netflix/register.png",
-    sections: [
-      {
-        title: "introduction",
-        brief:
-          "A NETFLIX clone app with very similar interface and experience created with MERN Stack (MongoDb, Express, React, NodeJs). The Front end was developed using React, SCSS and Material UI for similar User Experience as original Netflix. And the back end is built with NodeJs, Express, Mongoose and with MongoDB as database.",
-        img: ["netflix/nextflix.gif"],
-      },
-      {
-        title: "features",
-        brief:
-          "User can navigate to sign up page, login page, home and movie view page. User can slide thru sections to see more movies and hover to see preview. The video player is implemented with Vimeo and has most usabilty such as play/pause, full screen and options. ",
-        img: [
-          "netflix/register.png",
-          "netflix/login.png",
-          "netflix/fullpage.jpeg",
-          "netflix/home_hover.png",
-          "netflix/watch.png",
-          "netflix/mongoDb.png",
-        ],
-      },
-    ],
-    prototype: "https://netflix-clone-front.onrender.com/",
-  },
-
   //REACT TODO
   //REACT TODO
   //REACT TODO
@@ -245,71 +244,71 @@ const projects = [
     prototype: "https://react-todo-ts-omega.vercel.app/",
   },
 
-  //NEXTFLIX
-  //NEXTFLIX
-  //NEXTFLIX
+  //COMPUTER REPAIR
+  //COMPUTER REPAIR
+  //COMPUTER REPAIR
+  //COMPUTER REPAIR
   {
-    name: "Nextflix",
-    header: "ui/ux Design",
+    name: "Computer Repair",
+    header: "Full stack Development",
     description:
-      " This is a basic description of the project. Nothing more, nothing less.",
-    stack: ["React", "SCSS", "React Hooks"],
-    head_img: "random_1.png",
+      " A full stack application to raise a ticket for computer repairs",
+    stack: ["React", "CSS", "TypeScript", "Redux", "MongoDb", "React Testing"],
+    head_img: "computer_repair/dashboard.png",
     sections: [
       {
-        title: "introduction",
+        title: "features",
         brief:
-          "hello this is a section brief. a little paragraph or something for Introduction",
+          "Navigating dashboard. Log in with User Authentication that is saved in browser. Raising a ticket for repair that can be submitted. Reactive Form that changes based on the user's option. Communicating with backend server to save the user info and tokens in database. Communicating with backend server to save the tickets raised by the user",
         img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
+          "computer_repair/flow.gif",
+          "computer_repair/dashboard.png",
+          "computer_repair/local_token.png",
+          "computer_repair/mongodb_tickets.png",
+          "computer_repair/mongodb_users.png",
         ],
       },
+    ],
+    sourceCode: "https://github.com/tpemba100/ComputerTicketSystem",
+  },
+
+  //STUDENT GROUPS
+  //STUDENT GROUPS
+  //STUDENT GROUPS
+  //STUDENT GROUPS
+  //STUDENT GROUPS
+  {
+    name: "Student Groups",
+    header: "Full stack Development",
+    description: " A full stack application to help manage students database.",
+    stack: [
+      "React",
+      "CSS",
+      "Material UI",
+      "Spring Boot",
+      "MySQL Database",
+      "PHP MyAdmin",
+    ],
+    head_img: "student_group/main.png",
+    sections: [
       {
-        title: "discover",
+        title: "Introduction",
         brief:
-          "hello this is a section brief. a little paragraph or something for Discover",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
+          "This is an application that can help students manage members in their group. The students can be added directly from a form container and displayed right below it. All the data is stored in MySQL Database or PHP MyAdmin. Developed a full stack application that manages student database using React and Spring Boot. The backend server was built using java, Spring Boot and MySQL database with Restful API. and The front end was built on React.js with Material UI, CSS and implementation of React Hooks.",
+        img: ["student_group/flow.gif"],
       },
       {
-        title: "design",
+        title: "features",
         brief:
-          "hello this is a section brief. a little paragraph or something for design section",
+          "Add Students information. Save Employee information. Delete Employee information. Update Employee information",
         img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "develop",
-        brief:
-          "hello this is a section brief. a little paragraph or something for develop part.      ",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-        ],
-      },
-      {
-        title: "deliver",
-        brief:
-          "hello this is a section brief. a little paragraph or something for deliver",
-        img: [
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
-          "tiqc_collective.jpg",
+          "student_group/main.png",
+          "student_group/intellij.png",
+          "student_group/data.png",
         ],
       },
     ],
     sourceCode: "https://github.com/tpemba100/Student-Group",
-    prototype: "https://www.google.com",
   },
 ];
 
@@ -335,13 +334,13 @@ const archives = [
   },
   {
     name: "Movie Filter",
-    header: "Web Design",
+    header: "development",
     description:
-      " This is a basic description of the project. Nothing more, nothing less.",
-    stack: ["Redux", "TypeScript", "React", "CSS", "MongoDB"],
-    head_img: "the_ghost_clan.png",
-    sourceCode: "https://github.com/tpemba100/ComputerTicketSystem",
-    livePreview: "https://github.com/tpemba100/ComputerTicketSystem",
+      " A simple web page displaying the movies using grids with features to filter them and with smooth animation using framer motion.",
+    stack: ["React", "Redux", "API", "CSS", "Framer Motion"],
+    head_img: "movie_filter_animation.gif",
+    sourceCode: "https://github.com/tpemba100/movie-filter-animation",
+    livePreview: "https://movie-filter-animation.vercel.app/",
   },
   {
     name: "Todo List",
@@ -367,11 +366,11 @@ const archives = [
     name: "Github Finder",
     header: "Development",
     description:
-      " This is a basic description of the project. Nothing more, nothing less.",
-    stack: ["React", "SCSS", "React Hooks"],
-    head_img: "random_1.png",
-    sourceCode: "https://github.com/tpemba100/Netflix-clone",
-    livePreview: "https://github.com/tpemba100/Netflix-clone",
+      "Search for any users in github with the username and see the repo",
+    stack: ["React", "CSS", "API", "Hooks"],
+    head_img: "github_search.gif",
+    sourceCode: "https://github.com/tpemba100/github-profile-search",
+    // livePreview: "https://github.com/tpemba100/Netflix-clone",
   },
   {
     name: "Food Branding",
@@ -410,10 +409,8 @@ const skills = [
 const contact = {
   // email is optional - if left empty Contact section won't show up
   email: "tpemba.96@gmail.com",
-  social: {
-    linkedin: "https://tpemba.linkedin.com",
-    github: "https://tpemba100.github.io",
-  },
+  linkedin: "https://tpemba.linkedin.com",
+  github: "https://tpemba100.github.io",
 };
 
 export {
