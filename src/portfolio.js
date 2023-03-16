@@ -36,6 +36,77 @@ const develop_about = {
     "visual studio code, git and github, intellij, mongodb, framer motion, material ui and bootstrap",
 };
 
+//SKILLS
+//SKILLS
+//SKILLS
+//SKILLS
+const skills = [
+  // skills can be added or removed
+  // if there are no skills, Skills section won't show up
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Redux",
+  "SASS",
+  "Material UI",
+  "MongoDB",
+  "Node",
+  "Git",
+  "Java",
+  "UI/UX",
+];
+
+//CONTACTS
+//CONTACTS
+//CONTACTS
+//CONTACTS
+const contact = {
+  // email is optional - if left empty Contact section won't show up
+  email: "tpemba.96@gmail.com",
+  linkedin: "https://tpemba.linkedin.com",
+  github: "https://tpemba100.github.io",
+  behance: "https://www.behance.net/tseringpemba",
+};
+
+const gitProjects = [
+  // projects can be added an removed
+  // if there are no projects, Projects section won't show up
+  {
+    name: "Student Group",
+    description:
+      "This is an application that can help students manage members in their group. The students can be added directly from a form container and displayed right below it. All the data is stored in MySQL Database or PHP MyAdmin.",
+    stack: [
+      "React",
+      "CSS",
+      "Java",
+      "JavaScript",
+      "Spring Boot",
+      "Material UI",
+      "Node",
+      "MySQL Database",
+    ],
+    sourceCode: "https://github.com/tpemba100/Student-Group",
+    livePreview: "https://github.com/tpemba100/Student-Gropup",
+  },
+  {
+    name: "Computer Ticketing Sysytem",
+    description:
+      "This is an full stack application where the user can raise a ticket for any issues with their computer. The users can provide information in the reactive forms to raise a ticket. Only authticated users can login and raise a ticket.",
+    stack: ["Redux", "TypeScript", "React", "CSS", "MongoDB", "Node"],
+    sourceCode: "https://github.com/tpemba100/ComputerTicketSystem",
+    livePreview: "https://github.com/tpemba100/ComputerTicketSystem",
+  },
+  {
+    name: "Netflix Clone",
+    description:
+      "A Full Stack Mock up of NETFLIX app with very similar interface and experience. The Front end was developed using React, SCSS and Material UI for similar User Experience as original Netflix. And the back end is built with NodeJs, Express, Mongoose and with MongoDB as database. ",
+    stack: ["React", "SCSS", "Material UI", "MongoDb", "Node"],
+    sourceCode: "https://github.com/tpemba100/Netflix-clone",
+    livePreview: "https://github.com/tpemba100/Netflix-clone",
+  },
+];
 //PROJECTS
 //PROJECTS
 //PROJECTS
@@ -46,9 +117,6 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
 
-  //TIQC COLLECTIVE
-  //TIQC COLLECTIVE
-  //TIQC COLLECTIVE
   {
     name: "projects",
   },
@@ -83,10 +151,15 @@ const projects = [
         ],
       },
     ],
+    sourceCode: "https://github.com/tpemba100/netflix-clone",
     prototype: "https://netflix-clone-front.onrender.com/",
   },
+
+  //QCTI
+  //QCTI
+  //QCTI
   {
-    name: "Qcti Collective",
+    name: "Tiqc Collective",
     header: "ui/ux case study",
     description:
       "Case Study for our Queens College Tech Incubator, Including research, interviews, analysis and prototype.",
@@ -323,14 +396,13 @@ const archives = [
     name: "archive",
   },
   {
-    name: "Random Cards",
-    header: "ui/ux design",
+    name: "Hyolmo Society Website",
+    header: "web Development",
     description:
-      " This is a basic description of the project. Nothing more, nothing less.",
-    stack: ["Figma", "Miro", "Photoshop", "inDesign", "Google Forms"],
-    head_img: "tiqc_collective.jpg",
-    sourceCode: "https://github.com/tpemba100/Student-Group",
-    livePreview: "https://github.com/tpemba100/ComputerTicketSystem",
+      "Web Design and development for non-profit community, Hyolmo Society of America. The goal was to create a online presence and platform for sharing our background, cultures and our community.",
+    stack: ["Wordpress", "Adobe XD", "Ux Design", "Development"],
+    head_img: "hsa.png",
+    seeMore: "https://github.com/tpemba100/Student-Group",
   },
   {
     name: "Movie Filter",
@@ -339,28 +411,26 @@ const archives = [
       " A simple web page displaying the movies using grids with features to filter them and with smooth animation using framer motion.",
     stack: ["React", "Redux", "API", "CSS", "Framer Motion"],
     head_img: "movie_filter_animation.gif",
-    sourceCode: "https://github.com/tpemba100/movie-filter-animation",
-    livePreview: "https://movie-filter-animation.vercel.app/",
+    seeMore: "https://movie-filter-animation.vercel.app/",
   },
   {
-    name: "Todo List",
+    name: "Merch Shop",
     header: "Development",
     description:
-      " This is a basic description of the project. Nothing more, nothing less.",
-    stack: ["React", "SCSS", "React Hooks"],
-    head_img: "nextflix.png",
-    sourceCode: "https://github.com/tpemba100/Netflix-clone",
-    livePreview: "https://github.com/tpemba100/Netflix-clone",
+      "A e-commerce website for all merchandise and products with features and Assessible design.",
+    stack: ["React", "CSS", "Redux", "Axios"],
+    head_img: "merch-shop.gif",
+    seeMore: "https://github.com/tpemba100/merch-shop",
   },
   {
-    name: "Nextflix",
-    header: "ui/ux Design",
+    name: "The Ghost Clan",
+    header: "web Design",
     description:
-      " This is a basic description of the project. Nothing more, nothing less.",
-    stack: ["React", "SCSS", "React Hooks"],
-    head_img: "nextflix.png",
-    sourceCode: "https://github.com/tpemba100/Netflix-clone",
-    livePreview: "https://github.com/tpemba100/Netflix-clone",
+      "a full on branding project for an upcoming music group based in NYC. The Ghost Clan",
+    stack: ["Adobe XD", "PhotoShop", "Illustration"],
+    head_img: "the_ghost_clan.png",
+    seeMore:
+      "https://xd.adobe.com/view/11471325-d925-4248-a3e6-b7a6a94117ad-4414/?fullscreen&hints=off",
   },
   {
     name: "Github Finder",
@@ -369,49 +439,37 @@ const archives = [
       "Search for any users in github with the username and see the repo",
     stack: ["React", "CSS", "API", "Hooks"],
     head_img: "github_search.gif",
-    sourceCode: "https://github.com/tpemba100/github-profile-search",
-    // livePreview: "https://github.com/tpemba100/Netflix-clone",
+    seeMore: "https://github.com/tpemba100/github-profile-search",
   },
   {
-    name: "Food Branding",
-    header: "branding design",
+    name: "War Dogs",
+    header: "Packaging design",
     description:
-      " This is a basic description of the project. Nothing more, nothing less.",
-    stack: ["React", "SCSS", "React Hooks"],
-    head_img: "random_1.png",
-    sourceCode: "https://github.com/tpemba100/Netflix-clone",
-    livePreview: "https://github.com/tpemba100/Netflix-clone",
+      "packaging design for (improving, progressive) drink based of military theme.",
+    stack: ["Photoshop", "Illustrator"],
+    head_img: "war_dogs.jpg",
+    seeMore: "https://www.behance.net/gallery/166104357/War-Dogs",
+  },
+
+  {
+    name: "Ninja Game",
+    header: "Game Development",
+    description:
+      "Ninja Zoom Zoom is a simple movement game made in p5.js which is a javascript library known for its interactive visual and creative coding.",
+    stack: ["P5js", "Javascript", "Canvas", "Creative Coding"],
+    head_img: "ninja.png",
+    seeMore: "https://editor.p5js.org/tpemba.design/sketches/y7O4rVGAs",
+  },
+  {
+    name: "Fire Typo",
+    header: "Creative Coding",
+    description:
+      "A interactive visual typography that changes its behavior based on user mouse movement.",
+    stack: ["P5js", "Javascript", "Canvas", "Creative Coding"],
+    head_img: "ninja.png",
+    seeMore: "https://editor.p5js.org/tpemba.design/sketches/nvHiYRYns",
   },
 ];
-
-//SKILLS
-//SKILLS
-//SKILLS
-//SKILLS
-const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Redux",
-  "SASS",
-  "Material UI",
-  "MongoDB",
-  "Node",
-  "Git",
-  "Java",
-  "UI/UX",
-];
-
-const contact = {
-  // email is optional - if left empty Contact section won't show up
-  email: "tpemba.96@gmail.com",
-  linkedin: "https://tpemba.linkedin.com",
-  github: "https://tpemba100.github.io",
-};
 
 export {
   header,
@@ -422,4 +480,5 @@ export {
   contact,
   design_about,
   develop_about,
+  gitProjects,
 };

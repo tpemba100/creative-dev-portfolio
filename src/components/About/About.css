@@ -51,8 +51,6 @@
 
 .about_visual {
   width: 50%;
-  /* height: 90%; */
-  /* background-color: red; */
 }
 
 .info {
@@ -74,9 +72,9 @@
 .gif_cont {
   display: flex;
   justify-content: center; /* horizontally center the images */
-  padding-top: 30px;
   align-items: center; /* vertically center the images */
   height: 100%;
+  padding: 20px;
 }
 
 .gif_cont img {
@@ -101,7 +99,7 @@
   }
   .about_visual {
     width: 100%;
-    /* height: 50%; */
+    height: 30vh;
   }
 
   .info {

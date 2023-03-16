@@ -11,6 +11,10 @@ export default function Projects({ projects }) {
   const location = useLocation();
   if (!projects.length) return null;
 
+  const handleClick = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <Box sx={{ flexGrow: 1, p: 0 }} id="projects">
       <h3 className="section__title">{projects[0].name}</h3>
@@ -29,11 +33,7 @@ export default function Projects({ projects }) {
           },
         }}
       >
-        {/* <Grid xs={12} sm={12} md={6} minHeight={30}>
-          {" "}
-          <h3 className="page">projects</h3>
-        </Grid>
-        <Grid xs={12} sm={12} md={6} minHeight={30}></Grid> */}
+        {/* If the page is archive show first cont for archive, else for project */}
 
         {projects.slice(1).map((project) => (
           <Grid {...{ xs: 12, sm: 12, md: 6, lg: 6 }} minHeight={160}>
@@ -51,10 +51,20 @@ export default function Projects({ projects }) {
                     <p>{item}</p>
                   ))}
                 </div>
-                <div className="archive_btn">
-                  <span type="button" className="btn btn--outline">
-                    see more
-                  </span>
+
+                <div className="archive_cont">
+                  {project.seeMore ? (
+                    <span
+                      type="button"
+                      className="btn btn--outline abt-btn"
+                      onClick={() => handleClick(project.seeMore)}
+                      style={{
+                        width: "300px",
+                      }}
+                    >
+                      See more
+                    </span>
+                  ) : null}
                 </div>
               </div>
             ) : (

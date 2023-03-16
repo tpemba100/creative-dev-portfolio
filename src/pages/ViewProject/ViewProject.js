@@ -46,19 +46,21 @@ const ViewProject = () => {
 
       {/*  Section Header */}
 
-      <div className="sections">
+      <div className="vp_sections">
         {sections.map((section, index) => (
           // section
-          <div key={index} className="section">
-            <h2 className="head--font section_head_title">{section.title}</h2>
+          <div key={index} className="vp_section">
+            <h2 className="head--font vp_section_head_title">
+              {section.title}
+            </h2>
             <p>{section.brief}</p>
 
             {/* img section */}
-            <div className="section_img_cont">
+            <div className="vp_section_img_cont">
               {section.img.map((img, index) => (
                 <div
                   key={index}
-                  className="section_img"
+                  className="vp_section_img"
                   // onClick={() => handleEnlarge(index)}
                 >
                   <img src={require("../.././assets/project_img/" + img)} />

@@ -92,6 +92,9 @@ main {
 .link--icon {
   color: var(--clr-fg);
 }
+.link--icon:hover {
+  color: var(--clr-primary);
+}
 
 .btn {
   display: block;

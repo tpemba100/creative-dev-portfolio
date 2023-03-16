@@ -6,7 +6,6 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  font-size: 1vw;
   justify-content: space-around;
   margin: 1rem 1.5rem;
 }
@@ -24,6 +23,26 @@
   width: 20%;
   margin: auto;
   text-align: center;
+}
+
+.archive_cont {
+  margin-bottom: 1vh;
+}
+
+@media (max-width: 900px) {
+  .txt_stack {
+    justify-content: space-around;
+    margin: 1rem 1.5rem;
+  }
+
+  .txt_stack p {
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding: 5px 13px;
+    /* margin: 10px 5px; */
+    background-color: var(--clr-primary);
+    color: var(--clr-bg);
+  }
 }
 
 @media (max-width: 600px) {
