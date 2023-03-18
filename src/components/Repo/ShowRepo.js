@@ -2,6 +2,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { useState, useEffect } from "react";
 import { gitProjects } from "../../portfolio";
 import "./ShowRepo.css";
+import uniqid from "uniqid";
 
 function ShowRepo() {
   const url = "https://api.github.com/users/tpemba100/repos";
@@ -15,7 +16,7 @@ function ShowRepo() {
       const data = await res.json();
       setRepoList(data);
       console.log("sucess Repo Fetch");
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       console.log(error);
     }
@@ -53,25 +54,25 @@ function ShowRepo() {
     }
   }
 
-  console.log(repoList.length);
-  console.log(visibleRepos);
+  // console.log(repoList.length);
+  // console.log(visibleRepos);
 
   return (
-    <section class="repos section">
+    <section className="repos section">
       <div className="section_header">
         <h3 className="section__title">github repo</h3>
 
         <h2 className="sub_title">Selected Repos</h2>
-        <ul class="selected_repo_cont repo__list">
+        <ul className="selected_repo_cont repo__list">
           {gitProjects.map((repo) => (
-            <li key={repo.id} className="selected_repo">
+            <li key={uniqid()} className="selected_repo">
               <h3>{repo.name}</h3>
               <br />
               <p className="repo_description">{repo.description}</p>
               {repo.stack && (
                 <div className="repo_stack">
                   {repo.stack.map((item) => (
-                    <p>{item}</p>
+                    <p key={uniqid()}>{item}</p>
                   ))}
                 </div>
               )}
@@ -85,7 +86,7 @@ function ShowRepo() {
           ))}
         </ul>
 
-        <div class="filter-repos">
+        <div className="filter-repos">
           <input
             type="text"
             placeholder="Search Repositories"
@@ -97,19 +98,19 @@ function ShowRepo() {
       {/* all Repos */}
       <h3 className="sub_title sub_titlea">All Repos</h3>
 
-      <ul class="repo__list">
+      <ul className="repo__list">
         {repoList.slice(0, visibleRepos).map((repo) => (
           <li key={repo.id} className="repo">
             <h3>{repo.name}</h3>
             <br />
-            <h2 class="lang-text">{repo.language}</h2>
+            <h2 className="lang-text">{repo.language}</h2>
             <br />
             <br />
 
             <a
               href={repo.html_url}
               aria-label="source code"
-              class="link link--icon"
+              className="link link--icon"
             >
               <GitHubIcon style={{ fontSize: "30px" }} />
             </a>

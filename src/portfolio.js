@@ -66,8 +66,7 @@ const contact = {
   // email is optional - if left empty Contact section won't show up
   email: "tpemba.96@gmail.com",
   linkedin: "https://tpemba.linkedin.com",
-  github: "https://tpemba100.github.io",
-  behance: "https://www.behance.net/tseringpemba",
+  github: "https://github.com/tpemba100",
 };
 
 const gitProjects = [
@@ -94,7 +93,7 @@ const gitProjects = [
     name: "Computer Ticketing Sysytem",
     description:
       "This is an full stack application where the user can raise a ticket for any issues with their computer. The users can provide information in the reactive forms to raise a ticket. Only authticated users can login and raise a ticket.",
-    stack: ["Redux", "TypeScript", "React", "CSS", "MongoDB", "Node"],
+    stack: ["React", "TypeScript", "Redux", "CSS", "MongoDB", "Node"],
     sourceCode: "https://github.com/tpemba100/ComputerTicketSystem",
     livePreview: "https://github.com/tpemba100/ComputerTicketSystem",
   },
@@ -396,13 +395,13 @@ const archives = [
     name: "archive",
   },
   {
-    name: "Hyolmo Society Website",
+    name: "HSA Website",
     header: "web Development",
     description:
       "Web Design and development for non-profit community, Hyolmo Society of America. The goal was to create a online presence and platform for sharing our background, cultures and our community.",
     stack: ["Wordpress", "Adobe XD", "Ux Design", "Development"],
     head_img: "hsa.png",
-    seeMore: "https://github.com/tpemba100/Student-Group",
+    seeMore: "https://tpemba.myportfolio.com/hyolmo-society-website",
   },
   {
     name: "Movie Filter",
@@ -424,13 +423,12 @@ const archives = [
   },
   {
     name: "The Ghost Clan",
-    header: "web Design",
+    header: "web Design & Branding",
     description:
       "a full on branding project for an upcoming music group based in NYC. The Ghost Clan",
     stack: ["Adobe XD", "PhotoShop", "Illustration"],
     head_img: "the_ghost_clan.png",
-    seeMore:
-      "https://xd.adobe.com/view/11471325-d925-4248-a3e6-b7a6a94117ad-4414/?fullscreen&hints=off",
+    seeMore: "https://tpemba.myportfolio.com/the-ghost-clan",
   },
   {
     name: "Github Finder",
@@ -448,7 +446,7 @@ const archives = [
       "packaging design for (improving, progressive) drink based of military theme.",
     stack: ["Photoshop", "Illustrator"],
     head_img: "war_dogs.jpg",
-    seeMore: "https://www.behance.net/gallery/166104357/War-Dogs",
+    seeMore: "https://tpemba.myportfolio.com/war-dogs-2",
   },
 
   {
@@ -466,7 +464,7 @@ const archives = [
     description:
       "A interactive visual typography that changes its behavior based on user mouse movement.",
     stack: ["P5js", "Javascript", "Canvas", "Creative Coding"],
-    head_img: "ninja.png",
+    head_img: "fire_typo.gif",
     seeMore: "https://editor.p5js.org/tpemba.design/sketches/nvHiYRYns",
   },
 ];

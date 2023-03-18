@@ -2,6 +2,7 @@
   padding: 1em 4rem;
   margin: 0 auto;
   position: relative;
+  color: var(--clr-primary);
 }
 
 .project_title {
@@ -17,9 +18,9 @@
 }
 
 .project_name {
-  font-family: "Averia Serif Libre", cursive;
+  /* font-family: "Averia Serif Libre", cursive; */
   text-transform: uppercase;
-  /* font-size: 35px; */
+  color: var(--clr-primary);
   font-size: 2vw;
   width: 100%;
 }
@@ -29,9 +30,8 @@
   text-transform: uppercase;
   font-weight: 700;
   align-items: end;
-  justify-content: center;
   text-align: right;
-  width: 40%;
+  width: 60%;
 }
 
 .img_cont {

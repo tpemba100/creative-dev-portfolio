@@ -33,10 +33,14 @@ export default function Projects({ projects }) {
           },
         }}
       >
-        {/* If the page is archive show first cont for archive, else for project */}
+        {/* Archive Page*/}
 
         {projects.slice(1).map((project) => (
-          <Grid {...{ xs: 12, sm: 12, md: 6, lg: 6 }} minHeight={160}>
+          <Grid
+            {...{ xs: 12, sm: 12, md: 6, lg: 6 }}
+            minHeight={160}
+            key={uniqid()}
+          >
             {location.pathname === `/archive` ? (
               <div>
                 <ProjectContainer
@@ -45,10 +49,10 @@ export default function Projects({ projects }) {
                   projectImg={project.head_img}
                 />
                 {/* info */}
-                <h5 className="archive_desc">{project.description} </h5>
+                {/* <h5 className="archive_desc">{project.description} </h5> */}
                 <div className="txt_stack">
                   {project.stack.map((item) => (
-                    <p>{item}</p>
+                    <p key={uniqid()}>{item}</p>
                   ))}
                 </div>
 

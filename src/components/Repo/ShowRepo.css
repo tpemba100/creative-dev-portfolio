@@ -51,8 +51,8 @@
 }
 
 .repo__list li:hover {
-  box-shadow: 0 3px 6px var(--shadow), 0 3px 6px var(--shadow);
-  box-shadow: var(--shadow);
+  box-shadow: 0 3px 6px var(--clr-primary);
+
   transform: translateY(-7px);
 }
 
@@ -124,6 +124,7 @@
   font-size: 30px;
   margin: 0;
   margin: auto;
+  color: var(--clr-primary);
 }
 
 .sub_titlea {

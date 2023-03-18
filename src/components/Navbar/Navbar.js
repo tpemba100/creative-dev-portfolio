@@ -63,8 +63,6 @@ const Navbar = () => {
         ) : null}
 
         <Link to="/archive" className="custom-link">
-          {/* TECHNICALLY ARCHIVE*/}
-          {/* {contact.email ? ( */}
           <li className="nav__list-item">
             <a onClick={toggleNavList} className="link link--nav">
               Archive
