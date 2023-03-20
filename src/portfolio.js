@@ -11,7 +11,7 @@ const about = {
   name: "Tsering Pemba",
   role: "Front End Engineer",
   description:
-    "I am a UI/UX Designer and a developer. I create visual and interfaces for users to experience and interact with. Creative coding is fun and exciting so i designing.",
+    "I am a UI/UX Designer and a developer. I create visuals and interfaces for users to experience and interact with. I am also a developer and love to develop my designs.",
   social: {
     linkedin: "https://linkedin.com/in/tpemba",
     github: "https://github.com/tpemba100",
