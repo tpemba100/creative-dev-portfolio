@@ -22,7 +22,10 @@ const Hero = () => {
           }}
           className="desc_right"
         >
-          <p>{description}</p>
+          <p>
+            {description}
+            <a href="#contact">Contact ME</a>
+          </p>
         </motion.div>
       </div>
 

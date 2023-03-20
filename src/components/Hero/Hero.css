@@ -16,6 +16,13 @@
   font-size: 33px;
   margin-bottom: 2rem;
 }
+.desc_right a {
+  color: var(--clr-primary);
+  text-decoration: underline;
+}
+.desc_right a:hover {
+  color: var(--clr-fg);
+}
 
 .new_cont {
   /* background-color: orange; */
