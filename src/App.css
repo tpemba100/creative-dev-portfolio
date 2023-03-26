@@ -4,6 +4,33 @@
   color: var(--clr-fg);
   background-color: var(--clr-bg);
 }
+
+.apsp {
+  /* background: linear-gradient(132deg, #fc415a, #591bc5, #212335); */
+  background: linear-gradient(132deg, var(--clr-bg), var(--clr-fg));
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  /* position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0px; */
+}
+
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .hide {
   display: none !important;
 }

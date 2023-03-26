@@ -161,7 +161,8 @@ const projects = [
     name: "Tiqc Collective",
     header: "ui/ux case study",
     description:
-      "Case Study for our Queens College Tech Incubator, Including research, interviews, analysis and prototype.",
+      // "Case Study for our Queens College Tech Incubator, Including research, interviews, analysis and prototype.",
+      "This is a case study that outlines our work with the Queens College Tech Incubator. Our project involved conducting research, interviews, analysis, and developing a prototype. In this study, we will detail our process and the outcomes of our work in assisting the QCTI.",
     stack: [
       "Figma",
       "Miro",
@@ -175,7 +176,7 @@ const projects = [
       {
         title: "introduction",
         brief:
-          "Queens College tech incubator is a program in Queens College that provides assistance to small business and start ups in our community. We had the opportunity to make a meaningful immpact to our commuity by trying to help the qcti achive greater engagment and involvement.",
+          "The Queens College Tech Incubator is a program that supports small businesses and startups in our community. We had the opportunity to help increase participation and involvement with the QCTI, which could make a big difference in our community.",
         img: [
           "qcti/qcti-problem-statement.jpg",
           "qcti/qcti-project-overview.jpg",
@@ -187,8 +188,7 @@ const projects = [
       {
         title: "discover",
         brief:
-          "We reserached and interviewed 5 individuals (entrepreneurs, staff members and student interns) and found the importance creating a Cohesive Ecosystem that creates environment of connections, community and collaboration.",
-
+          "After conducting research and interviews with five individuals, including entrepreneurs, staff members, and student interns, we discovered the significance of establishing a cohesive ecosystem that nurtures an environment of connectivity, community, and collaboration.",
         img: [
           "qcti/qcti-discovery.jpg",
           "qcti/qcti-user-persona.jpg",
@@ -198,7 +198,7 @@ const projects = [
       {
         title: "define",
         brief:
-          "Focusing on Cohesive Ecosystem, We believe a web app would be the best solution that would bring about collaboration, community and support to all party.  ",
+          "Our focus on creating a cohesive ecosystem led us to believe that a web hub that connects students, staff, and entrepreneurs would provide the optimal solution for fostering collaboration, community, and support among all parties involved.",
         img: [
           "qcti/qcti-define.jpg",
           "qcti/qcti-define.jpg",
@@ -208,7 +208,7 @@ const projects = [
       {
         title: "develop",
         brief:
-          "After many itterations on our wireframing and user interaction to create a seamless user experience, we designed and developed a prototype of the web app. ",
+          "After numerous iterations of wireframing and refining user interaction to ensure a smooth and intuitive user experience, we successfully designed and developed a web app prototype ",
         img: ["qcti/qcti-prototype.jpg", "qcti/qcti-prototype-1.jpg"],
       },
       {
@@ -252,7 +252,7 @@ const projects = [
       {
         title: "define",
         brief:
-          "After discovering insights from interviews and research. I defined my target audience, a one persona and mapped thier jounrey leading to the usage of my app during its daily life. ",
+          "After conducting interviews and research, I identified my target audience as a single persona and mapped out their journey towards using my app as a part of their daily routine.",
         img: [
           "peak_speak/peak_speak_7_persona.jpg",
           "peak_speak/peak_speak_8_journey.jpg",
@@ -262,7 +262,7 @@ const projects = [
       {
         title: "ideate",
         brief:
-          "After understanding the problem, target users, their brief experience and our features based on insights. User Flow, a flow chart so my app from start to finish.",
+          "After gaining an understanding of the problem, the target users, and their experience with our app features, we developed a user flow chart that outlines the various steps involved in using our app from start to finish.",
         img: ["peak_speak/peak_speak_10_user_flow.jpg"],
       },
       {
