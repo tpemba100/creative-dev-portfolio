@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import uniqid from "uniqid";
 import { useState } from "react";
 import "./ProjectContainer.css";
@@ -16,8 +17,15 @@ const ProjectContainer = ({ project, projectImg }) => {
   };
 
   return (
-    <div className="project">
-      <div className="project_title" style={{ zIndex: hovered ? 0 : 1 }}>
+    <motion.div
+      animate={{ opcaity: 1 }}
+      initial={{ opcaity: 0 }}
+      exit={{ opcaity: 0 }}
+      layout
+      className="project"
+    >
+      {/* <div className="project"> */}
+      <div className="project_title " style={{ zIndex: hovered ? 0 : 1 }}>
         <h3 className="project_name">{project.name}</h3>
         <p className="project_description">{project.header}</p>
       </div>
@@ -44,7 +52,7 @@ const ProjectContainer = ({ project, projectImg }) => {
           <img src={require("../.././assets/project_img/" + projectImg)} />
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

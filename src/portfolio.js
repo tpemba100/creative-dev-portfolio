@@ -129,6 +129,7 @@ const projects = [
     description: "A full stack netflix movie app clone using MERN stack.",
     stack: ["react", "scss", "Material UI", "MongoDB", "Node", "Express"],
     head_img: "netflix/register.png",
+    category: "develop",
     sections: [
       {
         title: "introduction",
@@ -172,6 +173,8 @@ const projects = [
       "inVision",
     ],
     head_img: "qcti/qcti-header.jpg",
+    category: "design",
+
     sections: [
       {
         title: "introduction",
@@ -231,6 +234,7 @@ const projects = [
       "A case study on app for langauge learning called peak speak. Focused on easy learning with bite size lessons and real conversation learning.",
     stack: ["figma", "miro", "Otter", "Photoshop", "illustrator"],
     head_img: "peak_speak/peak_speak_1_head_img.jpg",
+    category: "design",
     sections: [
       {
         title: "introduction",
@@ -300,6 +304,7 @@ const projects = [
       "React Toastify",
     ],
     head_img: "todo_list/todo.png",
+    category: "develop",
     sections: [
       {
         title: "features",
@@ -327,6 +332,7 @@ const projects = [
       " A full stack application to raise a ticket for computer repairs",
     stack: ["React", "CSS", "TypeScript", "Redux", "MongoDb", "React Testing"],
     head_img: "computer_repair/dashboard.png",
+    category: "develop",
     sections: [
       {
         title: "features",
@@ -362,6 +368,7 @@ const projects = [
       "PHP MyAdmin",
     ],
     head_img: "student_group/main.png",
+    category: "develop",
     sections: [
       {
         title: "Introduction",
@@ -401,6 +408,7 @@ const archives = [
       "Web Design and development for non-profit community, Hyolmo Society of America. The goal was to create a online presence and platform for sharing our background, cultures and our community.",
     stack: ["Wordpress", "Adobe XD", "Ux Design", "Development"],
     head_img: "hsa.png",
+    category: "develop",
     seeMore: "https://tpemba.myportfolio.com/hyolmo-society-website",
   },
   {
@@ -410,6 +418,7 @@ const archives = [
       " A simple web page displaying the movies using grids with features to filter them and with smooth animation using framer motion.",
     stack: ["React", "Redux", "API", "CSS", "Framer Motion"],
     head_img: "movie_filter_animation.gif",
+    category: "develop",
     seeMore: "https://movie-filter-animation.vercel.app/",
   },
   {
@@ -419,6 +428,7 @@ const archives = [
       "A e-commerce website for all merchandise and products with features and Assessible design.",
     stack: ["React", "CSS", "Redux", "Axios"],
     head_img: "merch-shop.gif",
+    category: "develop",
     seeMore: "https://github.com/tpemba100/merch-shop",
   },
   {
@@ -428,6 +438,7 @@ const archives = [
       "a full on branding project for an upcoming music group based in NYC. The Ghost Clan",
     stack: ["Adobe XD", "PhotoShop", "Illustration"],
     head_img: "the_ghost_clan.png",
+    category: "design",
     seeMore: "https://tpemba.myportfolio.com/the-ghost-clan",
   },
   {
@@ -437,6 +448,7 @@ const archives = [
       "Search for any users in github with the username and see the repo",
     stack: ["React", "CSS", "API", "Hooks"],
     head_img: "github_search.gif",
+    category: "develop",
     seeMore: "https://github.com/tpemba100/github-profile-search",
   },
   {
@@ -446,6 +458,7 @@ const archives = [
       "packaging design for (improving, progressive) drink based of military theme.",
     stack: ["Photoshop", "Illustrator"],
     head_img: "war_dogs.jpg",
+    category: "design",
     seeMore: "https://tpemba.myportfolio.com/war-dogs-2",
   },
 
@@ -456,6 +469,7 @@ const archives = [
       "Ninja Zoom Zoom is a simple movement game made in p5.js which is a javascript library known for its interactive visual and creative coding.",
     stack: ["P5js", "Javascript", "Canvas", "Creative Coding"],
     head_img: "ninja.png",
+    category: "develop",
     seeMore: "https://editor.p5js.org/tpemba.design/sketches/y7O4rVGAs",
   },
   {
@@ -465,6 +479,7 @@ const archives = [
       "A interactive visual typography that changes its behavior based on user mouse movement.",
     stack: ["P5js", "Javascript", "Canvas", "Creative Coding"],
     head_img: "fire_typo.gif",
+    category: "develop",
     seeMore: "https://editor.p5js.org/tpemba.design/sketches/nvHiYRYns",
   },
 ];

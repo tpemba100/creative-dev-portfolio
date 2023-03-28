@@ -29,6 +29,32 @@
   margin-bottom: 1vh;
 }
 
+/* FILTER BUTTON */
+.filter-container {
+  text-align: center;
+}
+.filter-container button {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  min-width: 5rem;
+  height: 2rem;
+  padding: 0, 5rem 1rem;
+  /* background-color: white; */
+  background-color: var(--clr-bg);
+  /* color: rgb(65, 98, 168); */
+  color: var(--clr-primary);
+  border-radius: 1rem;
+  border: 2px solid var(--clr-primary);
+  font-weight: bold;
+  cursor: pointer;
+}
+button.active {
+  /* background: rgb(65, 98, 168); */
+  background-color: var(--clr-primary);
+
+  color: white;
+}
+
 @media (max-width: 900px) {
   .txt_stack {
     justify-content: space-around;
