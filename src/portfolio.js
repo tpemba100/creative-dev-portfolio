@@ -48,6 +48,7 @@ const skills = [
   "JavaScript",
   "TypeScript",
   "React",
+  "React Native",
   "Redux",
   "SASS",
   "Material UI",
