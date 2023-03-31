@@ -1,5 +1,5 @@
 import { contact } from "../../portfolio";
-import ResumePDF from "../../assets/Tsering_Pemba_Resume.pdf";
+import ResumePDF from "../../assets/TseringPemba_Resume.pdf";
 import "./Contact.css";
 
 const Contact = () => {
