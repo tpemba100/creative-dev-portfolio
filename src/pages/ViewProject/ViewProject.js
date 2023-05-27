@@ -17,6 +17,7 @@ const ViewProject = () => {
     sections,
     sourceCode,
     prototype,
+    website,
   } = project;
 
   const projectImg = head_img;
@@ -95,6 +96,19 @@ const ViewProject = () => {
             }}
           >
             Prototype
+          </span>
+        ) : null}
+
+        {website ? (
+          <span
+            type="button"
+            className="btn btn--outline abt-btn"
+            onClick={() => handleClick(website)}
+            style={{
+              width: "300px",
+            }}
+          >
+            Website
           </span>
         ) : null}
       </div>

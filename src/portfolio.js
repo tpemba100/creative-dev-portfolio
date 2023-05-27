@@ -120,6 +120,36 @@ const projects = [
   {
     name: "projects",
   },
+  //HYOLMO WEBSITE
+  {
+    name: "Hyolmo Website",
+    header: "WordPress Development",
+    description:
+      "Non-Profit organization Website build using WordPress CMS, templates, plugins and custom CSS & JS",
+    stack: ["WordPress", "HTML", "CSS", "JavaScript", "templates", "Plugins"],
+    head_img: "hyolmo_website/our_works_eng.png",
+    category: "develop",
+    sections: [
+      {
+        title: "introduction",
+        brief:
+          "Led end-to-end development of Hyolmo Society of America's website using WordPress, leveraging templates,plugins, and a Content Management System (CMS) for seamless design and functionality.",
+        img: ["hyolmo_website/home_gif.gif"],
+      },
+      {
+        title: "features",
+        brief:
+          "Simple, Accessible and Simple User Experience. Easy accessible to Translate button to nepali, the native language of the community.",
+        img: [
+          "hyolmo_website/hyolmo_site_map.png",
+          "hyolmo_website/translate.gif",
+          // "hyolmo_website/",
+        ],
+      },
+    ],
+    website: "https://www.hyolmosocietyofamerica.org",
+  },
+  ,
   //NETFLIX
   //NETFLIX
   //NETFLIX
@@ -350,46 +380,6 @@ const projects = [
     ],
     sourceCode: "https://github.com/tpemba100/ComputerTicketSystem",
   },
-
-  //STUDENT GROUPS
-  //STUDENT GROUPS
-  //STUDENT GROUPS
-  //STUDENT GROUPS
-  //STUDENT GROUPS
-  {
-    name: "Student Groups",
-    header: "Full stack Development",
-    description: " A full stack application to help manage students database.",
-    stack: [
-      "React",
-      "CSS",
-      "Material UI",
-      "Spring Boot",
-      "MySQL Database",
-      "PHP MyAdmin",
-    ],
-    head_img: "student_group/main.png",
-    category: "develop",
-    sections: [
-      {
-        title: "Introduction",
-        brief:
-          "This is an application that can help students manage members in their group. The students can be added directly from a form container and displayed right below it. All the data is stored in MySQL Database or PHP MyAdmin. Developed a full stack application that manages student database using React and Spring Boot. The backend server was built using java, Spring Boot and MySQL database with Restful API. and The front end was built on React.js with Material UI, CSS and implementation of React Hooks.",
-        img: ["student_group/flow.gif"],
-      },
-      {
-        title: "features",
-        brief:
-          "Add Students information. Save Employee information. Delete Employee information. Update Employee information",
-        img: [
-          "student_group/main.png",
-          "student_group/itellij.png",
-          "student_group/data.png",
-        ],
-      },
-    ],
-    sourceCode: "https://github.com/tpemba100/Student-Group",
-  },
 ];
 
 //ARCHIVE
@@ -401,16 +391,6 @@ const archives = [
   // if there are no projects, Projects section won't show up
   {
     name: "archive",
-  },
-  {
-    name: "HSA Website",
-    header: "web Development",
-    description:
-      "Web Design and development for non-profit community, Hyolmo Society of America. The goal was to create a online presence and platform for sharing our background, cultures and our community.",
-    stack: ["Wordpress", "Adobe XD", "Ux Design", "Development"],
-    head_img: "hsa.png",
-    category: "develop",
-    seeMore: "https://tpemba.myportfolio.com/hyolmo-society-website",
   },
   {
     name: "Movie Filter",
