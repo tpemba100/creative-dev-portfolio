@@ -143,7 +143,6 @@ const projects = [
         img: [
           "hyolmo_website/hyolmo_site_map.png",
           "hyolmo_website/translate.gif",
-          // "hyolmo_website/",
         ],
       },
     ],
