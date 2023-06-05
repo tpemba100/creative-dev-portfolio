@@ -1,5 +1,9 @@
 import { contact } from "../../portfolio";
 import ResumePDF from "../../assets/TseringPemba_Resume.pdf";
+import uxPDF from "../../assets/certificates/Coursera_front_end.pdf";
+import takeoPDF from "../../assets/certificates/Coursera_ux.pdf";
+import jpmPDF from "../../assets/certificates/J.P. Morgan__completion_certificate.pdf";
+import frontendCourseraPDF from "../../assets/certificates/Takeo_react.pdf";
 import "./Contact.css";
 
 const Contact = () => {
@@ -29,6 +33,29 @@ const Contact = () => {
             Resume
           </span>
         </a>
+
+        <div style={{ display: "none" }}>
+          <a href={uxPDF} target="_blank">
+            <span type="button" className="btn btn--outline">
+              Resume
+            </span>
+          </a>
+          <a href={takeoPDF} target="_blank">
+            <span type="button" className="btn btn--outline">
+              Resume
+            </span>
+          </a>
+          <a href={jpmPDF} target="_blank">
+            <span type="button" className="btn btn--outline">
+              Resume
+            </span>
+          </a>
+          <a href={frontendCourseraPDF} target="_blank">
+            <span type="button" className="btn btn--outline">
+              Resume
+            </span>
+          </a>
+        </div>
       </div>
     </section>
   );
