@@ -121,12 +121,13 @@ const projects = [
     name: "projects",
   },
   //HYOLMO WEBSITE
+  //HYOLMO WEBSITE
   {
     name: "Hyolmo Website",
     header: "WordPress Development",
     description:
       "Non-Profit organization Website build using WordPress CMS, templates, plugins and custom CSS & JS",
-    stack: ["WordPress", "HTML", "CSS", "JavaScript", "templates", "Plugins"],
+    stack: ["WordPress", "HTML", "CSS", "JavaScript", "Templates", "Plugins"],
     head_img: "hyolmo_website/our_works_eng.png",
     category: "develop",
     sections: [
@@ -141,7 +142,7 @@ const projects = [
         brief:
           "Simple, Accessible and Simple User Experience. Easy accessible to Translate button to nepali, the native language of the community.",
         img: [
-          "hyolmo_website/hyolmo_site_map.png",
+          "hyolmo_website/hyolmo_site_map.jpg",
           "hyolmo_website/translate.gif",
         ],
       },
