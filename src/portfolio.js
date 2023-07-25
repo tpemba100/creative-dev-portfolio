@@ -149,7 +149,7 @@ const projects = [
     ],
     website: "https://www.hyolmosocietyofamerica.org",
   },
-  ,
+
   //NETFLIX
   //NETFLIX
   //NETFLIX
@@ -318,6 +318,26 @@ const projects = [
       "https://www.figma.com/proto/hvAGnjSm7wL929Y7v05dtg/Learning-app?node-id=9-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=9%3A3",
   },
 
+  //THE GHOST CLAN
+  //THE GHOST CLAN
+  {
+    name: "The Ghost Clan",
+    header: "Web Design & Branding",
+    description:
+      "A full on branding project for an upcoming music group based in NYC. The Ghost Clan",
+    stack: ["Adobe XD", "PhotoShop", "Illustration"],
+    head_img: "the_ghost_clan.png",
+    category: "design",
+    sections: [
+      {
+        title: "introduction",
+        brief: "d",
+        img: ["hyolmo_website/home_gif.gif"],
+      },
+    ],
+    website: "https://tpemba.myportfolio.com/the-ghost-clan",
+  },
+
   //REACT TODO
   //REACT TODO
   //REACT TODO
@@ -412,16 +432,16 @@ const archives = [
     category: "develop",
     seeMore: "https://github.com/tpemba100/merch-shop",
   },
-  {
-    name: "The Ghost Clan",
-    header: "web Design & Branding",
-    description:
-      "a full on branding project for an upcoming music group based in NYC. The Ghost Clan",
-    stack: ["Adobe XD", "PhotoShop", "Illustration"],
-    head_img: "the_ghost_clan.png",
-    category: "design",
-    seeMore: "https://tpemba.myportfolio.com/the-ghost-clan",
-  },
+  // {
+  //   name: "The Ghost Clan",
+  //   header: "web Design & Branding",
+  //   description:
+  //     "a full on branding project for an upcoming music group based in NYC. The Ghost Clan",
+  //   stack: ["Adobe XD", "PhotoShop", "Illustration"],
+  //   head_img: "the_ghost_clan.png",
+  //   category: "design",
+  //   seeMore: "https://tpemba.myportfolio.com/the-ghost-clan",
+  // },
   {
     name: "Github Finder",
     header: "Development",

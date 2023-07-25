@@ -28,34 +28,11 @@ const Contact = () => {
             Linkedin
           </span>
         </a>
-        <a href={ResumePDF} target="_blank">
+        <a href={ResumePDF} target="_blank" rel="noreferrer">
           <span type="button" className="btn btn--outline">
             Resume
           </span>
         </a>
-
-        <div style={{ display: "none" }}>
-          <a href={uxPDF} target="_blank">
-            <span type="button" className="btn btn--outline">
-              Resume
-            </span>
-          </a>
-          <a href={takeoPDF} target="_blank">
-            <span type="button" className="btn btn--outline">
-              Resume
-            </span>
-          </a>
-          <a href={jpmPDF} target="_blank">
-            <span type="button" className="btn btn--outline">
-              Resume
-            </span>
-          </a>
-          <a href={frontendCourseraPDF} target="_blank">
-            <span type="button" className="btn btn--outline">
-              Resume
-            </span>
-          </a>
-        </div>
       </div>
     </section>
   );
