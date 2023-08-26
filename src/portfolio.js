@@ -330,9 +330,17 @@ const projects = [
     category: "design",
     sections: [
       {
-        title: "introduction",
-        brief: "d",
-        img: ["hyolmo_website/home_gif.gif"],
+        title: "deliverables",
+        brief: "cap, t-shirt, hoodies, business card",
+        img: [
+          "the_ghost_clan/bussinessCard.png",
+          "the_ghost_clan/bussinessCardFront.png",
+          "the_ghost_clan/capFront.png",
+          "the_ghost_clan/hoodieBack.png",
+          "the_ghost_clan/hoodieFront.png",
+          "the_ghost_clan/tShirtFront.png",
+          "the_ghost_clan/tShirtBack.png",
+        ],
       },
     ],
     website: "https://tpemba.myportfolio.com/the-ghost-clan",
