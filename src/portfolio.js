@@ -154,37 +154,37 @@ const projects = [
   //NETFLIX
   //NETFLIX
   //NETFLIX
-  {
-    name: "Netflix Clone",
-    header: "Full Stack Development",
-    description: "A full stack netflix movie app clone using MERN stack.",
-    stack: ["react", "scss", "Material UI", "MongoDB", "Node", "Express"],
-    head_img: "netflix/register.png",
-    category: "develop",
-    sections: [
-      {
-        title: "introduction",
-        brief:
-          "A NETFLIX clone app with very similar interface and experience created with MERN Stack (MongoDb, Express, React, NodeJs). The Front end was developed using React, SCSS and Material UI for similar User Experience as original Netflix. And the back end is built with NodeJs, Express, Mongoose and with MongoDB as database.",
-        img: ["netflix/nextflix.gif"],
-      },
-      {
-        title: "features",
-        brief:
-          "User can navigate to sign up page, login page, home and movie view page. User can slide thru sections to see more movies and hover to see preview. The video player is implemented with Vimeo and has most usabilty such as play/pause, full screen and options. ",
-        img: [
-          "netflix/register.png",
-          "netflix/login.png",
-          "netflix/fullpage.jpeg",
-          "netflix/home_hover.png",
-          "netflix/watch.png",
-          "netflix/mongoDb.png",
-        ],
-      },
-    ],
-    sourceCode: "https://github.com/tpemba100/netflix-clone",
-    prototype: "https://netflix-clone-front.onrender.com/",
-  },
+  // {
+  //   name: "Netflix Clone",
+  //   header: "Full Stack Development",
+  //   description: "A full stack netflix movie app clone using MERN stack.",
+  //   stack: ["react", "scss", "Material UI", "MongoDB", "Node", "Express"],
+  //   head_img: "netflix/register.png",
+  //   category: "develop",
+  //   sections: [
+  //     {
+  //       title: "introduction",
+  //       brief:
+  //         "A NETFLIX clone app with very similar interface and experience created with MERN Stack (MongoDb, Express, React, NodeJs). The Front end was developed using React, SCSS and Material UI for similar User Experience as original Netflix. And the back end is built with NodeJs, Express, Mongoose and with MongoDB as database.",
+  //       img: ["netflix/nextflix.gif"],
+  //     },
+  //     {
+  //       title: "features",
+  //       brief:
+  //         "User can navigate to sign up page, login page, home and movie view page. User can slide thru sections to see more movies and hover to see preview. The video player is implemented with Vimeo and has most usabilty such as play/pause, full screen and options. ",
+  //       img: [
+  //         "netflix/register.png",
+  //         "netflix/login.png",
+  //         "netflix/fullpage.jpeg",
+  //         "netflix/home_hover.png",
+  //         "netflix/watch.png",
+  //         "netflix/mongoDb.png",
+  //       ],
+  //     },
+  //   ],
+  //   sourceCode: "https://github.com/tpemba100/netflix-clone",
+  //   prototype: "https://netflix-clone-front.onrender.com/",
+  // },
 
   //QCTI
   //QCTI
@@ -235,7 +235,7 @@ const projects = [
           "Our focus on creating a cohesive ecosystem led us to believe that a web hub that connects students, staff, and entrepreneurs would provide the optimal solution for fostering collaboration, community, and support among all parties involved.",
         img: [
           "qcti/qcti-define.jpg",
-          "qcti/qcti-define.jpg",
+          // "qcti/qcti-define.jpg",
           "qcti/qcti-full-analysis.jpg",
         ],
       },
@@ -343,7 +343,8 @@ const projects = [
         ],
       },
     ],
-    website: "https://tpemba.myportfolio.com/the-ghost-clan",
+    website:
+      "https://xd.adobe.com/view/11471325-d925-4248-a3e6-b7a6a94117ad-4414/?fullscreen&hints=off",
   },
 
   //REACT TODO
@@ -384,30 +385,30 @@ const projects = [
   //COMPUTER REPAIR
   //COMPUTER REPAIR
   //COMPUTER REPAIR
-  {
-    name: "Computer Repair",
-    header: "Full stack Development",
-    description:
-      " A full stack application to raise a ticket for computer repairs",
-    stack: ["React", "CSS", "TypeScript", "Redux", "MongoDb", "React Testing"],
-    head_img: "computer_repair/dashboard.png",
-    category: "develop",
-    sections: [
-      {
-        title: "features",
-        brief:
-          "Navigating dashboard. Log in with User Authentication that is saved in browser. Raising a ticket for repair that can be submitted. Reactive Form that changes based on the user's option. Communicating with backend server to save the user info and tokens in database. Communicating with backend server to save the tickets raised by the user",
-        img: [
-          "computer_repair/flow.gif",
-          "computer_repair/dashboard.png",
-          "computer_repair/local_token.png",
-          "computer_repair/mongodb_tickets.png",
-          "computer_repair/mongodb_users.png",
-        ],
-      },
-    ],
-    sourceCode: "https://github.com/tpemba100/ComputerTicketSystem",
-  },
+  // {
+  //   name: "Computer Repair",
+  //   header: "Full stack Development",
+  //   description:
+  //     " A full stack application to raise a ticket for computer repairs",
+  //   stack: ["React", "CSS", "TypeScript", "Redux", "MongoDb", "React Testing"],
+  //   head_img: "computer_repair/dashboard.png",
+  //   category: "develop",
+  //   sections: [
+  //     {
+  //       title: "features",
+  //       brief:
+  //         "Navigating dashboard. Log in with User Authentication that is saved in browser. Raising a ticket for repair that can be submitted. Reactive Form that changes based on the user's option. Communicating with backend server to save the user info and tokens in database. Communicating with backend server to save the tickets raised by the user",
+  //       img: [
+  //         "computer_repair/flow.gif",
+  //         "computer_repair/dashboard.png",
+  //         "computer_repair/local_token.png",
+  //         "computer_repair/mongodb_tickets.png",
+  //         "computer_repair/mongodb_users.png",
+  //       ],
+  //     },
+  //   ],
+  //   sourceCode: "https://github.com/tpemba100/ComputerTicketSystem",
+  // },
 ];
 
 //ARCHIVE
