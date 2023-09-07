@@ -11,7 +11,7 @@ const about = {
   name: "Tsering Pemba",
   role: "Front End Engineer",
   description:
-    "I am a UI/UX Designer & developer based in NYC. I’m passionate about creating user experiences that are not only visually appealing but also highly functional. ",
+    "I am a Creative Designer & developer based in NYC. I’m passionate about creating user experiences that are not only visually appealing but also highly functional. ",
   social: {
     linkedin: "https://linkedin.com/in/tpemba",
     github: "https://github.com/tpemba100",
@@ -21,10 +21,11 @@ const about = {
 const design_about = {
   name: "Design",
   description:
-    "As a designer, I specialize in creating engaging visual experiences that help businesses connect with their audiences and stand out in a crowded marketplace. I'm a designer with a keen eye for detail and a passion for crafting beautiful and impactful designs.",
+    "As a designer, I specialize in creating engaging visual experiences that help businesses connect with their audiences and convey the values. I'm a designer with a keen eye for detail and a passion for crafting beautiful and impactful designs.",
   skills:
-    "graphic design, visual design, ui design, ux design, interaction design",
-  software: "adobe xd, figma, photoshop, illustrator, sketchup, Miro, indesign",
+    "graphic design, visual design, branding, ui design, ux design, interaction design",
+  software:
+    "adobe xd, adobe photoshop, adobe illustrator, adobe inDesign, figma, sketchup, Miro",
 };
 const develop_about = {
   name: "Develop",
@@ -74,18 +75,18 @@ const gitProjects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: "Student Group",
+    name: "Book Share",
     description:
-      "This is an application that can help students manage members in their group. The students can be added directly from a form container and displayed right below it. All the data is stored in MySQL Database or PHP MyAdmin.",
+      "Book Mates is a web application that allows users to keep track of their book lists. With Book Mates, users can log in and access their list of books that they have read, books that they are currently reading, and books that they want to read in the future.",
     stack: [
-      "React",
+      "HTML",
       "CSS",
-      "Java",
       "JavaScript",
-      "Spring Boot",
-      "Material UI",
+      "React",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
       "Node",
-      "MySQL Database",
     ],
     sourceCode: "https://github.com/tpemba100/Student-Group",
     livePreview: "https://github.com/tpemba100/Student-Gropup",
