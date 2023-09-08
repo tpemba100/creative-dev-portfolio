@@ -145,6 +145,8 @@ const projects = [
         img: [
           "hyolmo_website/hyolmo_site_map.jpg",
           "hyolmo_website/translate.gif",
+          "hyolmo_website/PageMockup.png",
+          "hyolmo_website/laptopPhoneMockup.png",
         ],
       },
     ],
