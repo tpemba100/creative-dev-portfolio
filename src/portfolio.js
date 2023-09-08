@@ -327,7 +327,7 @@ const projects = [
     description:
       "A full on branding project for an upcoming music group based in NYC. The Ghost Clan",
     stack: ["Adobe XD", "PhotoShop", "Illustration"],
-    head_img: "the_ghost_clan/the_ghost_clan.png",
+    head_img: "the_ghost_clan/the_ghost_clann.png",
     category: "design",
     sections: [
       {
