@@ -1,5 +1,5 @@
 import { contact } from "../../portfolio";
-import ResumePDF from "../../assets/TseringPemba_Resume.pdf";
+import ResumePDF from "../../assets/TseringPemba_Resume_Design.pdf";
 import uxPDF from "../../assets/certificates/Coursera_front_end.pdf";
 import takeoPDF from "../../assets/certificates/Coursera_ux.pdf";
 import jpmPDF from "../../assets/certificates/J.P. Morgan__completion_certificate.pdf";
