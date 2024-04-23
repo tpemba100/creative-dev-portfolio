@@ -67,7 +67,7 @@ const skills = [
 const contact = {
   // email is optional - if left empty Contact section won't show up
   email: "tpemba.96@gmail.com",
-  linkedin: "https://tpemba.linkedin.com",
+  linkedin: "https://www.linkedin.com/in/tpemba/",
   github: "https://github.com/tpemba100",
 };
 
