@@ -13,7 +13,7 @@ const about = {
   description:
     "I am a Creative Designer & developer based in NYC. I’m passionate about creating user experiences that are not only visually appealing but also highly functional. ",
   social: {
-    linkedin: "https://linkedin.com/in/tpemba",
+    linkedin: "https://www.linkedin.com/in/tpemba/",
     github: "https://github.com/tpemba100",
   },
 };
