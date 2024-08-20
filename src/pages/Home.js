@@ -4,6 +4,8 @@ import Contact from ".././components/Contact/Contact";
 import ".././App.css";
 import Hero from ".././components/Hero/Hero";
 import { projects } from "../portfolio";
+import Work from "../slides/Work";
+import BlockAnimation from "../slides/BlockAnimation.js";
 
 const Home = () => {
   if (!projects.length) return null;
@@ -11,9 +13,9 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <About />
-      <Projects projects={projects} />
-
+      <Work />
+      {/* <About /> */}
+      {/* <Projects projects={projects} /> */}
       <Contact />
     </div>
   );

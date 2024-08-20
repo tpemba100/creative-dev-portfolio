@@ -217,3 +217,8 @@ main {
 .body--font {
   font-family: "Averia Serif Libre", cursive;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap");
+.AvenirFont {
+  font-family: "Avenir", sans-serif;
+}
