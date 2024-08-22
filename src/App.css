@@ -74,7 +74,8 @@
 
 main {
   /* max-width: 1100px;s */
-  width: 95%;
+  /* width: 95%; */
+  width: 100%;
   margin: 0 auto;
 }
 

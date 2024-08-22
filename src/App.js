@@ -1,3 +1,5 @@
+import React, { useEffect } from "react";
+
 import { useContext } from "react";
 import { ThemeContext } from "./contexts/theme";
 import Header from "./components/Header/Header";
@@ -10,11 +12,16 @@ import Home from "./pages/Home";
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext);
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+  }, []);
 
   return (
     <BrowserRouter>
       <div className={`${themeName} app`}>
-        <Header />
+        {/* <Header /> */}
         <main>
           <Routes>
             <Route exact path="/" element={<Home />} />
