@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import styled, { keyframes } from "styled-components";
 import PropTypes from "prop-types";
 import device from "../../../assets/breakpoints";
+import { Link } from "react-router-dom";
+import { projects } from "../../../portfolio";
+
+const project = projects[0];
 
 const TextContainer = styled.section`
   position: fixed;
