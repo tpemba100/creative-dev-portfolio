@@ -1,8 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import fastRetailingUQImg from "../../../../assets/Images/FastRetailing/UQ.png";
-import fastRetailingGUImg from "../../../../assets/Images/FastRetailing/GU.png";
-import fastRetailingPLSTImg from "../../../../assets/Images/FastRetailing/PLST.png";
+// import fastRetailingUQImg from "../../../../assets/Images/FastRetailing/UQ.png";
+// import fastRetailingGUImg from "../../../../assets/Images/FastRetailing/GU.png";
+// import fastRetailingPLSTImg from "../../../../assets/Images/FastRetailing/PLST.png";
+// import fastRetailingGU2Img from "../../../../assets/Images/FastRetailing/GU2.png";
+import HSALaptop from "../../../../assets/Images/FastRetailing/HSALaptop.png";
+import HSAPhone from "../../../../assets/Images/FastRetailing/HSAPhone.png";
+import HSATablet from "../../../../assets/Images/FastRetailing/HSATablet.png";
 import fastRetailingGU2Img from "../../../../assets/Images/FastRetailing/GU2.png";
 import styled from "styled-components";
 
@@ -12,31 +16,32 @@ const Image = styled.img`
   height: 80vh;
 `;
 
-const FastRetailingPhoneUQ = styled(Image)`
-  top: 90vh;
+const HSA1 = styled(Image)`
+  top: 70vh;
   left: 0vw;
   transform: ${({ scroll }) => `translate(0px,-${scroll * 14}%)`};
 `;
 
-const FastRetailingPhoneGU = styled(Image)`
+const HSA2 = styled(Image)`
   top: 45vh;
-  right: 2vw;
+  right: 1vw;
   transform: ${({ scroll }) => `translate(0px,-${scroll * 8}%) scale(0.9)`};
   filter: blur(0.6px);
 `;
 
-const FastRetailingPhonePLST = styled(Image)`
+const HSA3 = styled(Image)`
   top: 75vh;
   right: 25vw;
   transform: ${({ scroll }) => `translate(0px,-${scroll * 4}%) scale(0.8)`};
   filter: blur(0.8px);
 `;
 
-const FastRetailingPhoneGU2 = styled(Image)`
+const HSA4 = styled(Image)`
   top: 55vh;
-  right: 5vw;
-  transform: ${({ scroll }) => `translate(0px,-${scroll * 2}%) scale(0.6)`};
-  filter: blur(1.2px);
+  right: 0vw;
+  transform: ${({ scroll }) => `translate(0px,-${scroll * 3}%) scale(1)`};
+  // filter: blur(1.2px);
+  background: rgba(255, 255, 255, 0); /* Fully transparent white */
 `;
 
 const FastRetailingImages = ({
@@ -53,23 +58,24 @@ const FastRetailingImages = ({
 
   return (
     <>
-      <FastRetailingPhoneUQ
-        src={fastRetailingUQImg}
+      {/* <FastRetailingPhoneUQ */}
+      <HSA1
+        src={HSAPhone}
         scroll={adjustedScrollPercent}
         alt="fastRetailingUQ"
       />
-      <FastRetailingPhoneGU
-        src={fastRetailingGUImg}
+      <HSA2
+        src={HSATablet}
         scroll={adjustedScrollPercent}
         alt="fastRetailingGU"
       />
-      <FastRetailingPhonePLST
-        src={fastRetailingPLSTImg}
+      {/* <HSA3
+        src={HSALaptop}
         scroll={adjustedScrollPercent}
         alt="fastRetailingPLST"
-      />
-      <FastRetailingPhoneGU2
-        src={fastRetailingGU2Img}
+      /> */}
+      <HSA4
+        src={HSALaptop}
         scroll={adjustedScrollPercent}
         alt="fastRetailingGU2"
       />

@@ -34,7 +34,7 @@ class Work extends Component {
         // FastRetailing
         projectDesc: "A community non-profit organization based in NY",
         projectType: "WEBSITE",
-        roles: ["Design lead", "Admin"],
+        roles: ["Design lead", "Web Developer", "Admin"],
       },
       {
         number: "02",
@@ -46,11 +46,12 @@ class Work extends Component {
       },
       {
         number: "03",
-        projectName: "Eyep",
+        // projectName: "Eyep",
+        projectName: "Book Space",
         projectDesc:
-          "Single purpose website to show your IP address and location.",
-        projectType: "WEB APP",
-        roles: ["UI Designer", "Front-end Developer"],
+          "Web app that helps you maintain and share your book lists.",
+        projectType: "FULL STACK WEB APP",
+        roles: ["UI/UX Designer", "React Developer", "Node Dev"],
       },
       {
         number: "04",
