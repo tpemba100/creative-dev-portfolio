@@ -34,7 +34,7 @@ class Work extends Component {
         // FastRetailing
         projectDesc: "A community non-profit organization based in NY",
         projectType: "WEBSITE",
-        roles: ["Design lead", "Web Developer", "Admin"],
+        roles: ["Design lead", "Admin"],
       },
       {
         number: "02",
@@ -45,7 +45,6 @@ class Work extends Component {
         roles: ["UX Design", "UX Research"],
       },
       {
-        number: "03",
         // projectName: "Eyep",
         projectName: "Book Space",
         projectDesc:

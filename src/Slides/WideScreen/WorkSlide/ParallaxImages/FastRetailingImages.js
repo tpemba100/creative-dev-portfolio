@@ -7,7 +7,6 @@ import PropTypes from "prop-types";
 import HSALaptop from "../../../../assets/Images/FastRetailing/HSALaptop.png";
 import HSAPhone from "../../../../assets/Images/FastRetailing/HSAPhone.png";
 import HSATablet from "../../../../assets/Images/FastRetailing/HSATablet.png";
-import fastRetailingGU2Img from "../../../../assets/Images/FastRetailing/GU2.png";
 import styled from "styled-components";
 
 const Image = styled.img`
