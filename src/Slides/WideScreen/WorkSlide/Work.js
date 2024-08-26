@@ -45,6 +45,7 @@ class Work extends Component {
         roles: ["UX Design", "UX Research"],
       },
       {
+        number: "03",
         // projectName: "Eyep",
         projectName: "Book Space",
         projectDesc:
@@ -54,26 +55,24 @@ class Work extends Component {
       },
       {
         number: "04",
-        projectName: "Tesla app",
-        projectDesc: "iOS app concept to control Tesla cars remotely.",
-        projectType: "iOS APP CONCEPT",
-        roles: ["UI Designer"],
+        projectName: "The Ghost Clan",
+        projectDesc: "Branding of a upcoming music group, based in NYC.",
+        projectType: "BRANDING",
+        roles: ["Graphic Design"],
       },
       {
         number: "05",
-        projectName: "WhatsMyFood",
-        projectDesc:
-          "iOS app to remember your fav food at each restaurant you eat.",
-        projectType: "iOS APP",
-        roles: ["UI Designer", "Front-end Developer"],
+        projectName: "Illustration",
+        projectDesc: "Illustration, logo and visual for single Design",
+        projectType: "VISUAL DESIGN",
+        roles: ["Illustrator", "Branding", "Logo Design"],
       },
       {
         number: "06",
-        projectName: "Voistrap",
-        projectDesc:
-          "Web app project to give workplace insights using indoor localization, voice and schedule.",
-        projectType: "iOS APP",
-        roles: ["UI Designer", "Full Stack Developer"],
+        projectName: "Creative Coding",
+        projectDesc: "Visual programming, creative coding, data visualization",
+        projectType: "CREATIVE CODING",
+        roles: ["Creative Coder", "Visual Programmer", "Interactive Design"],
       },
       {
         number: "",
