@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import alertImg from "../../../../assets/Images/Lashic/Alert.png";
-import taskImg from "../../../../assets/Images/Lashic/Task.png";
-import customersImg from "../../../../assets/Images/Lashic/Customers.png";
-import customerDetailImg from "../../../../assets/Images/Lashic/CustomerDetail.png";
+// import alertImg from "../../../../assets/Images/Lashic/Alert.png";
+// import taskImg from "../../../../assets/Images/Lashic/Task.png";
+// import customersImg from "../../../../assets/Images/Lashic/Customers.png";
+// import customerDetailImg from "../../../../assets/Images/Lashic/CustomerDetail.png";
+import SPEAK1 from "../../../../assets/Images/Lashic/SPEAK1.png";
+import SPEAK2 from "../../../../assets/Images/Lashic/SPEAK2.png";
+import SPEAK3 from "../../../../assets/Images/Lashic/SPEAK3.png";
+import SPEAK4 from "../../../../assets/Images/Lashic/SPEAK4.png";
 
 const Task = styled.img.attrs(({ scroll }) => ({
   style: {
@@ -72,18 +76,14 @@ const LashicImages = ({
 
   return (
     <>
+      <Customers src={SPEAK4} scroll={adjustedScrollPercent} alt="customers" />
       <CustomerDetail
-        src={customerDetailImg}
+        src={SPEAK3}
         scroll={adjustedScrollPercent}
         alt="customerDetails"
       />
-      <Customers
-        src={customersImg}
-        scroll={adjustedScrollPercent}
-        alt="customers"
-      />
-      <Alert src={alertImg} scroll={adjustedScrollPercent} alt="Alert" />
-      <Task src={taskImg} scroll={adjustedScrollPercent} alt="Task" />
+      <Alert src={SPEAK2} scroll={adjustedScrollPercent} alt="Alert" />
+      <Task src={SPEAK1} scroll={adjustedScrollPercent} alt="Task" />
     </>
   );
 };

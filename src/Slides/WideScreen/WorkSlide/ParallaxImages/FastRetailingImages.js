@@ -16,15 +16,15 @@ const Image = styled.img`
 `;
 
 const HSA1 = styled(Image)`
-  top: 70vh;
+  top: 95vh;
   left: 0vw;
   transform: ${({ scroll }) => `translate(0px,-${scroll * 14}%)`};
 `;
 
 const HSA2 = styled(Image)`
-  top: 45vh;
+  top: 75vh;
   right: 1vw;
-  transform: ${({ scroll }) => `translate(0px,-${scroll * 8}%) scale(0.9)`};
+  transform: ${({ scroll }) => `translate(0px,-${scroll * 6}%) scale(0.9)`};
   filter: blur(0.6px);
 `;
 
@@ -36,7 +36,7 @@ const HSA3 = styled(Image)`
 `;
 
 const HSA4 = styled(Image)`
-  top: 55vh;
+  top: 105vh;
   right: 0vw;
   transform: ${({ scroll }) => `translate(0px,-${scroll * 3}%) scale(1)`};
   // filter: blur(1.2px);

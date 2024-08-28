@@ -5,8 +5,6 @@ import device from "../../../assets/breakpoints";
 import { Link } from "react-router-dom";
 import { projects } from "../../../portfolio";
 
-const project = projects[0];
-
 const TextContainer = styled.section`
   position: fixed;
   top: 0;

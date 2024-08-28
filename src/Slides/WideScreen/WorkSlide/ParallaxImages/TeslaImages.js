@@ -1,9 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import teslaTyreImg from "../../../../assets/Images/Tesla/Tyre.png";
-import teslaHeatImg from "../../../../assets/Images/Tesla/Heat.png";
-import teslaLockImg from "../../../../assets/Images/Tesla/Lock.png";
-import teslaBatteryImg from "../../../../assets/Images/Tesla/Battery.png";
+// import teslaTyreImg from "../../../../assets/Images/Tesla/Tyre.png";
+// import teslaHeatImg from "../../../../assets/Images/Tesla/Heat.png";
+// import teslaLockImg from "../../../../assets/Images/Tesla/Lock.png";
+// import teslaBatteryImg from "../../../../assets/Images/Tesla/Battery.png";
+import bookSpace1 from "../../../../assets/Images/BookSpace/BookSpacePhone1.png";
+import bookSpace2 from "../../../../assets/Images/BookSpace/BookSpacePhone2.png";
+import bookSpace3 from "../../../../assets/Images/BookSpace/BookSpacePhone3.png";
+import bookSpace4 from "../../../../assets/Images/BookSpace/BookSpacePhone4.png";
 
 const TeslaImages = ({
   scrollPercent,
@@ -18,10 +22,10 @@ const TeslaImages = ({
   const adjustedScrollPercent = scrollPercent - scrollOffsetInPercent;
 
   const styleHeat = {
-    transform: `translate(0px,-${adjustedScrollPercent * 15}%)`,
+    transform: `translate(0px,-${adjustedScrollPercent * 14}%)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
-    bottom: "-90vh",
+    bottom: "-130vh",
     left: "0vw",
     height: "80vh",
   };
@@ -30,39 +34,43 @@ const TeslaImages = ({
     transform: `translate(0px,-${adjustedScrollPercent * 8}%) scale(0.9)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
-    bottom: "-45vh",
+    bottom: "-90vh",
     right: "2vw",
     filter: "blur(0.6px)",
     height: "80vh",
   };
 
   const styleBattery = {
-    transform: `translate(0px,-${adjustedScrollPercent * 5}%) scale(0.7)`,
+    transform: `translate(0px,-${adjustedScrollPercent * 5}%) scale(0.8)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
-    bottom: "-75vh",
+    bottom: "-90vh",
     left: "2vw",
     filter: "blur(0.8px)",
     height: "80vh",
   };
 
   const styleLock = {
-    transform: `translate(0px,-${adjustedScrollPercent * 2}%) scale(0.6)`,
+    transform: `translate(0px,-${adjustedScrollPercent * 4}%) scale(0.7)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
-    bottom: "-55vh",
+    top: "130vh",
     right: "5vw",
-    filter: "blur(1.2px)",
+    filter: "blur(0.8px)",
     height: "80vh",
   };
 
   return (
-    <>
-      <img src={teslaLockImg} style={styleLock} alt="teslaLock" />
+    <div className="tesla">
+      <img src={bookSpace4} style={styleLock} alt="teslaLock" />
+      <img src={bookSpace3} style={styleBattery} alt="teslaBattery" />
+      <img src={bookSpace2} style={styleTyre} alt="teslaTyre" />
+      <img src={bookSpace1} style={styleHeat} alt="teslaHeat" />
+      {/* <img src={teslaLockImg} style={styleLock} alt="teslaLock" />
       <img src={teslaBatteryImg} style={styleBattery} alt="teslaBattery" />
       <img src={teslaTyreImg} style={styleTyre} alt="teslaTyre" />
-      <img src={teslaHeatImg} style={styleHeat} alt="teslaHeat" />
-    </>
+      <img src={teslaHeatImg} style={styleHeat} alt="teslaHeat" /> */}
+    </div>
   );
 };
 

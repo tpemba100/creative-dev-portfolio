@@ -52,7 +52,7 @@ class Work extends Component {
         projectDesc:
           "Web app that helps you maintain and share your book lists.",
         projectType: "FULL STACK WEB APP",
-        roles: ["UI/UX Designer", "React Developer", "Node Dev"],
+        roles: ["UI/UX Designer", "React Developer"],
       },
       {
         number: "04",

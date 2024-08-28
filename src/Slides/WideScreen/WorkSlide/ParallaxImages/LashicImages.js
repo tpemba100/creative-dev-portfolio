@@ -26,7 +26,7 @@ const LashicImages = ({
           transform: `translate(0px,-${adjustedScrollPercent * 15}%)`,
           transition: "transform 0.2s ease-out",
           position: "absolute",
-          bottom: "-90vh",
+          bottom: "-100vh",
           left: "0vw",
           height: "80vh",
         }}
@@ -35,10 +35,10 @@ const LashicImages = ({
         src={SPEAK2}
         alt="Alert"
         style={{
-          transform: `translate(0px,-${adjustedScrollPercent * 8}%) scale(0.9)`,
+          transform: `translate(0px,-${adjustedScrollPercent * 9}%) scale(0.9)`,
           transition: "transform 0.2s ease-out",
           position: "absolute",
-          bottom: "-45vh",
+          bottom: "-85vh",
           right: "2vw",
           height: "80vh",
           filter: "blur(0.6px)",
@@ -50,7 +50,7 @@ const LashicImages = ({
         style={{
           transform: `translate(0px,-${adjustedScrollPercent * 5}%) scale(0.7)`,
           transition: "transform 0.2s ease-out",
-          bottom: "-75vh",
+          bottom: "-95vh",
           left: "2vw",
           position: "absolute",
           height: "80vh",
@@ -63,7 +63,7 @@ const LashicImages = ({
         style={{
           transform: `translate(0px,-${adjustedScrollPercent * 2}%) scale(0.6)`,
           transition: "transform 0.2s ease-out",
-          bottom: "-55vh",
+          bottom: "-75vh",
           right: "5vw",
           position: "absolute",
           height: "80vh",

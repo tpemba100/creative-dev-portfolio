@@ -39,7 +39,7 @@ const EyepImages = ({
           transform: `translate(0px,-${adjustedScrollPercent * 12}%)`,
           transition: "transform 0.2s ease-out",
           position: "absolute",
-          bottom: "-70vh",
+          top: "130vh",
           left: "0vw",
           height: "80vh",
         }}

@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import fastRetailingUQImg from "../../../../assets/Images/FastRetailing/UQ.png";
-import fastRetailingGUImg from "../../../../assets/Images/FastRetailing/GU.png";
-import fastRetailingPLSTImg from "../../../../assets/Images/FastRetailing/PLST.png";
-import fastRetailingGU2Img from "../../../../assets/Images/FastRetailing/GU2.png";
-
-const FastRetailingPhoneUQ = styled.img.attrs(({ scroll }) => ({
+// import fastRetailingUQImg from "../../../../assets/Images/FastRetailing/UQ.png";
+// import fastRetailingGUImg from "../../../../assets/Images/FastRetailing/GU.png";
+// import fastRetailingPLSTImg from "../../../../assets/Images/FastRetailing/PLST.png";
+// import fastRetailingGU2Img from "../../../../assets/Images/FastRetailing/GU2.png";
+import HSALaptop from "../../../../assets/Images/FastRetailing/HSALaptop.png";
+import HSAPhone from "../../../../assets/Images/FastRetailing/HSAPhone.png";
+import HSATablet from "../../../../assets/Images/FastRetailing/HSATablet.png";
+const HSA1 = styled.img.attrs(({ scroll }) => ({
   style: {
     transform: `translate(0px,-${scroll * 15}%) scale(0.7)`,
   },
@@ -19,7 +21,7 @@ const FastRetailingPhoneUQ = styled.img.attrs(({ scroll }) => ({
   height: 80vh;
 `;
 
-const FastRetailingPhoneGU = styled.img.attrs(({ scroll }) => ({
+const HSA2 = styled.img.attrs(({ scroll }) => ({
   style: {
     transform: `translate(0px,-${scroll * 8.5}%) scale(0.62)`,
   },
@@ -47,7 +49,7 @@ const FastRetailingPhonePLST = styled.img.attrs(({ scroll }) => ({
   filter: blur(0.8px);
 `;
 
-const FastRetailingPhoneGU2 = styled.img.attrs(({ scroll }) => ({
+const HSA3 = styled.img.attrs(({ scroll }) => ({
   style: {
     transform: `translate(0px,-${scroll * 2}%) scale(0.45)`,
   },
@@ -75,25 +77,25 @@ const FastRetailingImages = ({
 
   return (
     <>
-      <FastRetailingPhonePLST
+      {/* <FastRetailingPhonePLST
         src={fastRetailingPLSTImg}
         scroll={adjustedScrollPercent}
         alt="fastRetailingPLST"
+      /> */}
+      <HSA2
+        src={HSATablet}
+        scroll={adjustedScrollPercent}
+        alt="fastRetailingGU"
       />
-      <FastRetailingPhoneGU2
-        src={fastRetailingGU2Img}
+      <HSA3
+        src={HSALaptop}
         scroll={adjustedScrollPercent}
         alt="fastRetailingGU2"
       />
-      <FastRetailingPhoneUQ
-        src={fastRetailingUQImg}
+      <HSA1
+        src={HSAPhone}
         scroll={adjustedScrollPercent}
         alt="fastRetailingUQ"
-      />
-      <FastRetailingPhoneGU
-        src={fastRetailingGUImg}
-        scroll={adjustedScrollPercent}
-        alt="fastRetailingGU"
       />
     </>
   );

@@ -75,8 +75,9 @@ const ImageContent = ({ pageSplitTimes }) => {
           scrollHeight={scrollHeight}
         />
       </ImageBox>
+
       <ImageBox height={boxHeight}>
-        <EyepImages
+        <TeslaImages
           boxHeight={boxHeight}
           index={3}
           scrollPercent={scrollPercent}
@@ -84,8 +85,9 @@ const ImageContent = ({ pageSplitTimes }) => {
           scrollHeight={scrollHeight}
         />
       </ImageBox>
+
       <ImageBox height={boxHeight}>
-        <TeslaImages
+        <EyepImages
           boxHeight={boxHeight}
           index={4}
           scrollPercent={scrollPercent}

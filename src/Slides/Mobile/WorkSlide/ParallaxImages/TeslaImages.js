@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import teslaTyreImg from "../../../../assets/Images/Tesla/Tyre.png";
-import teslaHeatImg from "../../../../assets/Images/Tesla/Heat.png";
-import teslaLockImg from "../../../../assets/Images/Tesla/Lock.png";
-import teslaBatteryImg from "../../../../assets/Images/Tesla/Battery.png";
+// import teslaTyreImg from "../../../../assets/Images/Tesla/Tyre.png";
+// import teslaHeatImg from "../../../../assets/Images/Tesla/Heat.png";
+// import teslaLockImg from "../../../../assets/Images/Tesla/Lock.png";
+// import teslaBatteryImg from "../../../../assets/Images/Tesla/Battery.png";
+import bookSpace1 from "../../../../assets/Images/BookSpace/BookSpacePhone1.png";
+import bookSpace2 from "../../../../assets/Images/BookSpace/BookSpacePhone2.png";
+import bookSpace3 from "../../../../assets/Images/BookSpace/BookSpacePhone3.png";
+import bookSpace4 from "../../../../assets/Images/BookSpace/BookSpacePhone4.png";
 
 const Heat = styled.img.attrs(({ scroll }) => ({
   style: {
@@ -75,14 +79,14 @@ const TeslaImages = ({
 
   return (
     <>
-      <Lock src={teslaLockImg} scroll={adjustedScrollPercent} alt="teslaLock" />
+      <Lock src={bookSpace4} scroll={adjustedScrollPercent} alt="teslaLock" />
       <Battery
-        src={teslaBatteryImg}
+        src={bookSpace3}
         scroll={adjustedScrollPercent}
         alt="teslaBattery"
       />
-      <Tyre src={teslaTyreImg} scroll={adjustedScrollPercent} alt="teslaTyre" />
-      <Heat src={teslaHeatImg} scroll={adjustedScrollPercent} alt="teslaHeat" />
+      <Tyre src={bookSpace2} scroll={adjustedScrollPercent} alt="teslaTyre" />
+      <Heat src={bookSpace1} scroll={adjustedScrollPercent} alt="teslaHeat" />
     </>
   );
 };

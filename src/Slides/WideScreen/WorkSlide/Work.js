@@ -39,22 +39,23 @@ class Work extends Component {
       {
         number: "02",
         // projectName: 'LASHIC',
-        projectName: "SPEAK PEAK",
+        projectName: "PEAK SPEAK",
         projectDesc: "A mobile app that helps you learn a new language faster.",
         projectType: "APP DESIGN, CASE STUDY",
         roles: ["UX Design", "UX Research"],
       },
       {
         number: "03",
-        // projectName: "Eyep",
+        // projectName: "Eyep", -Tesla
         projectName: "Book Space",
         projectDesc:
           "Web app that helps you maintain and share your book lists.",
         projectType: "FULL STACK WEB APP",
-        roles: ["UI/UX Designer", "React Developer", "Node Dev"],
+        roles: ["UI/UX Designer", "React Developer"],
       },
       {
         number: "04",
+        // projectName: -Tesla -> EYEP
         projectName: "The Ghost Clan",
         projectDesc: "Branding of a upcoming music group, based in NYC.",
         projectType: "BRANDING",
@@ -62,6 +63,7 @@ class Work extends Component {
       },
       {
         number: "05",
+        // projectName: WhatsMyfood
         projectName: "Illustration",
         projectDesc: "Illustration, logo and visual for single Design",
         projectType: "VISUAL DESIGN",
@@ -69,6 +71,8 @@ class Work extends Component {
       },
       {
         number: "06",
+        // projectName: Voistrap
+
         projectName: "Creative Coding",
         projectDesc: "Visual programming, creative coding, data visualization",
         projectType: "CREATIVE CODING",
