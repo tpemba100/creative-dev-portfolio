@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import vhCheck from "vh-check";
-import VoistrapImages from "./ParallaxImages/VoistrapImages";
-import WhatsMyFoodImages from "./ParallaxImages/WhatsMyFoodImages";
+import CreativeCodingImages from "./ParallaxImages/CreativeCodingImages";
+import Illustration from "./ParallaxImages/Illustration";
 import HSAImages from "./ParallaxImages/HSAImages";
 import TGSImages from "./ParallaxImages/TGSImages";
 import BookSpaceImages from "./ParallaxImages/BookSpaceImages";
@@ -81,6 +81,7 @@ const ImageContent = ({ pageSplitTimes }) => {
           scrollHeight={scrollHeight}
         />
       </ImageBox>
+
       <ImageBox height={boxHeight}>
         <BookSpaceImages
           boxHeight={boxHeight}
@@ -90,6 +91,7 @@ const ImageContent = ({ pageSplitTimes }) => {
           scrollHeight={scrollHeight}
         />
       </ImageBox>
+
       <ImageBox height={boxHeight}>
         <TGSImages
           boxHeight={boxHeight}
@@ -100,7 +102,7 @@ const ImageContent = ({ pageSplitTimes }) => {
         />
       </ImageBox>
       <ImageBox height={boxHeight}>
-        <WhatsMyFoodImages
+        <Illustration
           boxHeight={boxHeight}
           index={5}
           scrollPercent={scrollPercent}
@@ -109,7 +111,7 @@ const ImageContent = ({ pageSplitTimes }) => {
         />
       </ImageBox>
       <ImageBox height={boxHeight}>
-        <VoistrapImages
+        <CreativeCodingImages
           boxHeight={boxHeight}
           index={6}
           scrollPercent={scrollPercent}

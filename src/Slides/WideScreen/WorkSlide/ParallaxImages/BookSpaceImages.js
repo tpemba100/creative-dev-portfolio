@@ -9,7 +9,7 @@ import bookSpace2 from "../../../../assets/Images/BookSpace/BookSpacePhone2.png"
 import bookSpace3 from "../../../../assets/Images/BookSpace/BookSpacePhone3.png";
 import bookSpace4 from "../../../../assets/Images/BookSpace/BookSpacePhone4.png";
 
-const TeslaImages = ({
+const BookSpace = ({
   scrollPercent,
   boxHeight,
   index,
@@ -74,12 +74,12 @@ const TeslaImages = ({
   );
 };
 
-TeslaImages.propTypes = {
-  boxHeight: PropTypes.number.isRequired,
-  index: PropTypes.number.isRequired,
-  screenHeight: PropTypes.number.isRequired,
-  scrollHeight: PropTypes.number.isRequired,
-  scrollPercent: PropTypes.number.isRequired,
-};
+// TeslaImages.propTypes = {
+//   boxHeight: PropTypes.number.isRequired,
+//   index: PropTypes.number.isRequired,
+//   screenHeight: PropTypes.number.isRequired,
+//   scrollHeight: PropTypes.number.isRequired,
+//   scrollPercent: PropTypes.number.isRequired,
+// };
 
-export default TeslaImages;
+export default BookSpace;

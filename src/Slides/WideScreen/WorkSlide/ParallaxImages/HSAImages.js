@@ -43,7 +43,7 @@ const HSA4 = styled(Image)`
   background: rgba(255, 255, 255, 0); /* Fully transparent white */
 `;
 
-const FastRetailingImages = ({
+const HSA = ({
   boxHeight,
   index,
   screenHeight,
@@ -82,12 +82,12 @@ const FastRetailingImages = ({
   );
 };
 
-FastRetailingImages.propTypes = {
-  boxHeight: PropTypes.number.isRequired,
-  index: PropTypes.number.isRequired,
-  screenHeight: PropTypes.number.isRequired,
-  scrollHeight: PropTypes.number.isRequired,
-  scrollPercent: PropTypes.number.isRequired,
-};
+// FastRetailingImages.propTypes = {
+//   boxHeight: PropTypes.number.isRequired,
+//   index: PropTypes.number.isRequired,
+//   screenHeight: PropTypes.number.isRequired,
+//   scrollHeight: PropTypes.number.isRequired,
+//   scrollPercent: PropTypes.number.isRequired,
+// };
 
-export default FastRetailingImages;
+export default HSA;

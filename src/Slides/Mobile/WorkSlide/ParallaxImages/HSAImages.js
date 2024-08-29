@@ -35,19 +35,19 @@ const HSA2 = styled.img.attrs(({ scroll }) => ({
   filter: blur(0.6px);
 `;
 
-const FastRetailingPhonePLST = styled.img.attrs(({ scroll }) => ({
-  style: {
-    transform: `translate(0px,-${scroll * 3.5}%) scale(0.5)`,
-  },
-}))`
-  transition: transform 0.2s ease-out;
-  bottom: -110vh;
-  left: 10vw;
-  transform-origin: left center;
-  position: absolute;
-  height: 80vh;
-  filter: blur(0.8px);
-`;
+// const FastRetailingPhonePLST = styled.img.attrs(({ scroll }) => ({
+//   style: {
+//     transform: `translate(0px,-${scroll * 3.5}%) scale(0.5)`,
+//   },
+// }))`
+//   transition: transform 0.2s ease-out;
+//   bottom: -110vh;
+//   left: 10vw;
+//   transform-origin: left center;
+//   position: absolute;
+//   height: 80vh;
+//   filter: blur(0.8px);
+// `;
 
 const HSA3 = styled.img.attrs(({ scroll }) => ({
   style: {
@@ -63,7 +63,7 @@ const HSA3 = styled.img.attrs(({ scroll }) => ({
   filter: blur(1.2px);
 `;
 
-const FastRetailingImages = ({
+const HSAImages = ({
   scrollPercent,
   boxHeight,
   index,
@@ -101,7 +101,7 @@ const FastRetailingImages = ({
   );
 };
 
-FastRetailingImages.propTypes = {
+HSAImages.propTypes = {
   boxHeight: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
   screenHeight: PropTypes.number.isRequired,
@@ -109,4 +109,4 @@ FastRetailingImages.propTypes = {
   scrollPercent: PropTypes.number.isRequired,
 };
 
-export default FastRetailingImages;
+export default HSAImages;

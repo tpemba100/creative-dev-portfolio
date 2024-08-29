@@ -62,7 +62,7 @@ const SketchPad = styled.img.attrs(({ scroll }) => ({
 //   filter: blur(1.2px);
 // `;
 
-const VoistrapImages = ({
+const CreativeCoding = ({
   scrollPercent,
   boxHeight,
   index,
@@ -100,12 +100,12 @@ const VoistrapImages = ({
   );
 };
 
-VoistrapImages.propTypes = {
-  boxHeight: PropTypes.number.isRequired,
-  index: PropTypes.number.isRequired,
-  screenHeight: PropTypes.number.isRequired,
-  scrollHeight: PropTypes.number.isRequired,
-  scrollPercent: PropTypes.number.isRequired,
-};
+// VoistrapImages.propTypes = {
+//   boxHeight: PropTypes.number.isRequired,
+//   index: PropTypes.number.isRequired,
+//   screenHeight: PropTypes.number.isRequired,
+//   scrollHeight: PropTypes.number.isRequired,
+//   scrollPercent: PropTypes.number.isRequired,
+// };
 
-export default VoistrapImages;
+export default CreativeCoding;

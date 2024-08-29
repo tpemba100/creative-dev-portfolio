@@ -1,15 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import homeImg from "../../../../assets/Images/WhatsMyFood/Home.png";
-// import restaurantImg from "../../../../assets/Images/WhatsMyFood/Restaurant.png";
-// import addRestaurantImg from "../../../../assets/Images/WhatsMyFood/AddRestaurant.png";
-// import addFoodImg from "../../../../assets/Images/WhatsMyFood/AddFood.png";
 import illImg1 from "../../../../assets/Images/illustrations/ill1_boudha.png";
 import illImg2 from "../../../../assets/Images/illustrations/ill2_jh.png";
 import illImg3 from "../../../../assets/Images/illustrations/ill3_scarface.png";
-// import illImg4 from "../../../../assets/Images/illustrations/ill4_tgc.png";
 import illImg5 from "../../../../assets/Images/illustrations/ill5_editorial.jpg";
-// import illImg6 from "../../../../assets/Images/illustrations/ill6_tools.png";
 
 const Illustrations = ({
   scrollPercent,
@@ -23,43 +17,43 @@ const Illustrations = ({
   const scrollOffsetInPercent = (scrollOffset * 100) / scrollHeight + index - 1;
   const adjustedScrollPercent = scrollPercent - scrollOffsetInPercent;
 
+  // Mobile-specific styles
   const styleillImg2 = {
-    transform: `translate(0px,-${adjustedScrollPercent * 15}%) scale(0.9)`,
+    transform: `translate(0px, -${adjustedScrollPercent * 12}%) scale(0.7)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
-    bottom: "-90vh",
-    right: "2vw",
-    height: "80vh",
-    filter: "blur(0.6px)",
+    bottom: "-60vh",
+    right: "-5vw",
+    height: "40vh",
+    filter: "blur(0.4px)",
   };
   const styleillImg1 = {
-    transform: `translate(0px,-${adjustedScrollPercent * 16}%)`,
+    transform: `translate(0px, -${adjustedScrollPercent * 14}%) scale(0.8)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
-    bottom: "-120vh",
-    left: "10svw",
-    height: "80vh",
-    scale: "0.7",
+    bottom: "-100vh",
+    left: "5vw",
+    height: "40vh",
   };
 
   const styleillImg3 = {
-    transform: `translate(0px,-${adjustedScrollPercent * 5}%) scale(0.7)`,
+    transform: `translate(0px, -${adjustedScrollPercent * 17}%) scale(0.8)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
-    bottom: "-125vh",
-    left: "2vw",
-    height: "80vh",
-    filter: "blur(0.8px)",
+    bottom: "-150vh",
+    left: "0vw",
+    height: "40vh",
+    filter: "blur(0.5px)",
   };
 
   const styleillImg5 = {
-    transform: `translate(0px,-${adjustedScrollPercent * 9}%) scale(0.6)`,
+    transform: `translate(0px, -${adjustedScrollPercent * 10}%) scale(0.7)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
-    bottom: "-120vh",
-    right: "25vw",
-    height: "80vh",
-    filter: "blur(1.2px)",
+    bottom: "-150vh",
+    right: "10vw",
+    height: "40vh",
+    filter: "blur(0.7px)",
   };
 
   return (

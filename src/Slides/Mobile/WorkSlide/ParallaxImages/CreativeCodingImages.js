@@ -1,45 +1,45 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import homeImg from "../../../../assets/Images/WhatsMyFood/Home.png";
-import restaurantImg from "../../../../assets/Images/WhatsMyFood/Restaurant.png";
-import addRestaurantImg from "../../../../assets/Images/WhatsMyFood/AddRestaurant.png";
-import addFoodImg from "../../../../assets/Images/WhatsMyFood/AddFood.png";
+import voistrapHomeImg from "../../../../assets/Images/Voistrap/Home.png";
+import voistrapMeetingsImg from "../../../../assets/Images/Voistrap/Meetings.png";
+import voistrapPeopleImg from "../../../../assets/Images/Voistrap/People.png";
+import voistrapScoreImg from "../../../../assets/Images/Voistrap/Score.png";
 
-const Restaurant = styled.img.attrs(({ scroll }) => ({
+const VoistrapPhoneHome = styled.img.attrs(({ scroll }) => ({
   style: {
     transform: `translate(0px,-${scroll * 15}%) scale(0.7)`,
   },
 }))`
   transition: transform 0.2s ease-out;
   position: absolute;
-  bottom: -170vh;
+  bottom: -220vh;
   transform-origin: left center;
   left: 2vw;
   height: 80vh;
 `;
 
-const Home = styled.img.attrs(({ scroll }) => ({
+const VoistrapPhoneMeetings = styled.img.attrs(({ scroll }) => ({
   style: {
     transform: `translate(0px,-${scroll * 8.5}%) scale(0.62)`,
   },
 }))`
   transition: transform 0.2s ease-out;
   position: absolute;
-  bottom: -125vh;
+  bottom: -180vh;
   right: 2vw;
   transform-origin: right center;
   height: 80vh;
   filter: blur(0.6px);
 `;
 
-const AddFood = styled.img.attrs(({ scroll }) => ({
+const VoistrapPhoneScore = styled.img.attrs(({ scroll }) => ({
   style: {
     transform: `translate(0px,-${scroll * 3.5}%) scale(0.5)`,
   },
 }))`
   transition: transform 0.2s ease-out;
-  bottom: -110vh;
+  bottom: -140vh;
   left: 10vw;
   transform-origin: left center;
   position: absolute;
@@ -47,13 +47,13 @@ const AddFood = styled.img.attrs(({ scroll }) => ({
   filter: blur(0.8px);
 `;
 
-const AddRestaurant = styled.img.attrs(({ scroll }) => ({
+const VoistrapPhonePeople = styled.img.attrs(({ scroll }) => ({
   style: {
     transform: `translate(0px,-${scroll * 2}%) scale(0.45)`,
   },
 }))`
   transition: transform 0.2s ease-out;
-  bottom: -105vh;
+  bottom: -155vh;
   right: 10vw;
   transform-origin: right center;
   position: absolute;
@@ -61,42 +61,45 @@ const AddRestaurant = styled.img.attrs(({ scroll }) => ({
   filter: blur(1.2px);
 `;
 
-const WhatsMyFoodImages = ({
+const VoistrapImages = ({
   boxHeight,
   index,
-  scrollHeight,
   screenHeight,
+  scrollHeight,
   scrollPercent,
 }) => {
   const heightToBeReducedInVH = boxHeight * index - 100;
   const scrollOffset = (screenHeight * heightToBeReducedInVH) / 100;
-  const scrollOffsetInPercent = (scrollOffset * 100) / scrollHeight + index - 1;
-
+  const scrollOffsetInPercent = (scrollOffset * 100) / scrollHeight;
   const adjustedScrollPercent = scrollPercent - scrollOffsetInPercent;
-
-  if (adjustedScrollPercent > 0 && adjustedScrollPercent < 0.1) {
-    console.log("WMF");
-  }
 
   return (
     <>
-      <AddFood src={addFoodImg} scroll={adjustedScrollPercent} alt="addFood" />
-      <AddRestaurant
-        src={addRestaurantImg}
+      <VoistrapPhonePeople
+        src={voistrapPeopleImg}
         scroll={adjustedScrollPercent}
-        alt="addRestaurant"
+        alt="voistrapPeople"
       />
-      <Home src={homeImg} scroll={adjustedScrollPercent} alt="Home" />
-      <Restaurant
-        src={restaurantImg}
+      <VoistrapPhoneScore
+        src={voistrapScoreImg}
         scroll={adjustedScrollPercent}
-        alt="Restaurant"
+        alt="voistrapScore"
+      />
+      <VoistrapPhoneMeetings
+        src={voistrapMeetingsImg}
+        scroll={adjustedScrollPercent}
+        alt="voistrapMeetings"
+      />
+      <VoistrapPhoneHome
+        src={voistrapHomeImg}
+        scroll={adjustedScrollPercent}
+        alt="voistrapHome"
       />
     </>
   );
 };
 
-WhatsMyFoodImages.propTypes = {
+VoistrapImages.propTypes = {
   boxHeight: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
   screenHeight: PropTypes.number.isRequired,
@@ -104,4 +107,4 @@ WhatsMyFoodImages.propTypes = {
   scrollPercent: PropTypes.number.isRequired,
 };
 
-export default WhatsMyFoodImages;
+export default VoistrapImages;

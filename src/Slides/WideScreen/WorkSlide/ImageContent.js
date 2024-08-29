@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import VoistrapImages from "./ParallaxImages/VoistrapImages";
+import CreativeCodingImages from "./ParallaxImages/CreativeCodingImages";
 import Illustration from "./ParallaxImages/Illustration";
 import HSAImages from "./ParallaxImages/HSAImages";
 import TGSImages from "./ParallaxImages/TGSImages";
@@ -105,7 +105,7 @@ const ImageContent = ({ pageSplitTimes }) => {
         />
       </ImageBox>
       <ImageBox height={boxHeight}>
-        <VoistrapImages
+        <CreativeCodingImages
           boxHeight={boxHeight}
           index={6}
           scrollPercent={scrollPercent}

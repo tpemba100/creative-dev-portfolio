@@ -10,7 +10,7 @@ import TGCImg4 from "../../../../assets/Images/TGC/tgc4.png";
 // import TGCImg6 from "../../../../assets/Images/TGC/tgc6.png";
 // import TGCImg7 from "../../../../assets/Images/TGC/tgc7.png";
 
-const EyepImages = ({
+const TGC = ({
   scrollPercent,
   boxHeight,
   index,
@@ -24,33 +24,6 @@ const EyepImages = ({
 
   return (
     <>
-      {/* <img
-        src={eyepTabletImg}
-        alt="eyepTablet"
-        style={{
-          transform: `translate(0px,-${
-            adjustedScrollPercent * 2
-          }%) scale(0.94)`,
-          transition: "transform 0.2s ease-out",
-          position: "absolute",
-          bottom: "-40vh",
-          right: "0vw",
-          height: "80vh",
-          filter: "blur(0.6px)",
-        }}
-      /> */}
-      {/* <img
-        src={eyepIphoneImg}
-        alt="eyepIphone"
-        style={{
-          transform: `translate(0px,-${adjustedScrollPercent * 12}%)`,
-          transition: "transform 0.2s ease-out",
-          position: "absolute",
-          top: "130vh",
-          left: "0vw",
-          height: "80vh",
-        }}
-      /> */}
       <img
         src={TGCImg1}
         alt="eyepIphone"
@@ -115,12 +88,12 @@ const EyepImages = ({
   );
 };
 
-EyepImages.propTypes = {
-  boxHeight: PropTypes.number.isRequired,
-  index: PropTypes.number.isRequired,
-  screenHeight: PropTypes.number.isRequired,
-  scrollHeight: PropTypes.number.isRequired,
-  scrollPercent: PropTypes.number.isRequired,
-};
+// EyepImages.propTypes = {
+//   boxHeight: PropTypes.number.isRequired,
+//   index: PropTypes.number.isRequired,
+//   screenHeight: PropTypes.number.isRequired,
+//   scrollHeight: PropTypes.number.isRequired,
+//   scrollPercent: PropTypes.number.isRequired,
+// };
 
-export default EyepImages;
+export default TGC;
