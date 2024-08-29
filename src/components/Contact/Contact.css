@@ -4,6 +4,7 @@
 
 .contact_div {
   display: flex;
+  margin-bottom: 3rem;
 }
 
 .contact_div a {

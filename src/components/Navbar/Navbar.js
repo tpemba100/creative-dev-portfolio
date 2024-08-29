@@ -4,7 +4,7 @@ import WbSunnyRoundedIcon from "@mui/icons-material//WbSunnyRounded";
 import MenuIcon from "@mui/icons-material//Menu";
 import CloseIcon from "@mui/icons-material//Close";
 import { ThemeContext } from "../../contexts/theme";
-import { about, projects, contact } from "../../portfolio";
+// import { about, projects, contact } from "../../portfolio";
 import { Link, useNavigate } from "react-router-dom";
 // import ScrollIntoView from "react-scroll-into-view";
 import "./Navbar.css";
@@ -14,21 +14,24 @@ const Navbar = () => {
   const [showNavList, setShowNavList] = useState(false);
   const navigate = useNavigate();
 
-  const toggleNavList = () => setShowNavList(!showNavList);
+  // const toggleNavList = () => setShowNavList(!showNavList);
 
-  function handleClick() {
-    if (window.location.pathname === "/") {
-      console.log("just scrool activate");
-    } else {
-      navigate("/");
+  // function handleClick() {
+  //   if (window.location.pathname === "/") {
+  //     console.log("just scrool activate");
+  //   } else {
+  //     navigate("/");
 
-      console.log("NAVIGATE");
-    }
-  }
+  //     console.log("NAVIGATE");
+  //   }
+  // }
 
   return (
-    <nav className="center nav">
-      <ul
+    <nav
+      // className="center nav "
+      className="nav_portfolio1"
+    >
+      {/* <ul
         style={{ display: showNavList ? "flex" : null }}
         className="nav__list"
       >
@@ -69,7 +72,7 @@ const Navbar = () => {
             </a>
           </li>
         </Link>
-      </ul>
+      </ul> */}
 
       <button
         type="button"
@@ -80,14 +83,14 @@ const Navbar = () => {
         {themeName === "dark" ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
       </button>
 
-      <button
+      {/* <button
         type="button"
         onClick={toggleNavList}
         className="btn btn--icon nav__hamburger"
         aria-label="toggle navigation"
       >
         {showNavList ? <CloseIcon /> : <MenuIcon />}
-      </button>
+      </button> */}
     </nav>
   );
 };

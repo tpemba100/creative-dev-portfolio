@@ -18,7 +18,8 @@ const AboutMeTitle = styled.div.attrs(({ scrollPercent }) => ({
   transition: transform 0.5s ease-out;
   font-family: "AvenirHeavy";
   position: absolute;
-  color: #eee;
+  color: var(--clr-fg-alt);
+  opacity: 0.2;
   top: 10%;
   left: -15%;
   @media ${device.laptop} {
@@ -84,8 +85,8 @@ const AboutMe = () => {
     <Container>
       <AboutMeTitle scrollPercent={scrollPercent}>ABOUT ME</AboutMeTitle>
       <AboutMeDescription>
-        Crafting user friendly and aesthetic UI designs is not just my
-        profession, it's my passion.
+        Creative developer blending design and tech to craft user-focused
+        digital experiences.
       </AboutMeDescription>
     </Container>
   );

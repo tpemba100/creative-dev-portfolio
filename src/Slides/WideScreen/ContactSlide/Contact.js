@@ -1,27 +1,24 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import twitterImg from "../../../assets/Images/Social/twitter.svg";
 import githubImg from "../../../assets/Images/Social/git.svg";
 import mailImg from "../../../assets/Images/Social/mail.svg";
-import instaImg from "../../../assets/Images/Social/insta.svg";
 import dribbbleImg from "../../../assets/Images/Social/dribbble.svg";
 import linkedInImg from "../../../assets/Images/Social/linkedin.svg";
 import SocialLogo from "./SocialLogo";
 import device from "../../../assets/breakpoints";
-
+import { contact } from "../../../portfolio";
 const Container = styled.section`
   height: 80vh; /* Since pageSplitTime is 1.4 */
   width: 100%;
-  /* border: 1px solid blue; */
   position: relative;
   overflow: hidden;
 `;
 
-const ContactTitle = styled.div.attrs({
-  style: ({ scrollPercent }) => ({
+const ContactTitle = styled.div.attrs(({ scrollPercent }) => ({
+  style: {
     transform: `translateX(${scrollPercent * 8}%)`,
-  }),
-})`
+  },
+}))`
   transition: transform 0.5s ease-out;
   font-family: "AvenirHeavy";
   font-size: 200px;
@@ -41,7 +38,6 @@ const ContactTitle = styled.div.attrs({
 `;
 
 const SocialMediaIcons = styled.div`
-  /* border: 1px solid black; */
   margin-left: 20%;
   margin-right: 3%;
   z-index: 1;
@@ -49,87 +45,61 @@ const SocialMediaIcons = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  background: rgba(255, 255, 255, 0); /* Fully transparent white */
 `;
 
-class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      screenHeight: 0,
-      scrollHeight: 0,
-      scrollPercent: 0,
+const Contact = () => {
+  const [scrollPercent, setScrollPercent] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const { body, documentElement } = document;
+      const sd = Math.max(body.scrollTop, documentElement.scrollTop);
+      const sp =
+        (sd / (documentElement.scrollHeight - documentElement.clientHeight)) *
+        100;
+      const minlimit =
+        (documentElement.clientHeight * 1040) / documentElement.scrollHeight;
+      if (sp >= minlimit && sp <= 100) {
+        setScrollPercent(sp - minlimit);
+      }
     };
-    this.handleScroll = this.handleScroll.bind(this);
-  }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-    this.setState({
-      scrollHeight: Math.round(window.document.documentElement.scrollHeight),
-    });
-    this.setState({
-      screenHeight: Math.round(window.document.documentElement.clientHeight),
-    });
-  }
+    window.addEventListener("scroll", handleScroll);
 
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-  handleScroll(event) {
-    const { body, documentElement } = event.srcElement;
-    const sd = Math.max(body.scrollTop, documentElement.scrollTop);
-    let sp =
-      (sd / (documentElement.scrollHeight - documentElement.clientHeight)) *
-      100;
-    const minlimit =
-      (documentElement.clientHeight * 1040) / documentElement.scrollHeight;
-    if (sp >= minlimit && sp <= 100) {
-      sp -= minlimit;
-      this.setState({ scrollPercent: sp });
-    }
-  }
+  return (
+    <Container>
+      <ContactTitle scrollPercent={scrollPercent}>CONTACT</ContactTitle>
+      <SocialMediaIcons>
+        <SocialLogo
+          imgURL={githubImg}
+          alternate="Github"
+          redirectURL={contact.github}
+        />
+        <SocialLogo
+          imgURL={mailImg}
+          alternate="Mail"
+          redirectURL="mailto:tpemba.96@gmail.com"
+        />
 
-  render() {
-    const { scrollPercent } = this.state;
-    return (
-      <Container>
-        <ContactTitle scrollPercent={scrollPercent}>CONTACT</ContactTitle>
-        <SocialMediaIcons>
-          <SocialLogo
-            imgURL={twitterImg}
-            alternate="Twitter"
-            redirectURL="https://twitter.com/sureshmurali29"
-          />
-          <SocialLogo
-            imgURL={githubImg}
-            alternate="Github"
-            redirectURL="https://github.com/sureshmurali"
-          />
-          <SocialLogo
-            imgURL={mailImg}
-            alternate="Mail"
-            redirectURL="mailto:sureshmurali29@gmail.com"
-          />
-          <SocialLogo
-            imgURL={instaImg}
-            alternate="Instagram"
-            redirectURL="https://www.instagram.com/sureshmurali_/"
-          />
-          <SocialLogo
-            imgURL={dribbbleImg}
-            alternate="Dribbble"
-            redirectURL="https://dribbble.com/sureshmurali29"
-          />
-          <SocialLogo
-            imgURL={linkedInImg}
-            alternate="Linkedin"
-            redirectURL="https://www.linkedin.com/in/sureshmurali29"
-          />
-        </SocialMediaIcons>
-      </Container>
-    );
-  }
-}
+        <SocialLogo
+          imgURL={dribbbleImg}
+          alternate="Dribbble"
+          redirectURL="https://dribbble.com"
+        />
+        <SocialLogo
+          imgURL={linkedInImg}
+          alternate="Linkedin"
+          redirectURL={contact.linkedin}
+        />
+      </SocialMediaIcons>
+    </Container>
+  );
+};
 
 export default Contact;

@@ -10,8 +10,7 @@ const Container = styled.div`
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-color: white;
-  font-family: "Averia Serif Libre", cursive;
+  background-color: color: var(--clr-bg);;
 
   /* border: 1px solid blue; */
 `;
@@ -26,11 +25,11 @@ class NameAndJobTitle extends Component {
   render() {
     return (
       <Container>
-        <NameReveal text="Tsering Pemba" timeDelay={500} />
+        <NameReveal text="Tsering Pemba" fontFam="Valencia" timeDelay={500} />
         <br />
         <TitleReveal
           text="UI/UX Designer & Developer"
-          // fontFam="AvenirRoman"
+          fontFam="AvenirRoman"
           timeDelay={1300}
         />
       </Container>

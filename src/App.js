@@ -30,7 +30,7 @@ const App = () => {
           </Routes>
         </main>
         <ScrollToTop />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </BrowserRouter>
   );

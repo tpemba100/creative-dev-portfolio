@@ -21,7 +21,7 @@ const TeslaImages = ({
   const scrollOffsetInPercent = (scrollOffset * 100) / scrollHeight + index - 1;
   const adjustedScrollPercent = scrollPercent - scrollOffsetInPercent;
 
-  const styleHeat = {
+  const styleBookSpace1 = {
     transform: `translate(0px,-${adjustedScrollPercent * 14}%)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
@@ -30,7 +30,7 @@ const TeslaImages = ({
     height: "80vh",
   };
 
-  const styleTyre = {
+  const styleBookSpace2 = {
     transform: `translate(0px,-${adjustedScrollPercent * 8}%) scale(0.9)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
@@ -40,32 +40,32 @@ const TeslaImages = ({
     height: "80vh",
   };
 
-  const styleBattery = {
+  const styleBookSpace3 = {
     transform: `translate(0px,-${adjustedScrollPercent * 5}%) scale(0.8)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
-    bottom: "-90vh",
+    bottom: "-95vh",
     left: "2vw",
-    filter: "blur(0.8px)",
+    filter: "blur(0.6px)",
     height: "80vh",
   };
 
-  const styleLock = {
+  const styleBookSpace4 = {
     transform: `translate(0px,-${adjustedScrollPercent * 4}%) scale(0.7)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
-    top: "130vh",
+    top: "120vh",
     right: "5vw",
-    filter: "blur(0.8px)",
+    filter: "blur(0.6px)",
     height: "80vh",
   };
 
   return (
     <div className="tesla">
-      <img src={bookSpace4} style={styleLock} alt="teslaLock" />
-      <img src={bookSpace3} style={styleBattery} alt="teslaBattery" />
-      <img src={bookSpace2} style={styleTyre} alt="teslaTyre" />
-      <img src={bookSpace1} style={styleHeat} alt="teslaHeat" />
+      <img src={bookSpace4} style={styleBookSpace4} alt="teslaLock" />
+      <img src={bookSpace3} style={styleBookSpace3} alt="teslaBattery" />
+      <img src={bookSpace2} style={styleBookSpace2} alt="teslaTyre" />
+      <img src={bookSpace1} style={styleBookSpace1} alt="teslaHeat" />
       {/* <img src={teslaLockImg} style={styleLock} alt="teslaLock" />
       <img src={teslaBatteryImg} style={styleBattery} alt="teslaBattery" />
       <img src={teslaTyreImg} style={styleTyre} alt="teslaTyre" />

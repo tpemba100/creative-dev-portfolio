@@ -109,6 +109,10 @@ main {
   display: flex;
   align-items: center;
 }
+.alignLeft {
+  display: flex;
+  align-items: end;
+}
 
 .link {
   color: var(--clr-primary);

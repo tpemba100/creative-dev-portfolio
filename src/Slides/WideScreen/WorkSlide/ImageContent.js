@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import VoistrapImages from "./ParallaxImages/VoistrapImages";
-import FastRetailingImages from "./ParallaxImages/FastRetailingImages";
-import WhatsMyFoodImages from "./ParallaxImages/WhatsMyFoodImages";
-import EyepImages from "./ParallaxImages/EyepImages";
-import TeslaImages from "./ParallaxImages/TeslaImages";
-import LashicImages from "./ParallaxImages/LashicImages";
+import Illustration from "./ParallaxImages/Illustration";
+import HSAImages from "./ParallaxImages/HSAImages";
+import TGSImages from "./ParallaxImages/TGSImages";
+import BookSpaceImages from "./ParallaxImages/BookSpaceImages";
+import PeakSpeakImages from "./ParallaxImages/PeakSpeakImages";
 
 const ImageContainer = styled.div`
   margin-left: 50%;
@@ -58,7 +58,7 @@ const ImageContent = ({ pageSplitTimes }) => {
   return (
     <ImageContainer>
       <ImageBox height={boxHeight}>
-        <FastRetailingImages
+        <HSAImages
           boxHeight={boxHeight}
           index={1}
           scrollPercent={scrollPercent}
@@ -67,7 +67,7 @@ const ImageContent = ({ pageSplitTimes }) => {
         />
       </ImageBox>
       <ImageBox height={boxHeight}>
-        <LashicImages
+        <PeakSpeakImages
           boxHeight={boxHeight}
           index={2}
           scrollPercent={scrollPercent}
@@ -77,7 +77,7 @@ const ImageContent = ({ pageSplitTimes }) => {
       </ImageBox>
 
       <ImageBox height={boxHeight}>
-        <TeslaImages
+        <BookSpaceImages
           boxHeight={boxHeight}
           index={3}
           scrollPercent={scrollPercent}
@@ -87,7 +87,7 @@ const ImageContent = ({ pageSplitTimes }) => {
       </ImageBox>
 
       <ImageBox height={boxHeight}>
-        <EyepImages
+        <TGSImages
           boxHeight={boxHeight}
           index={4}
           scrollPercent={scrollPercent}
@@ -96,7 +96,7 @@ const ImageContent = ({ pageSplitTimes }) => {
         />
       </ImageBox>
       <ImageBox height={boxHeight}>
-        <WhatsMyFoodImages
+        <Illustration
           boxHeight={boxHeight}
           index={5}
           scrollPercent={scrollPercent}

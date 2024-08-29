@@ -3,7 +3,6 @@ import styled, { keyframes } from "styled-components";
 import PropTypes from "prop-types";
 import device from "../../../assets/breakpoints";
 import { Link } from "react-router-dom";
-import { projects } from "../../../portfolio";
 
 const TextContainer = styled.section`
   position: fixed;
@@ -111,10 +110,10 @@ const ProjectDetailsContainer = styled.div`
 
 const appearText = () => keyframes`
 0%{
-  color: #FFF;
+  color: red;
 }
 100%{
-  color: #333;
+  color: var(--clr-primary);
 }
 `;
 
@@ -137,7 +136,7 @@ let BlockTextReveal = styled.span``;
 
 const BlockTextRevealQuick = styled.span`
   display: ${(props) => (props.inline ? "inline" : "block")};
-  color: #fff;
+  color: var(--clr-bg);
   animation: ${appearText} 0.0001s linear forwards;
   animation-delay: 0.5s;
   position: relative;
@@ -149,7 +148,7 @@ const BlockTextRevealQuick = styled.span`
     position: absolute;
     width: 0%;
     height: 100%;
-    background: #222;
+    background: var(--clr-primary);
     animation: ${revBlock} 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     animation-delay: 0s;
   }

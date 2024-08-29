@@ -42,8 +42,8 @@ const AboutMe = () => {
   return (
     <Container>
       <AboutMeDescription>
-        Crafting user friendly and aesthetic UI designs is not just my
-        profession, it's my passion.
+        Creative developer blending design and tech to craft user-focused
+        digital experiences.
       </AboutMeDescription>
     </Container>
   );

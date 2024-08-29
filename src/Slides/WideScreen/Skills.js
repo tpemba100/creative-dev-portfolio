@@ -19,7 +19,8 @@ const SkillsTitle = styled.div.attrs(({ scrollPercent }) => ({
   transition: transform 0.5s ease-out;
   font-family: "AvenirHeavy";
   position: absolute;
-  color: #eee;
+  color: var(--clr-fg-alt);
+  opacity: 0.2;
   top: 30%;
   right: -50%;
   @media ${device.laptop} {
@@ -90,7 +91,9 @@ const Skills = () => {
           <br />
           Design System
           <br />
-          Information Architecture
+          Graphic Design
+          <br />
+          Branding
           <br />
           <br />
           HTML & CSS
@@ -107,12 +110,15 @@ const Skills = () => {
           <br />
           Concept Development
           <br />
+          Prototyping
+          <br />
           <br />
           Figma
           <br />
-          Sketch
+          Adobe Creative Cloud
           <br />
-          Principle
+          Miro
+          <br />
           <br />
         </div>
       </SkillsList>

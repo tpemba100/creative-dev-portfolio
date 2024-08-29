@@ -5,57 +5,62 @@ import voistrapHomeImg from "../../../../assets/Images/Voistrap/Home.png";
 import voistrapMeetingsImg from "../../../../assets/Images/Voistrap/Meetings.png";
 import voistrapPeopleImg from "../../../../assets/Images/Voistrap/People.png";
 import voistrapScoreImg from "../../../../assets/Images/Voistrap/Score.png";
+import ninjaImg from "../../../../assets/Images/CreativeCoding/ninjaBunny.png";
+import fireImg from "../../../../assets/Images/CreativeCoding/interactiveFire.png";
+import sketchImg from "../../../../assets/Images/CreativeCoding/sketchPad.png";
 
-const VoistrapPhoneHome = styled.img.attrs(({ scroll }) => ({
+const BunnyNinja = styled.img.attrs(({ scroll }) => ({
   style: {
     transform: `translate(0px,-${scroll * 18}%)`,
   },
 }))`
   transition: transform 0.2s ease-out;
   position: absolute;
-  bottom: -200vh;
-  left: 0vw;
+  bottom: -110vh;
+  left: -15vw;
   height: 80vh;
+  scale: 0.6;
 `;
 
-const VoistrapPhoneMeetings = styled.img.attrs(({ scroll }) => ({
+const InteractiveFire = styled.img.attrs(({ scroll }) => ({
   style: {
-    transform: `translate(0px,-${scroll * 9}%) scale(0.9)`,
+    transform: `translate(0px,-${scroll * 9}%) scale(0.7)`,
   },
 }))`
   transition: transform 0.2s ease-out;
   position: absolute;
-  bottom: -120vh;
-  right: 2vw;
+  bottom: -145vh;
+  right: -5vw;
   height: 80vh;
   filter: blur(0.6px);
 `;
 
-const VoistrapPhoneScore = styled.img.attrs(({ scroll }) => ({
+const SketchPad = styled.img.attrs(({ scroll }) => ({
   style: {
     transform: `translate(0px,-${scroll * 7}%) scale(0.7)`,
   },
 }))`
   transition: transform 0.2s ease-out;
-  bottom: -135vh;
-  left: 2vw;
+  bottom: -145vh;
+  left: -13vw;
   position: absolute;
   height: 80vh;
   filter: blur(0.8px);
+  scale: 0.8;
 `;
 
-const VoistrapPhonePeople = styled.img.attrs(({ scroll }) => ({
-  style: {
-    transform: `translate(0px,-${scroll * 3}%) scale(0.6)`,
-  },
-}))`
-  transition: transform 0.2s ease-out;
-  bottom: -95vh;
-  right: 5vw;
-  position: absolute;
-  height: 80vh;
-  filter: blur(1.2px);
-`;
+// const VoistrapPhonePeople = styled.img.attrs(({ scroll }) => ({
+//   style: {
+//     transform: `translate(0px,-${scroll * 3}%) scale(0.6)`,
+//   },
+// }))`
+//   transition: transform 0.2s ease-out;
+//   bottom: -95vh;
+//   right: 5vw;
+//   position: absolute;
+//   height: 80vh;
+//   filter: blur(1.2px);
+// `;
 
 const VoistrapImages = ({
   scrollPercent,
@@ -71,25 +76,25 @@ const VoistrapImages = ({
 
   return (
     <>
-      <VoistrapPhonePeople
+      {/* <VoistrapPhonePeople
         src={voistrapPeopleImg}
         scroll={adjustedScrollPercent}
         alt="voistrapPeople"
-      />
-      <VoistrapPhoneScore
-        src={voistrapScoreImg}
+      /> */}
+      <BunnyNinja
+        src={ninjaImg}
         scroll={adjustedScrollPercent}
-        alt="voistrapScore"
+        alt="voistrapHome"
       />
-      <VoistrapPhoneMeetings
-        src={voistrapMeetingsImg}
+      <InteractiveFire
+        src={fireImg}
         scroll={adjustedScrollPercent}
         alt="voistrapMeetings"
       />
-      <VoistrapPhoneHome
-        src={voistrapHomeImg}
+      <SketchPad
+        src={sketchImg}
         scroll={adjustedScrollPercent}
-        alt="voistrapHome"
+        alt="voistrapScore"
       />
     </>
   );
