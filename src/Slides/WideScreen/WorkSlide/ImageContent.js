@@ -20,6 +20,7 @@ const ImageBox = styled.div`
   margin-top: 40vh;
   height: 100vh;
   position: relative;
+  loading: "lazy";
 `;
 
 const ImageContent = ({ pageSplitTimes }) => {

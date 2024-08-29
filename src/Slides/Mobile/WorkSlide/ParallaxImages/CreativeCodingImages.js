@@ -5,61 +5,64 @@ import voistrapHomeImg from "../../../../assets/Images/Voistrap/Home.png";
 import voistrapMeetingsImg from "../../../../assets/Images/Voistrap/Meetings.png";
 import voistrapPeopleImg from "../../../../assets/Images/Voistrap/People.png";
 import voistrapScoreImg from "../../../../assets/Images/Voistrap/Score.png";
+import ninjaImg from "../../../../assets/Images/CreativeCoding/ninjaBunny.png";
+import fireImg from "../../../../assets/Images/CreativeCoding/interactiveFire.png";
+import sketchImg from "../../../../assets/Images/CreativeCoding/sketchPad.png";
 
-const VoistrapPhoneHome = styled.img.attrs(({ scroll }) => ({
+const BunnyPhone = styled.img.attrs(({ scroll }) => ({
   style: {
-    transform: `translate(0px,-${scroll * 15}%) scale(0.7)`,
+    transform: `translate(0px,-${scroll * 15}%) scale(0.3)`,
   },
 }))`
   transition: transform 0.2s ease-out;
   position: absolute;
-  bottom: -220vh;
+  bottom: -200vh;
   transform-origin: left center;
   left: 2vw;
   height: 80vh;
 `;
 
-const VoistrapPhoneMeetings = styled.img.attrs(({ scroll }) => ({
+const P5Fire = styled.img.attrs(({ scroll }) => ({
   style: {
-    transform: `translate(0px,-${scroll * 8.5}%) scale(0.62)`,
+    transform: `translate(0px,-${scroll * 8.5}%) scale(0.3)`,
   },
 }))`
   transition: transform 0.2s ease-out;
   position: absolute;
-  bottom: -180vh;
-  right: 2vw;
+  bottom: -170vh;
+  right: 4vw;
   transform-origin: right center;
   height: 80vh;
   filter: blur(0.6px);
 `;
 
-const VoistrapPhoneScore = styled.img.attrs(({ scroll }) => ({
+const P5SketchPad = styled.img.attrs(({ scroll }) => ({
   style: {
-    transform: `translate(0px,-${scroll * 3.5}%) scale(0.5)`,
+    transform: `translate(0px,-${scroll * 3.5}%) scale(0.3)`,
   },
 }))`
   transition: transform 0.2s ease-out;
   bottom: -140vh;
-  left: 10vw;
+  left: 2vw;
   transform-origin: left center;
   position: absolute;
   height: 80vh;
   filter: blur(0.8px);
 `;
 
-const VoistrapPhonePeople = styled.img.attrs(({ scroll }) => ({
-  style: {
-    transform: `translate(0px,-${scroll * 2}%) scale(0.45)`,
-  },
-}))`
-  transition: transform 0.2s ease-out;
-  bottom: -155vh;
-  right: 10vw;
-  transform-origin: right center;
-  position: absolute;
-  height: 80vh;
-  filter: blur(1.2px);
-`;
+// const VoistrapPhonePeople = styled.img.attrs(({ scroll }) => ({
+//   style: {
+//     transform: `translate(0px,-${scroll * 2}%) scale(0.45)`,
+//   },
+// }))`
+//   transition: transform 0.2s ease-out;
+//   bottom: -155vh;
+//   right: 10vw;
+//   transform-origin: right center;
+//   position: absolute;
+//   height: 80vh;
+//   filter: blur(1.2px);
+// `;
 
 const VoistrapImages = ({
   boxHeight,
@@ -75,36 +78,32 @@ const VoistrapImages = ({
 
   return (
     <>
-      <VoistrapPhonePeople
+      {/* <VoistrapPhonePeople
         src={voistrapPeopleImg}
         scroll={adjustedScrollPercent}
         alt="voistrapPeople"
-      />
-      <VoistrapPhoneScore
-        src={voistrapScoreImg}
+      /> */}
+      <P5SketchPad
+        src={sketchImg}
         scroll={adjustedScrollPercent}
         alt="voistrapScore"
       />
-      <VoistrapPhoneMeetings
-        src={voistrapMeetingsImg}
+      <P5Fire src={fireImg} scroll={adjustedScrollPercent} alt="fireImg" />
+      <BunnyPhone
+        src={ninjaImg}
         scroll={adjustedScrollPercent}
-        alt="voistrapMeetings"
-      />
-      <VoistrapPhoneHome
-        src={voistrapHomeImg}
-        scroll={adjustedScrollPercent}
-        alt="voistrapHome"
+        alt="bunnyNinja"
       />
     </>
   );
 };
 
-VoistrapImages.propTypes = {
-  boxHeight: PropTypes.number.isRequired,
-  index: PropTypes.number.isRequired,
-  screenHeight: PropTypes.number.isRequired,
-  scrollHeight: PropTypes.number.isRequired,
-  scrollPercent: PropTypes.number.isRequired,
-};
+// VoistrapImages.propTypes = {
+//   boxHeight: PropTypes.number.isRequired,
+//   index: PropTypes.number.isRequired,
+//   screenHeight: PropTypes.number.isRequired,
+//   scrollHeight: PropTypes.number.isRequired,
+//   scrollPercent: PropTypes.number.isRequired,
+// };
 
 export default VoistrapImages;

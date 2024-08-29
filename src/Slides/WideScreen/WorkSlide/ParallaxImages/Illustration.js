@@ -24,7 +24,7 @@ const Illustrations = ({
   const adjustedScrollPercent = scrollPercent - scrollOffsetInPercent;
 
   const styleillImg2 = {
-    transform: `translate(0px,-${adjustedScrollPercent * 15}%) scale(0.9)`,
+    transform: `translate(0px,-${adjustedScrollPercent * 15}%) scale(0.7)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
     bottom: "-90vh",
@@ -37,17 +37,17 @@ const Illustrations = ({
     transition: "transform 0.2s ease-out",
     position: "absolute",
     bottom: "-120vh",
-    left: "10svw",
+    left: "0svw",
     height: "80vh",
     scale: "0.7",
   };
 
   const styleillImg3 = {
-    transform: `translate(0px,-${adjustedScrollPercent * 5}%) scale(0.7)`,
+    transform: `translate(0px,-${adjustedScrollPercent * 5}%) scale(0.5)`,
     transition: "transform 0.2s ease-out",
     position: "absolute",
     bottom: "-125vh",
-    left: "2vw",
+    left: "-6vw",
     height: "80vh",
     filter: "blur(0.8px)",
   };

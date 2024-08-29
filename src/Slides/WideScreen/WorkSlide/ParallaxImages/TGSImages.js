@@ -46,7 +46,7 @@ const TGC = ({
           transition: "transform 0.2s ease-out",
           position: "absolute",
           top: "110vh",
-          left: "15vw",
+          left: "10vw",
           height: "80vh",
           scale: "0.5",
         }}

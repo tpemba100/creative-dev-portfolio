@@ -40,6 +40,7 @@ const Container = styled.section`
 const ContactTitle = styled.div`
   font-family: "AvenirHeavy";
   color: #000;
+  width: "100%";
   @media ${device.mobileS} {
     font-size: 40px;
   }

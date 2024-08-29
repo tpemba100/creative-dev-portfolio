@@ -110,10 +110,10 @@ const ProjectDetailsContainer = styled.div`
 
 const appearText = () => keyframes`
 0%{
-  color: red;
+  color: var(--clr-bg);
 }
 100%{
-  color: var(--clr-primary);
+  color: inherit;
 }
 `;
 

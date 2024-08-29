@@ -16,33 +16,33 @@ const BunnyNinja = styled.img.attrs(({ scroll }) => ({
 }))`
   transition: transform 0.2s ease-out;
   position: absolute;
-  bottom: -110vh;
-  left: -15vw;
+  bottom: -80vh;
+  left: -25vw;
   height: 80vh;
-  scale: 0.6;
+  scale: 0.5;
 `;
 
 const InteractiveFire = styled.img.attrs(({ scroll }) => ({
   style: {
-    transform: `translate(0px,-${scroll * 9}%) scale(0.7)`,
+    transform: `translate(0px,-${scroll * 9}%) scale(0.4)`,
   },
 }))`
   transition: transform 0.2s ease-out;
   position: absolute;
   bottom: -145vh;
-  right: -5vw;
+  right: -15vw;
   height: 80vh;
   filter: blur(0.6px);
 `;
 
 const SketchPad = styled.img.attrs(({ scroll }) => ({
   style: {
-    transform: `translate(0px,-${scroll * 7}%) scale(0.7)`,
+    transform: `translate(0px,-${scroll * 7}%) scale(0.6)`,
   },
 }))`
   transition: transform 0.2s ease-out;
   bottom: -145vh;
-  left: -13vw;
+  left: -25vw;
   position: absolute;
   height: 80vh;
   filter: blur(0.8px);
@@ -62,7 +62,7 @@ const SketchPad = styled.img.attrs(({ scroll }) => ({
 //   filter: blur(1.2px);
 // `;
 
-const CreativeCoding = ({
+const CreativeCodingImages = ({
   scrollPercent,
   boxHeight,
   index,
@@ -100,12 +100,12 @@ const CreativeCoding = ({
   );
 };
 
-// VoistrapImages.propTypes = {
-//   boxHeight: PropTypes.number.isRequired,
-//   index: PropTypes.number.isRequired,
-//   screenHeight: PropTypes.number.isRequired,
-//   scrollHeight: PropTypes.number.isRequired,
-//   scrollPercent: PropTypes.number.isRequired,
-// };
+CreativeCodingImages.propTypes = {
+  boxHeight: PropTypes.number.isRequired,
+  index: PropTypes.number.isRequired,
+  screenHeight: PropTypes.number.isRequired,
+  scrollHeight: PropTypes.number.isRequired,
+  scrollPercent: PropTypes.number.isRequired,
+};
 
-export default CreativeCoding;
+export default CreativeCodingImages;
