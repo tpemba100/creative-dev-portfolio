@@ -11,7 +11,7 @@ import illImg3 from "../../../../assets/Images/illustrations/ill3_scarface.png";
 import illImg5 from "../../../../assets/Images/illustrations/ill5_editorial.jpg";
 // import illImg6 from "../../../../assets/Images/illustrations/ill6_tools.png";
 
-const Illustrations = ({
+const Illustration = ({
   scrollPercent,
   boxHeight,
   index,
@@ -37,7 +37,7 @@ const Illustrations = ({
     transition: "transform 0.2s ease-out",
     position: "absolute",
     bottom: "-120vh",
-    left: "0svw",
+    left: "0vw",
     height: "80vh",
     scale: "0.7",
   };
@@ -72,7 +72,7 @@ const Illustrations = ({
   );
 };
 
-Illustrations.propTypes = {
+Illustration.propTypes = {
   boxHeight: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
   screenHeight: PropTypes.number.isRequired,
@@ -80,4 +80,4 @@ Illustrations.propTypes = {
   scrollPercent: PropTypes.number.isRequired,
 };
 
-export default Illustrations;
+export default Illustration;

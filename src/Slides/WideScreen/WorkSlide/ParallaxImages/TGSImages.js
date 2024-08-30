@@ -10,7 +10,7 @@ import TGCImg4 from "../../../../assets/Images/TGC/tgc4.png";
 // import TGCImg6 from "../../../../assets/Images/TGC/tgc6.png";
 // import TGCImg7 from "../../../../assets/Images/TGC/tgc7.png";
 
-const TGC = ({
+const TGCImages = ({
   scrollPercent,
   boxHeight,
   index,
@@ -88,12 +88,12 @@ const TGC = ({
   );
 };
 
-// EyepImages.propTypes = {
-//   boxHeight: PropTypes.number.isRequired,
-//   index: PropTypes.number.isRequired,
-//   screenHeight: PropTypes.number.isRequired,
-//   scrollHeight: PropTypes.number.isRequired,
-//   scrollPercent: PropTypes.number.isRequired,
-// };
+TGCImages.propTypes = {
+  boxHeight: PropTypes.number.isRequired,
+  index: PropTypes.number.isRequired,
+  screenHeight: PropTypes.number.isRequired,
+  scrollHeight: PropTypes.number.isRequired,
+  scrollPercent: PropTypes.number.isRequired,
+};
 
-export default TGC;
+export default TGCImages;

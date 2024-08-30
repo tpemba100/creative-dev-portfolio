@@ -5,7 +5,7 @@ import SPEAK2 from "../../../../assets/Images/Lashic/SPEAK2.png";
 import SPEAK3 from "../../../../assets/Images/Lashic/SPEAK3.png";
 import SPEAK4 from "../../../../assets/Images/Lashic/SPEAK4.png";
 
-const PeakSpeak = ({
+const PeakSpeakImages = ({
   scrollPercent,
   boxHeight,
   index,
@@ -74,12 +74,12 @@ const PeakSpeak = ({
   );
 };
 
-// LashicImages.propTypes = {
-//   boxHeight: PropTypes.number.isRequired,
-//   index: PropTypes.number.isRequired,
-//   screenHeight: PropTypes.number.isRequired,
-//   scrollHeight: PropTypes.number.isRequired,
-//   scrollPercent: PropTypes.number.isRequired,
-// };
+PeakSpeakImages.propTypes = {
+  boxHeight: PropTypes.number.isRequired,
+  index: PropTypes.number.isRequired,
+  screenHeight: PropTypes.number.isRequired,
+  scrollHeight: PropTypes.number.isRequired,
+  scrollPercent: PropTypes.number.isRequired,
+};
 
-export default PeakSpeak;
+export default PeakSpeakImages;

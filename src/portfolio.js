@@ -525,7 +525,8 @@ const workDetails = [
     number: "03",
     // projectName:  -Tesla
     projectName: "Book Space",
-    projectDesc: "Web app that helps you maintain and share your book lists.",
+    projectDesc:
+      "Web app that helps you maintain and share your book lists. book_lists_book_listsbook_listsbook_lists",
     projectType: "FULL STACK WEB APP",
     roles: ["UI/UX Designer", "React Developer"],
   },

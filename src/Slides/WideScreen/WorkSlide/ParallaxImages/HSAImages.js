@@ -82,12 +82,12 @@ const HSA = ({
   );
 };
 
-// FastRetailingImages.propTypes = {
-//   boxHeight: PropTypes.number.isRequired,
-//   index: PropTypes.number.isRequired,
-//   screenHeight: PropTypes.number.isRequired,
-//   scrollHeight: PropTypes.number.isRequired,
-//   scrollPercent: PropTypes.number.isRequired,
-// };
+HSA.propTypes = {
+  boxHeight: PropTypes.number.isRequired,
+  index: PropTypes.number.isRequired,
+  screenHeight: PropTypes.number.isRequired,
+  scrollHeight: PropTypes.number.isRequired,
+  scrollPercent: PropTypes.number.isRequired,
+};
 
 export default HSA;

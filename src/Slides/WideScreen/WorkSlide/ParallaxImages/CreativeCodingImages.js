@@ -30,7 +30,7 @@ const InteractiveFire = styled.img.attrs(({ scroll }) => ({
   transition: transform 0.2s ease-out;
   position: absolute;
   bottom: -145vh;
-  right: -15vw;
+  right: 0vw;
   height: 80vh;
   filter: blur(0.6px);
 `;
@@ -49,18 +49,18 @@ const SketchPad = styled.img.attrs(({ scroll }) => ({
   scale: 0.8;
 `;
 
-// const VoistrapPhonePeople = styled.img.attrs(({ scroll }) => ({
-//   style: {
-//     transform: `translate(0px,-${scroll * 3}%) scale(0.6)`,
-//   },
-// }))`
-//   transition: transform 0.2s ease-out;
-//   bottom: -95vh;
-//   right: 5vw;
-//   position: absolute;
-//   height: 80vh;
-//   filter: blur(1.2px);
-// `;
+const VoistrapPhonePeople = styled.img.attrs(({ scroll }) => ({
+  style: {
+    transform: `translate(0px,-${scroll * 3}%) scale(0.6)`,
+  },
+}))`
+  transition: transform 0.2s ease-out;
+  bottom: -95vh;
+  right: 5vw;
+  position: absolute;
+  height: 80vh;
+  filter: blur(1.2px);
+`;
 
 const CreativeCodingImages = ({
   scrollPercent,
