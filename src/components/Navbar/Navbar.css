@@ -40,7 +40,8 @@
 }
 
 .nav_portfolio1 {
-  /* background-color: red; */
+  background: rgba(255, 255, 255, 0); /* Fully transparent white */
+
   display: flex;
   width: 100%;
   justify-content: end;

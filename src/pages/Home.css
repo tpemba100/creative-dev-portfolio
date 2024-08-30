@@ -1,0 +1,23 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  scroll-behavior: smooth; /* Optional: smooth scrolling for anchor links */
+}
+
+body {
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+/* Home.css */
+.mobile-wrapper {
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Allow vertical scrolling */
+  scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
+}
+
+.mobile-wrapper > * {
+  height: 100vh; /* Full viewport height for each section */
+  scroll-snap-align: start; /* Align sections at the start of the viewport */
+}

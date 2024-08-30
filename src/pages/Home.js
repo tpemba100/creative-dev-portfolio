@@ -3,7 +3,6 @@ import About from ".././components/About/About";
 import Projects from ".././components/Projects/Projects";
 import Contact from ".././components/Contact/Contact";
 import ".././App.css";
-// import Hero from ".././components/Hero/Hero";
 import { projects } from "../portfolio";
 import MediaQuery from "react-responsive";
 import WideScreenHero from ".././Slides/WideScreen/HeroSlide/Hero";
@@ -15,6 +14,8 @@ import MobileWork from ".././Slides/Mobile/WorkSlide/Work";
 import MobileSkills from ".././Slides/Mobile/Skills";
 import MobileContact from ".././Slides/Mobile/ContactSlide/Contact";
 import Navbar from "../components/Navbar/Navbar";
+import "./Home.css";
+
 const Home = () => {
   if (!projects.length) return null;
 
@@ -29,13 +30,13 @@ const Home = () => {
       </MediaQuery>
       <MediaQuery query="(max-device-width: 1224px)">
         <MobileHero />
-        <MobileWork />
-        <MobileSkills />
-        <MobileContact />
+        <div className="mobile-wrapper">
+          <MobileWork />
+          {/* Uncomment these if needed */}
+          {/* <MobileSkills /> */}
+          {/* <MobileContact /> */}
+        </div>
       </MediaQuery>
-      {/* <Hero /> */}
-      {/* <About /> */}
-      {/* <Projects projects={projects} /> */}
     </div>
   );
 };

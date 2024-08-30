@@ -498,13 +498,13 @@ const archives = [
 ];
 
 const workDetails = [
-  {
-    number: "",
-    projectName: "",
-    projectDesc: "",
-    projectType: "",
-    roles: [""],
-  },
+  // {
+  //   number: "",
+  //   projectName: "",
+  //   projectDesc: "",
+  //   projectType: "",
+  //   roles: [""],
+  // },
   {
     number: "01",
     projectName: "Hyolmo Society",
