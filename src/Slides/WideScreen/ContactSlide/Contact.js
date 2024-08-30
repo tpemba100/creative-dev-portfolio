@@ -7,6 +7,7 @@ import linkedInImg from "../../../assets/Images/Social/linkedin.svg";
 import SocialLogo from "./SocialLogo";
 import device from "../../../assets/breakpoints";
 import { contact } from "../../../portfolio";
+
 const Container = styled.section`
   height: 80vh; /* Since pageSplitTime is 1.4 */
   width: 100%;

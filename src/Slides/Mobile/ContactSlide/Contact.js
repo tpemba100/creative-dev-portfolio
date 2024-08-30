@@ -8,6 +8,7 @@ import dribbbleImg from "../../../assets/Images/Social/dribbble.svg";
 import linkedInImg from "../../../assets/Images/Social/linkedin.svg";
 import SocialLogo from "./SocialLogo";
 import device from "../../../assets/breakpoints";
+import { contact } from "../../../portfolio";
 
 const Container = styled.section`
   margin-top: 20vh;
@@ -18,6 +19,7 @@ const Container = styled.section`
   flex-flow: column wrap;
   justify-content: center;
   align-content: flex-start;
+
   @media ${device.mobileS} {
     padding-left: 60px;
   }
@@ -88,38 +90,29 @@ const SocialMediaIcons = styled.div`
 class Contact extends Component {
   render() {
     return (
-      <Container className="mobileContact">
-        <ContactTitle>CONTACT</ContactTitle>
+      <Container>
+        <ContactTitle style={{ width: "100%" }}>CONTACT</ContactTitle>
         <SocialMediaIcons>
           <SocialLogo
-            imgURL={twitterImg}
-            alternate="twitter"
-            redirectURL="https://twitter.com/sureshmurali29"
-          />
-          <SocialLogo
             imgURL={githubImg}
-            alternate="github"
-            redirectURL="https://github.com/sureshmurali"
+            alternate="Github"
+            redirectURL={contact.github}
           />
           <SocialLogo
             imgURL={mailImg}
-            alternate="mail"
-            redirectURL="mailto:sureshmurali29@gmail.com"
+            alternate="Mail"
+            redirectURL="mailto:tpemba.96@gmail.com"
           />
-          <SocialLogo
-            imgURL={instaImg}
-            alternate="insta"
-            redirectURL="https://www.instagram.com/sureshmurali_/"
-          />
+
           <SocialLogo
             imgURL={dribbbleImg}
-            alternate="dribbble"
-            redirectURL="https://dribbble.com/sureshmurali29"
+            alternate="Dribbble"
+            redirectURL="https://dribbble.com"
           />
           <SocialLogo
             imgURL={linkedInImg}
-            alternate="linkedin"
-            redirectURL="https://www.linkedin.com/in/sureshmurali29"
+            alternate="Linkedin"
+            redirectURL={contact.linkedin}
           />
         </SocialMediaIcons>
       </Container>
