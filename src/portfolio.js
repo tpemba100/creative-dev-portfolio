@@ -11,7 +11,7 @@ const about = {
   name: "Tsering Pemba",
   role: "Front End Engineer",
   description:
-    "I am a Creative Designer & developer based in NYC. I’m passionate about creating user experiences that are not only visually appealing but also highly functional. ",
+    "I am a Designer & Developer based in NYC. I’m passionate about creating user experiences that are not only visually appealing but also highly functional. ",
   social: {
     linkedin: "https://www.linkedin.com/in/tpemba/",
     github: "https://github.com/tpemba100",
@@ -30,11 +30,11 @@ const design_about = {
 const develop_about = {
   name: "Develop",
   description:
-    "As a developer, i have passion for building elegant and intuitive interfaces that bring design to life. by writing clean and efficient code that creates seamless user experience, meets business objectives and complete my vision.",
+    "As a full-stack developer, I'm passionate about crafting seamless user experiences through elegant interfaces and efficient code, bridging the gap between design and functionality to deliver scalable, intuitive, and business-driven solutions that bring my vision to life.",
   skills:
-    "html, css, javascript, react, ux/ui design, frontend and backend dev",
+    "java, javascript, react, node, ux/ui design, frontend and backend dev, oop, data structure",
   software:
-    "visual studio code, git and github, intellij, mongodb, framer motion, material ui and bootstrap",
+    "vs code, git/ github, Dbeaver, postman, intellij, mongodb, framer motion, mui and bootstrap",
 };
 
 //SKILLS
@@ -120,6 +120,49 @@ const projects = [
 
   {
     name: "projects",
+  },
+  //BOOK SHARE
+  //BOOK SHARE
+  //BOOK SHARE
+  {
+    name: "Book Share",
+    header: "full stack development",
+    description:
+      "a space to share your book list, connect and discover new books",
+    stack: [
+      "MERN STACK",
+      "REACT",
+      "NODE",
+      "MONGODB",
+      "EXPRESS",
+      "RENDER",
+      "CI/CD",
+    ],
+    head_img: "book_share/homepage.png",
+    category: "develop",
+    sections: [
+      {
+        title: "introduction",
+        brief:
+          "A full stack application for book lovers to search, save and share books. Users can save books to their list and create your own summary to remember the connection to that book. You can add notes or summary to each book to remember key details, Then you can share your book list with friends or make your book list easily accessible",
+        img: ["book_share/introduction.gif"],
+      },
+      {
+        title: "features",
+        brief: "",
+        img: [
+          "book_share/features.png",
+          "book_share/login.gif",
+          "book_share/add_book.gif",
+          "book_share/delete_book.gif",
+          "book_share/notes.gif",
+          "book_share/share.gif",
+          "book_share/mobile.gif",
+        ],
+      },
+    ],
+    sourceCode: "https://github.com/tpemba100/book-club",
+    website: "https://bookshare-now.onrender.com",
   },
   //HYOLMO WEBSITE
   //HYOLMO WEBSITE
