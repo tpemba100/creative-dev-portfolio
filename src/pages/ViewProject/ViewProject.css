@@ -27,6 +27,9 @@
   font-size: 1vw;
   text-transform: uppercase;
 }
+.hero_txt_title {
+  color: var(--clr-primary);
+}
 
 .hero_txt_stack {
   display: flex;
@@ -41,7 +44,7 @@
   text-transform: uppercase;
   padding: 5px 15px;
   margin: 10px 5px;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-fg-alt);
   color: var(--clr-bg);
 }
 
@@ -76,6 +79,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   padding-left: 6vw;
+  color: var(--clr-fg-alt);
 }
 
 /* SECTION IMAGE */

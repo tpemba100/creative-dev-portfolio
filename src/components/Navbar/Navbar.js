@@ -80,6 +80,7 @@ const Navbar = () => {
         {themeName === "dark" ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
       </button>
 
+      {/* only mobile view */}
       <button
         type="button"
         onClick={toggleNavList}

@@ -24,11 +24,8 @@ const About = () => {
           className={`design_cont ${activeButton === "design" ? "" : "active"}`}
           style={{
             backgroundColor:
-              activeButton === "design"
-                ? "var(--clr-fg)"
-                : "var(--clr-primary)",
-            color:
-              activeButton === "design" ? "var(--clr-bg)" : "var(--clr-bg)",
+              activeButton === "design" ? "var(--clr-fg)" : "var(--clr-fg-alt)",
+            color: activeButton === "design" ? "white" : "white",
             opacity: activeButton === "design" ? "1" : "0.5",
             borderTopLeftRadius: "10px",
             borderTopRightRadius: "10px",
@@ -47,9 +44,8 @@ const About = () => {
             backgroundColor:
               activeButton === "develop"
                 ? "var(--clr-fg)"
-                : "var(--clr-primary)",
-            color:
-              activeButton === "develop" ? "var(--clr-bg)" : "var(--clr-bg)",
+                : "var(--clr-fg-alt)",
+            color: activeButton === "develop" ? "white" : "white",
             opacity: activeButton === "develop" ? "1" : "0.5",
             borderTopLeftRadius: "10px",
             borderTopRightRadius: "10px",

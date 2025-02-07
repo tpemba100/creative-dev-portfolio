@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { gitProjects } from "../../portfolio";
 import "./ShowRepo.css";
 import uniqid from "uniqid";
+import { LanguageRounded } from "@mui/icons-material";
 
 function ShowRepo() {
   const url = "https://api.github.com/users/tpemba100/repos";
@@ -62,11 +63,11 @@ function ShowRepo() {
       <div className="section_header">
         <h3 className="section__title">github repo</h3>
 
-        <h2 className="sub_title">Selected Repos</h2>
+        {/* <h2 className="sub_title">Selected Repos</h2> */}
         <ul className="selected_repo_cont repo__list">
           {gitProjects.map((repo) => (
             <li key={uniqid()} className="selected_repo">
-              <h3>{repo.name}</h3>
+              <h3 className="repo_title">{repo.name}</h3>
               <br />
               <p className="repo_description">{repo.description}</p>
               {repo.stack && (
@@ -80,23 +81,26 @@ function ShowRepo() {
               <a href={repo.sourceCode} className="link link--icon">
                 <GitHubIcon style={{ fontSize: "30px" }} />
               </a>
+              {repo.livePreview && (
+                <a
+                  href={repo.livePreview}
+                  className="link link--icon"
+                  style={{ marginLeft: "0.5rem" }}
+                >
+                  <LanguageRounded style={{ fontSize: "30px" }} />
+                </a>
+              )}
 
               <br />
             </li>
           ))}
         </ul>
 
-        <div className="filter-repos">
-          <input
-            type="text"
-            placeholder="Search Repositories"
-            onChange={(e) => handleRepoSearch(e.target.value)}
-          />
-        </div>
+        {/* s */}
       </div>
 
       {/* all Repos */}
-      <h3 className="sub_title sub_titlea">All Repos</h3>
+      {/* <h3 className="sub_title sub_titlea">All Repos</h3>
 
       <ul className="repo__list">
         {repoList.slice(0, visibleRepos).map((repo) => (
@@ -119,7 +123,7 @@ function ShowRepo() {
       </ul>
 
       {/* more or less button */}
-      {visibleRepos <= repoList.length ? (
+      {/* {visibleRepos <= repoList.length ? (
         <span
           type="button"
           className="btn btn--outline abt-btn"
@@ -127,7 +131,7 @@ function ShowRepo() {
         >
           {visibleRepos >= repoList.length ? "See Less" : "See More"}
         </span>
-      ) : null}
+      ) : null}  */}
     </section>
   );
 }

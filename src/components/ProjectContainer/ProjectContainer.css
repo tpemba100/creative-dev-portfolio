@@ -12,7 +12,7 @@
   /* transform: translate(-50%, -50%); */
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
-  color: var(--clr-primary);
+  color: var(--clr-fg-alt);
   display: flex;
   align-items: first baseline;
 }
@@ -21,7 +21,7 @@
   /* font-family: "Averia Serif Libre", cursive; */
   text-transform: uppercase;
   color: var(--clr-primary);
-  font-size: 2vw;
+  font-size: 1.6vw;
   width: 100%;
 }
 

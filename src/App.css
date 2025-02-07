@@ -45,11 +45,11 @@
 }
 */
 .dark {
-  --clr-bg: #1b1f31;
-  --clr-bg-alt: #2a2f4c;
-  --clr-fg: #bdbddd;
-  --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
+  --clr-bg: #121212;
+  --clr-bg-alt: #282828;
+  --clr-fg: #37362e;
+  --clr-fg-alt: #94948f;
+  --clr-primary: #c6bc4e;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -128,13 +128,15 @@ main {
 }
 
 .link--nav {
-  color: var(--clr-fg);
+  /* color: var(--clr-fg); */
+  color: var(--clr-fg-alt);
+
   text-transform: lowercase;
   font-weight: 500;
 }
 
 .link--icon {
-  color: var(--clr-fg);
+  color: var(--clr-primary) f;
 }
 .link--icon:hover {
   color: var(--clr-primary);

@@ -43,7 +43,7 @@
   min-height: 180px;
   border-radius: 10px;
   margin: 1em;
-  border: 2px solid var(--clr-primary);
+  border: 2px solid var(--clr-fg-alt);
   padding: 1em;
   text-align: center;
   /* box-shadow: var(--shadow); */
@@ -126,7 +126,9 @@
   margin: auto;
   color: var(--clr-primary);
 }
-
+.repo_title {
+  color: var(--clr-primary);
+}
 .sub_titlea {
   padding-left: 25%;
 }
@@ -135,6 +137,7 @@
   margin: 0;
   padding: 0;
   padding-left: 0;
+  color: var(--clr-fg-alt);
 }
 
 .repo_stack {
@@ -151,7 +154,7 @@
   text-transform: uppercase;
   padding: 3px 7px;
   margin: 6px 2px;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-fg-alt);
   color: var(--clr-bg);
 }
 

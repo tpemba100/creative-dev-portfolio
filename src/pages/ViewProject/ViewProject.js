@@ -31,7 +31,7 @@ const ViewProject = () => {
       {/* Main Header */}
       <div className="hero">
         <div className="hero_txt">
-          <h1>{name}</h1>
+          <h1 className="hero_txt_title">{name}</h1>
           <h4>{header}</h4>
           <h3>{description}</h3>
           <div className="hero_txt_stack">

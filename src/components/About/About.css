@@ -46,6 +46,7 @@
   /* box-shadow: 0 0 20px 10px gray; */
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  /* background-color: var(--clr-fg); */
   background-color: var(--clr-fg);
 }
 
@@ -57,11 +58,12 @@
   width: 50%;
   /* margin-left: 50%; */
   padding: 4vw;
-  color: var(--clr-bg-alt);
+  /* color: var(--clr-fg-alt); */
+  color: white;
   border-bottom-right-radius: 20px;
 }
 .info h2 {
-  color: var(--clr-bg-alt);
+  color: var(--clr-fg-alt);
 }
 
 .info p {

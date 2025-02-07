@@ -60,7 +60,7 @@ export default function Projects({ projects }) {
           Design
         </button>
       </div>
-      <motion.div layout className="popular-movies">
+      <motion.div layout>
         <AnimatePresence>
           <Grid
             container
@@ -69,11 +69,12 @@ export default function Projects({ projects }) {
               "--Grid-borderWidth": "2px",
               borderTop: "var(--Grid-borderWidth) solid",
               borderLeft: "var(--Grid-borderWidth) solid",
-              borderColor: "var(--clr-primary)",
+              // borderColor: "var(--clr-primary)",
+              borderColor: "var(--clr-fg-alt)",
               "& > div": {
                 borderRight: "var(--Grid-borderWidth) solid",
                 borderBottom: "var(--Grid-borderWidth) solid",
-                borderColor: "var(--clr-primary)",
+                borderColor: "var(--clr-fg-alt)",
               },
             }}
           >

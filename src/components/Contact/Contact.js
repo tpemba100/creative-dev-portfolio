@@ -1,5 +1,5 @@
 import { contact } from "../../portfolio";
-import ResumePDF from "../../assets/TseringPemba_Resume.pdf";
+import ResumePDF from "../../assets/TseringPemba_Resume_2024.pdf";
 import uxPDF from "../../assets/certificates/Coursera_front_end.pdf";
 import takeoPDF from "../../assets/certificates/Coursera_ux.pdf";
 import jpmPDF from "../../assets/certificates/J.P. Morgan__completion_certificate.pdf";
@@ -18,12 +18,12 @@ const Contact = () => {
             Email
           </span>
         </a>
-        <a href={contact.github}>
+        <a href={contact.github} target="_blank" rel="noreferrer">
           <span type="button" className="btn btn--outline">
             Github
           </span>
         </a>
-        <a href={contact.linkedin}>
+        <a href={contact.linkedin} target="_blank" rel="noreferrer">
           <span type="button" className="btn btn--outline">
             Linkedin
           </span>

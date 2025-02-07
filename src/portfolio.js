@@ -11,7 +11,8 @@ const about = {
   name: "Tsering Pemba",
   role: "Front End Engineer",
   description:
-    "I am a Designer & Developer based in NYC. I’m passionate about creating user experiences that are not only visually appealing but also highly functional. ",
+    "I'm a Developer & Designer based in NYC, passionate about building seamless, visually engaging, and highly functional user experiences. ",
+
   social: {
     linkedin: "https://www.linkedin.com/in/tpemba/",
     github: "https://github.com/tpemba100",
@@ -77,7 +78,7 @@ const gitProjects = [
   {
     name: "Book Share",
     description:
-      "Book Mates is a web application that allows users to keep track of their book lists. With Book Mates, users can log in and access their list of books that they have read, books that they are currently reading, and books that they want to read in the future.",
+      "Book Share is a web application that allows users to keep track of their book lists. With Book Mates, users can log in and access their list of books that they have read, books that they are currently reading, and books that they want to read in the future.",
     stack: [
       "HTML",
       "CSS",
@@ -88,8 +89,23 @@ const gitProjects = [
       "MongoDB",
       "Node",
     ],
-    sourceCode: "https://github.com/tpemba100/Student-Group",
-    livePreview: "https://github.com/tpemba100/Student-Gropup",
+    sourceCode: "https://github.com/tpemba100/book-club",
+    livePreview: "https://bookshare-now.onrender.com/#/landing-page",
+  },
+  {
+    name: "HimaLingo",
+    description:
+      "A user-friendly fullstack app ddeveloped to help you explore alphabets, words, and sentences in your favorite himalayans languages. Built with React as Front End and Java with Spring Data along with spring security for secured user authentication. ",
+    stack: [
+      "React",
+      "Java",
+      "Spring Boot",
+      "Sring Data JPAA",
+      "MySQL",
+      "Junit",
+    ],
+    sourceCode: "https://github.com/tpemba100/Himalingo-Backend",
+    // livePreview: "https://github.com/tpemba100/Netflix-clone",
   },
   {
     name: "Computer Ticketing Sysytem",
@@ -97,15 +113,7 @@ const gitProjects = [
       "This is an full stack application where the user can raise a ticket for any issues with their computer. The users can provide information in the reactive forms to raise a ticket. Only authticated users can login and raise a ticket.",
     stack: ["React", "TypeScript", "Redux", "CSS", "MongoDB", "Node"],
     sourceCode: "https://github.com/tpemba100/ComputerTicketSystem",
-    livePreview: "https://github.com/tpemba100/ComputerTicketSystem",
-  },
-  {
-    name: "Netflix Clone",
-    description:
-      "A Full Stack Mock up of NETFLIX app with very similar interface and experience. The Front end was developed using React, SCSS and Material UI for similar User Experience as original Netflix. And the back end is built with NodeJs, Express, Mongoose and with MongoDB as database. ",
-    stack: ["React", "SCSS", "Material UI", "MongoDb", "Node"],
-    sourceCode: "https://github.com/tpemba100/Netflix-clone",
-    livePreview: "https://github.com/tpemba100/Netflix-clone",
+    // livePreview: "https://github.com/tpemba100/ComputerTicketSystem",
   },
 ];
 //PROJECTS
